@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>nianav OS â€” Win with intent. Keep winning by design.</title>
+<title>nianav OS — Win with intent. Keep winning by design.</title>
 
 <style>/* latin-ext */
 @font-face {
@@ -707,7 +707,7 @@
     overflow-x: hidden;
   }
 
-  /* â•â•â•â•â•â•â•â• BACKGROUND STACK (matches direction-lattice.html) â•â•â•â•â•â•â•â• */
+  /* ════════ BACKGROUND STACK (matches direction-lattice.html) ════════ */
   .stage-bg {
     position: fixed; inset: 0; z-index: 0;
     background: var(--bg);
@@ -731,14 +731,14 @@
     overflow: hidden;
   }
   .canvas-wrap.network-wrap { z-index: 1; opacity: 0.07; }
-  /* No dark-mode bump â€” the network stays calm throughout the page. */
+  /* No dark-mode bump — the network stays calm throughout the page. */
 
   .nv-connective-matrix {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
     overflow: hidden;
     background: transparent !important;
-    /* Lines & dots both kept faint so neither dominates â€” the lines now
+    /* Lines & dots both kept faint so neither dominates — the lines now
        match the dot opacity. */
     --nv-node: #0E2240;
     --nv-node-bright: #4FB3A2;
@@ -760,7 +760,7 @@
     display: block;
   }
 
-  /* â•â•â•â•â•â•â•â• PULSING PYRAMID (hero mark) â•â•â•â•â•â•â•â• */
+  /* ════════ PULSING PYRAMID (hero mark) ════════ */
   .pyramid-stage {
     position: fixed;
     left: 50%;
@@ -826,7 +826,7 @@
 
   main { position: relative; z-index: 5; }
 
-  /* â•â•â•â•â•â•â•â• NAV â•â•â•â•â•â•â•â• */
+  /* ════════ NAV ════════ */
   nav.top {
     position: fixed; top: 0; left: 0; right: 0; z-index: 30;
     padding: 22px 48px;
@@ -949,7 +949,7 @@
   body.is-dark .section-mark { border-color: rgba(255,255,255,.28); color: #ffffff; }
   body.is-dark .section-mark .desc { color: rgba(255,255,255,.78); }
 
-  /* â•â•â•â•â•â•â•â• HERO (mirrors direction-lattice.html) â•â•â•â•â•â•â•â• */
+  /* ════════ HERO (mirrors direction-lattice.html) ════════ */
   section.hero {
     min-height: 100vh;
     padding: 180px 0 120px;
@@ -1037,7 +1037,7 @@
   body.is-dark .hero-meta { color: rgba(255,255,255,.55); }
   body.is-dark .hero-meta .item span { color: white; }
 
-  /* â•â•â•â•â•â•â•â• PROBLEM â•â•â•â•â•â•â•â• */
+  /* ════════ PROBLEM ════════ */
   section.problem { padding: 120px 0; position: relative; }
   .problem .grid {
     display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: start;
@@ -1062,8 +1062,8 @@
   body.is-dark .problem .body p { color: rgba(255,255,255,0.65); }
   body.is-dark .problem .body p b { color: white; }
 
-  /* â•â•â•â•â•â•â•â• HOW IT WORKS â€” scrub-driven â•â•â•â•â•â•â•â• */
-  /* No explicit background here â€” the body.is-dark stageBg lerp paints it navy. */
+  /* ════════ HOW IT WORKS — scrub-driven ════════ */
+  /* No explicit background here — the body.is-dark stageBg lerp paints it navy. */
   section.howitworks {
     position: relative;
     height: 700vh;
@@ -1081,7 +1081,7 @@
     grid-template-columns: 1.4fr 1fr;
   }
 
-  /* Prominent nianav OS mark â€” inline SVG so the wordmark is sharp at any
+  /* Prominent nianav OS mark — inline SVG so the wordmark is sharp at any
      size and we don't depend on filter tricks to recolour a PNG. */
   .stage-osmark {
     position: absolute;
@@ -1201,7 +1201,7 @@
   }
   .lock-grp { opacity: 0; transition: opacity .5s ease; }
 
-  /* SVG dark-mode palette â€” blocks fill with a quiet teal tint so the navy
+  /* SVG dark-mode palette — blocks fill with a quiet teal tint so the navy
      stage doesn't swallow them, and titles stay legible. */
   body.is-dark .blk-rect { fill: rgba(79, 179, 162, 0.14); stroke: rgba(79, 179, 162, 0.45); }
   body.is-dark .blk-rect.active { stroke: var(--teal-bright); stroke-width: 1.6; fill: rgba(79, 179, 162, 0.22); }
@@ -1350,7 +1350,7 @@
     background: rgba(25,74,90,0.52);
   }
 
-  /* â•â•â•â•â•â•â•â• RECAP â€” "What you just saw" â•â•â•â•â•â•â•â• */
+  /* ════════ RECAP — "What you just saw" ════════ */
   section.recap { padding: 144px 0; position: relative; }
   .recap h2 {
     font-family: var(--font);
@@ -1392,7 +1392,7 @@
   }
   .recap-card p { font-size: 14px; line-height: 1.6; color: var(--muted); margin: 0; }
 
-  /* â•â•â•â•â•â•â•â• COMPLIANCE â•â•â•â•â•â•â•â• */
+  /* ════════ COMPLIANCE ════════ */
   section.compliance {
     padding: 144px 0;
     background: var(--bg-warm);
@@ -1419,13 +1419,13 @@
   }
   .compliance p b { color: var(--ink); font-weight: 600; }
 
-  /* â•â•â•â•â•â•â•â• BUILT FOR / WORKING WITH NIAVICTA â•â•â•â•â•â•â•â• */
+  /* ════════ BUILT FOR / WORKING WITH NIAVICTA ════════ */
   section.builtfor { padding: 144px 0; position: relative; }
   .builtfor .grid {
     display: grid; grid-template-columns: 1fr 1fr;
     gap: 80px; align-items: start;
   }
-  /* Eyebrow â€” matches the hairline section-mark style used elsewhere. */
+  /* Eyebrow — matches the hairline section-mark style used elsewhere. */
   .pill {
     display: inline-flex; align-items: center; gap: 14px;
     font-family: var(--font-mono);
@@ -1464,7 +1464,7 @@
     gap: 20px; align-items: start;
     padding: 4px 0;
   }
-  /* Square icon plates â€” matches the structural / hairline aesthetic. */
+  /* Square icon plates — matches the structural / hairline aesthetic. */
   .builtfor .icon-square {
     width: 44px; height: 44px;
     border-radius: 4px;
@@ -1490,7 +1490,7 @@
     max-width: 44ch;
   }
 
-  /* Working with Niavicta â€” flat structural card, no glow */
+  /* Working with Niavicta — flat structural card, no glow */
   .why-card {
     background: white;
     border: 1px solid var(--line-strong);
@@ -1532,7 +1532,7 @@
     margin: 0;
   }
 
-  /* â•â•â•â•â•â•â•â• CLOSE / CTA (small) â•â•â•â•â•â•â•â• */
+  /* ════════ CLOSE / CTA (small) ════════ */
   section.close { padding: 120px 0 100px; text-align: center; position: relative; }
   section.close h2 {
     font-family: var(--font);
@@ -1598,15 +1598,15 @@
     .pyramid-stage { width: 80vw; }
   }
 
-  /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     PRODUCT SIMULATION FRAME â€” Calm Operations
-     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  /* ════════════════════════════════════════════════════════════════════════
+     PRODUCT SIMULATION FRAME — Calm Operations
+     ──────────────────────────────────────────────────────────────────────
      Replaces the abstract block diagram. Each beat shows a real nianav OS
      screen styled with the Calm Operations system: cool blue-white canvas,
      14px white cards, soft shadows, teal accent, Manrope display + Inter
      body, semantic chips. All scoped under .product-frame so tokens here
      don't collide with the Niavicta marketing CSS in this same file.
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+     ════════════════════════════════════════════════════════════════════════ */
 
   .product-frame {
     /* Calm Operations tokens, scoped */
@@ -1673,7 +1673,7 @@
   }
   .product-chrome .url b { color: var(--p-primary); font-weight: 500; }
 
-  /* Screens stack â€” each beat fades through */
+  /* Screens stack — each beat fades through */
   .product-stage {
     position: relative;
     height: 588px;
@@ -1693,7 +1693,7 @@
     transform: none;
   }
 
-  /* Top bar inside each screen â€” persona + page context */
+  /* Top bar inside each screen — persona + page context */
   .p-topbar {
     display: flex; align-items: center; justify-content: space-between;
     padding: 14px 22px 12px;
@@ -2038,7 +2038,7 @@
     color: var(--p-text-soft); letter-spacing: 0.04em;
   }
 
-  /* Trail strip (Beat 6 â€” final compressed audit) */
+  /* Trail strip (Beat 6 — final compressed audit) */
   .p-strip {
     background: var(--p-surface-inverse, #1e3243);
     color: #fff;
@@ -2082,7 +2082,7 @@
 </style>
 <link rel="icon" type="image/svg+xml" href="images/niavicta_logo.svg">
 </head>
-<body data-screen-label="nianav OS â€” Landing">
+<body data-screen-label="nianav OS — Landing">
 
 <div class="stage-bg" id="stageBg"></div>
 
@@ -2132,7 +2132,7 @@
 </div>
 
 <nav class="top" style="color: rgb(250, 250, 247)">
-      <a class="brand" href="index.html" aria-label="Niavicta ï¿½ nianav OS home">
+      <a class="brand" href="index.html" aria-label="Niavicta � nianav OS home">
     <img class="brand-logo" src="images/niavicta_logo.svg" alt="Niavicta logo">
     Niavicta <span class="product"><b>nianav</b> OS</span>
   </a>
@@ -2200,11 +2200,11 @@
 <main>
   
 
-  <!-- â”€â”€â”€ 1 Â· HERO (Niavicta) â”€â”€â”€ -->
+  <!-- ─── 1 · HERO (Niavicta) ─── -->
   <section class="hero" id="top">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <div class="eyebrow">Systems for scalability Â· nianav OS</div>
+        <div class="eyebrow">Systems for scalability · nianav OS</div>
         <h1>
           Win with intent.<br>
           Keep winning <span class="teal">by design</span>.
@@ -2225,11 +2225,11 @@
     </div>
   </section>
 
-  <!-- â”€â”€â”€ 2 Â· PROBLEM â”€â”€â”€ -->
+  <!-- ─── 2 · PROBLEM ─── -->
   <section class="problem" id="problem">
     <div class="container">
       <div class="section-mark">
-        <span class="label">S.&nbsp;01&nbsp;Â·&nbsp;The problem</span>
+        <span class="label">S.&nbsp;01&nbsp;·&nbsp;The problem</span>
         <span class="desc">What happens when the operating model lives in people's heads.</span>
       </div>
       <div class="grid">
@@ -2243,18 +2243,18 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
     </div>
   </section>
 
-  <!-- â”€â”€â”€ 3 Â· HOW IT WORKS â€” pinned, scrub-driven, navy backdrop â”€â”€â”€ -->
-  <section class="howitworks" id="howitworks" data-dark-anchor="" data-screen-label="03 How it works Â· pinned">
+  <!-- ─── 3 · HOW IT WORKS — pinned, scrub-driven, navy backdrop ─── -->
+  <section class="howitworks" id="howitworks" data-dark-anchor="" data-screen-label="03 How it works · pinned">
     <div class="stage">
 
       <!-- Prominent nianav OS mark, top-left of the pinned stage.
-           Authored nianav OS lockup SVG â€” orbit symbol + wordmark. -->
+           Authored nianav OS lockup SVG — orbit symbol + wordmark. -->
       <div class="stage-osmark" style="opacity: 1">
         <img class="logo-svg" src="nianav_logo_crisp (1).svg" alt="nianav OS logo" />
       </div>
 
       <div class="stage-header">
-        <span class="label">S.&nbsp;02&nbsp;Â·&nbsp;How it works</span>
+        <span class="label">S.&nbsp;02&nbsp;·&nbsp;How it works</span>
 
       </div>
 
@@ -2270,25 +2270,25 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
             <!-- Chrome (browser-style window header) -->
             <div class="product-chrome" aria-hidden="true">
               <span class="dots"><i></i><i></i><i></i></span>
-              <span class="url"><b>app.nianav.os</b> &nbsp;Â·&nbsp; <span id="pUrl">inbox</span></span>
+              <span class="url"><b>app.nianav.os</b> &nbsp;·&nbsp; <span id="pUrl">inbox</span></span>
               <span style="width: 40px;"></span>
             </div>
 
             <div class="product-stage">
 
-              <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Beat 0 Â· Inbound trigger â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+              <!-- ─────────── Beat 0 · Inbound trigger ─────────── -->
               <div class="product-screen" data-beat="0">
                 <div class="p-topbar">
                   <div class="p-persona">
                     <span class="avatar">N</span>
                     <span>
-                      <span class="role">Inbound Â· System</span>
-                      <span class="name">Customer message Â· 14:08</span>
+                      <span class="role">Inbound · System</span>
+                      <span class="name">Customer message · 14:08</span>
                     </span>
                   </div>
                   <div class="p-page">
                     <b>Inbox</b><br>
-                    Pre-routing &nbsp;Â·&nbsp; auto-classifier
+                    Pre-routing &nbsp;·&nbsp; auto-classifier
                   </div>
                 </div>
                 <div class="p-body">
@@ -2297,23 +2297,23 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                       <span class="avatar">JB</span>
                       <span class="who">
                         <b>Jonas Berger</b>
-                        <span class="meta">Acme Industries Â· QC Lead &nbsp;Â·&nbsp; jonas@acme.com</span>
+                        <span class="meta">Acme Industries · QC Lead &nbsp;·&nbsp; jonas@acme.com</span>
                       </span>
                       <time>14:08&nbsp;CET</time>
                     </div>
-                    <h3>The part doesnâ€™t fit.</h3>
+                    <h3>The part doesn’t fit.</h3>
                     <blockquote>
                       The H-23 valve flange we received Tuesday is ~2&nbsp;mm wider than spec.
-                      Production is halted on Line&nbsp;4. We need a fix or a swap before tomorrowâ€™s shift.
+                      Production is halted on Line&nbsp;4. We need a fix or a swap before tomorrow’s shift.
                     </blockquote>
                     <div class="stamp-row">
-                      <span class="ref">MSG-INB-44102 &nbsp;Â·&nbsp; received via mail bridge</span>
+                      <span class="ref">MSG-INB-44102 &nbsp;·&nbsp; received via mail bridge</span>
                       <span class="chip pending"><i></i>Unrouted</span>
                     </div>
                   </div>
                   <div class="p-section-head">
                     <h4>What happens next</h4>
-                    <span class="right">auto Â· 9 ms</span>
+                    <span class="right">auto · 9 ms</span>
                   </div>
                   <p style="margin: -4px 0 0; font-size: 12.5px; color: var(--p-text-muted); line-height: 1.55;">
                     The message is recognised as a customer issue against an existing supplier
@@ -2322,26 +2322,26 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                 </div>
               </div>
 
-              <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Beat 1 Â· Support classifies â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+              <!-- ─────────── Beat 1 · Support classifies ─────────── -->
               <div class="product-screen" data-beat="1">
                 <div class="p-topbar">
                   <div class="p-persona">
                     <span class="avatar">A</span>
                     <span>
-                      <span class="role">Support Â· Anouk de Vries</span>
+                      <span class="role">Support · Anouk de Vries</span>
                       <span class="name">My queue</span>
                     </span>
                   </div>
                   <div class="p-page">
                     <b>NCR-2026-0117</b><br>
-                    Customer issues &nbsp;Â·&nbsp; Open
+                    Customer issues &nbsp;·&nbsp; Open
                   </div>
                 </div>
                 <div class="p-body">
                   <div class="p-action">
                     <div class="top">
-                      <span class="chip warn"><i></i>Needs me Â· 12s</span>
-                      <span class="chip ghost">Inbound Â· Acme</span>
+                      <span class="chip warn"><i></i>Needs me · 12s</span>
+                      <span class="chip ghost">Inbound · Acme</span>
                     </div>
                     <h3>Classify customer issue and route to the right team.</h3>
                     <p class="why">
@@ -2350,7 +2350,7 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                     </p>
                     <dl class="p-meta">
                       <div class="row"><dt>Record</dt><dd>NCR-2026-0117</dd></div>
-                      <div class="row"><dt>Source</dt><dd>Email Â· MSG-INB-44102</dd></div>
+                      <div class="row"><dt>Source</dt><dd>Email · MSG-INB-44102</dd></div>
                       <div class="row"><dt>Customer</dt><dd>Acme Industries</dd></div>
                       <div class="row"><dt>Owner</dt><dd>Anouk de&nbsp;Vries</dd></div>
                     </dl>
@@ -2362,7 +2362,7 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                   <div class="p-trail">
                     <div class="head">
                       <h4>Activity</h4>
-                      <span class="meta">2 events Â· today</span>
+                      <span class="meta">2 events · today</span>
                     </div>
                     <div class="p-trail-row">
                       <time>14:08</time>
@@ -2373,45 +2373,45 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                     <div class="p-trail-row">
                       <time>14:08</time>
                       <span class="role">System</span>
-                      <span class="act"><b>NCR-2026-0117</b> created Â· assigned to Support</span>
-                      <span class="tag">auto Â· rule&nbsp;R-42</span>
+                      <span class="act"><b>NCR-2026-0117</b> created · assigned to Support</span>
+                      <span class="tag">auto · rule&nbsp;R-42</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Beat 2 Â· Quality investigates â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+              <!-- ─────────── Beat 2 · Quality investigates ─────────── -->
               <div class="product-screen" data-beat="2">
                 <div class="p-topbar">
                   <div class="p-persona">
                     <span class="avatar q">P</span>
                     <span>
-                      <span class="role">Quality Â· Priya Shah</span>
+                      <span class="role">Quality · Priya Shah</span>
                       <span class="name">Open nonconformances</span>
                     </span>
                   </div>
                   <div class="p-page">
                     <b>NCR-2026-0117</b><br>
-                    Nonconformance &nbsp;Â·&nbsp; Open
+                    Nonconformance &nbsp;·&nbsp; Open
                   </div>
                 </div>
                 <div class="p-body">
                   <div class="p-action">
                     <div class="top">
-                      <span class="chip open"><i></i>Open Â· Major</span>
-                      <span class="chip primary">Same step Â· your language</span>
+                      <span class="chip open"><i></i>Open · Major</span>
+                      <span class="chip primary">Same step · your language</span>
                     </div>
-                    <h3>Find the root cause â€” H-23 valve flange, Line&nbsp;4.</h3>
+                    <h3>Find the root cause — H-23 valve flange, Line&nbsp;4.</h3>
                     <p class="why">
-                      Support saw <i>â€œClassify customer issueâ€</i>. You see what
-                      investigating means in QA â€” open the nonconformance, set the cause, decide
+                      Support saw <i>“Classify customer issue”</i>. You see what
+                      investigating means in QA — open the nonconformance, set the cause, decide
                       if a CAPA is required.
                     </p>
                     <dl class="p-meta">
                       <div class="row"><dt>Part</dt><dd>H-23-VLV-01</dd></div>
                       <div class="row"><dt>Supplier</dt><dd>Berger Fittings GmbH</dd></div>
                       <div class="row"><dt>Affected units</dt><dd>240 (lot&nbsp;L-7714)</dd></div>
-                      <div class="row"><dt>Severity</dt><dd>Major Â· Line halt</dd></div>
+                      <div class="row"><dt>Severity</dt><dd>Major · Line halt</dd></div>
                     </dl>
                     <div class="p-btn-row" style="margin-top: 4px;">
                       <button class="p-btn" type="button">Open investigation <span class="arr"></span></button>
@@ -2421,31 +2421,31 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                   <div class="p-trail">
                     <div class="head">
                       <h4>Evidence</h4>
-                      <span class="meta">1 of 1 Â· linked</span>
+                      <span class="meta">1 of 1 · linked</span>
                     </div>
                     <div class="p-trail-row">
                       <time>14:11</time>
                       <span class="role">QA</span>
-                      <span class="act"><b>Inspection</b> INS-2026-0412 Â· <i>failed (dim. tolerance)</i></span>
+                      <span class="act"><b>Inspection</b> INS-2026-0412 · <i>failed (dim. tolerance)</i></span>
                       <span class="tag">+2.1 mm</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Beat 3 Â· Sub-process appears â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+              <!-- ─────────── Beat 3 · Sub-process appears ─────────── -->
               <div class="product-screen" data-beat="3">
                 <div class="p-topbar">
                   <div class="p-persona">
                     <span class="avatar q">P</span>
                     <span>
-                      <span class="role">Quality Â· Priya Shah</span>
-                      <span class="name">Investigation Â· root cause set</span>
+                      <span class="role">Quality · Priya Shah</span>
+                      <span class="name">Investigation · root cause set</span>
                     </span>
                   </div>
                   <div class="p-page">
                     <b>NCR-2026-0117</b><br>
-                    CAPA-2026-0089 &nbsp;Â·&nbsp; In progress
+                    CAPA-2026-0089 &nbsp;·&nbsp; In progress
                   </div>
                 </div>
                 <div class="p-body">
@@ -2463,14 +2463,14 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                     <h3>Replace tolerance check on Line&nbsp;4.</h3>
                     <p class="why">
                       Root cause set: supplier batch out of dimensional tolerance and the receiving
-                      check missed it. <b>CAPA-2026-0089</b> opens three nested steps â€” one for each team
+                      check missed it. <b>CAPA-2026-0089</b> opens three nested steps — one for each team
                       that has to touch this.
                     </p>
                   </div>
                   <div class="p-sub">
                     <div class="head">
                       <div>
-                        <span class="label">Sub-process Â· CAPA</span>
+                        <span class="label">Sub-process · CAPA</span>
                         <h4>Make the change</h4>
                       </div>
                       <span class="id">CAPA-2026-0089</span>
@@ -2478,21 +2478,21 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                     <div class="p-sub-row active">
                       <span class="who">Engineering</span>
                       <span class="task">Design corrected part spec
-                        <span class="sub">owner Â· Daan H.</span>
+                        <span class="sub">owner · Daan H.</span>
                       </span>
                       <span class="chip open"><i></i>In design</span>
                     </div>
                     <div class="p-sub-row waiting">
                       <span class="who">Procurement</span>
                       <span class="task">Source compliant supplier batch
-                        <span class="sub">owner Â· Lia R.</span>
+                        <span class="sub">owner · Lia R.</span>
                       </span>
                       <span class="chip pending"><i></i>PO required</span>
                     </div>
                     <div class="p-sub-row waiting">
                       <span class="who">Production</span>
                       <span class="task">Update Line&nbsp;4 inspection routine
-                        <span class="sub">owner Â· Marco V.</span>
+                        <span class="sub">owner · Marco V.</span>
                       </span>
                       <span class="chip pending"><i></i>Pending</span>
                     </div>
@@ -2500,19 +2500,19 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                 </div>
               </div>
 
-              <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Beat 4 Â· Nothing closes early â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+              <!-- ─────────── Beat 4 · Nothing closes early ─────────── -->
               <div class="product-screen" data-beat="4">
                 <div class="p-topbar">
                   <div class="p-persona">
                     <span class="avatar q">P</span>
                     <span>
-                      <span class="role">Quality Â· Priya Shah</span>
-                      <span class="name">Investigation Â· waiting on Production</span>
+                      <span class="role">Quality · Priya Shah</span>
+                      <span class="name">Investigation · waiting on Production</span>
                     </span>
                   </div>
                   <div class="p-page">
                     <b>NCR-2026-0117</b><br>
-                    CAPA-2026-0089 &nbsp;Â·&nbsp; 2 of 3 complete
+                    CAPA-2026-0089 &nbsp;·&nbsp; 2 of 3 complete
                   </div>
                 </div>
                 <div class="p-body">
@@ -2527,16 +2527,16 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                         1 of 3 sub-steps still open
                       </span>
                     </div>
-                    <h3>You canâ€™t close this NC yet. Production hasnâ€™t finished.</h3>
+                    <h3>You can’t close this NC yet. Production hasn’t finished.</h3>
                     <p class="why">
-                      No one has to remember to wait â€” the parent step wonâ€™t accept a close
-                      while a nested step is open. <b>Production Â· Marco&nbsp;V.</b> still owes the routine update.
+                      No one has to remember to wait — the parent step won’t accept a close
+                      while a nested step is open. <b>Production · Marco&nbsp;V.</b> still owes the routine update.
                     </p>
                   </div>
                   <div class="p-sub">
                     <div class="head">
                       <div>
-                        <span class="label">Sub-process Â· CAPA</span>
+                        <span class="label">Sub-process · CAPA</span>
                         <h4>Make the change</h4>
                       </div>
                       <span class="id">CAPA-2026-0089</span>
@@ -2544,21 +2544,21 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                     <div class="p-sub-row done">
                       <span class="who">Engineering</span>
                       <span class="task">Design corrected part spec
-                        <span class="sub">spec rev D Â· Daan H. Â· 14:52</span>
+                        <span class="sub">spec rev D · Daan H. · 14:52</span>
                       </span>
                       <span class="chip success"><i></i>Complete</span>
                     </div>
                     <div class="p-sub-row done">
                       <span class="who">Procurement</span>
                       <span class="task">Source compliant supplier batch
-                        <span class="sub">PO-7244 raised Â· Lia R. Â· 15:14</span>
+                        <span class="sub">PO-7244 raised · Lia R. · 15:14</span>
                       </span>
                       <span class="chip success"><i></i>Complete</span>
                     </div>
                     <div class="p-sub-row active">
                       <span class="who">Production</span>
                       <span class="task">Update Line&nbsp;4 inspection routine
-                        <span class="sub">in review Â· Marco V.</span>
+                        <span class="sub">in review · Marco V.</span>
                       </span>
                       <span class="chip open"><i></i>In progress</span>
                     </div>
@@ -2566,31 +2566,31 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                 </div>
               </div>
 
-              <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Beat 5 Â· Manager approval + audit â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+              <!-- ─────────── Beat 5 · Manager approval + audit ─────────── -->
               <div class="product-screen" data-beat="5">
                 <div class="p-topbar">
                   <div class="p-persona">
                     <span class="avatar m">E</span>
                     <span>
-                      <span class="role">Manager Â· Erik Janssen</span>
-                      <span class="name">Approval queue Â· 1 awaiting</span>
+                      <span class="role">Manager · Erik Janssen</span>
+                      <span class="name">Approval queue · 1 awaiting</span>
                     </span>
                   </div>
                   <div class="p-page">
                     <b>CAPA-2026-0089</b><br>
-                    Awaiting approval &nbsp;Â·&nbsp; 11&nbsp;min
+                    Awaiting approval &nbsp;·&nbsp; 11&nbsp;min
                   </div>
                 </div>
                 <div class="p-body">
                   <div class="p-action ok">
                     <div class="top">
-                      <span class="chip success"><i></i>Ready Â· 3 of 3</span>
-                      <span class="chip ghost">Evidence attached Â· audit complete</span>
+                      <span class="chip success"><i></i>Ready · 3 of 3</span>
+                      <span class="chip ghost">Evidence attached · audit complete</span>
                     </div>
-                    <h3>Approve CAPA-2026-0089 â€” Tolerance check, Line&nbsp;4.</h3>
+                    <h3>Approve CAPA-2026-0089 — Tolerance check, Line&nbsp;4.</h3>
                     <p class="why">
                       Three teams completed their step. The audit trail below was built as the
-                      work happened â€” nothing to assemble. Youâ€™re approving the change, not the paperwork.
+                      work happened — nothing to assemble. You’re approving the change, not the paperwork.
                     </p>
                     <div class="p-btn-row" style="margin-top: 4px;">
                       <button class="p-btn" type="button">Approve <span class="arr"></span></button>
@@ -2599,65 +2599,65 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                   </div>
                   <div class="p-trail">
                     <div class="head">
-                      <h4>Audit trail Â· self-built</h4>
-                      <span class="meta">5 events Â· 1h 30m</span>
+                      <h4>Audit trail · self-built</h4>
+                      <span class="meta">5 events · 1h 30m</span>
                     </div>
                     <div class="p-trail-row">
                       <time>14:08</time>
                       <span class="role">Inbound</span>
-                      <span class="act"><b>Customer message</b> logged Â· Acme Industries</span>
+                      <span class="act"><b>Customer message</b> logged · Acme Industries</span>
                       <span class="tag">MSG-INB-44102</span>
                     </div>
                     <div class="p-trail-row">
                       <time>14:09</time>
                       <span class="role">Support</span>
-                      <span class="act"><b>Classified</b> as dimensional NC Â· Anouk de&nbsp;Vries</span>
+                      <span class="act"><b>Classified</b> as dimensional NC · Anouk de&nbsp;Vries</span>
                       <span class="tag">rule R-42</span>
                     </div>
                     <div class="p-trail-row">
                       <time>14:14</time>
                       <span class="role">Quality</span>
-                      <span class="act"><b>Root cause set</b> Â· CAPA opened Â· Priya Shah</span>
+                      <span class="act"><b>Root cause set</b> · CAPA opened · Priya Shah</span>
                       <span class="tag">CAPA-0089</span>
                     </div>
                     <div class="p-trail-row">
                       <time>14:52</time>
                       <span class="role">Engineering</span>
-                      <span class="act"><b>Spec rev D</b> released Â· Daan H.</span>
+                      <span class="act"><b>Spec rev D</b> released · Daan H.</span>
                       <span class="tag">ENG-DOC-218</span>
                     </div>
                     <div class="p-trail-row">
                       <time>15:38</time>
                       <span class="role">Production</span>
-                      <span class="act"><b>Routine updated</b> Â· Line&nbsp;4 Â· Marco&nbsp;V.</span>
+                      <span class="act"><b>Routine updated</b> · Line&nbsp;4 · Marco&nbsp;V.</span>
                       <span class="tag">SOP-L4-09</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Beat 6 Â· Closed & customer updated â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+              <!-- ─────────── Beat 6 · Closed & customer updated ─────────── -->
               <div class="product-screen" data-beat="6">
                 <div class="p-topbar">
                   <div class="p-persona">
                     <span class="avatar">A</span>
                     <span>
-                      <span class="role">Support Â· Anouk de Vries</span>
+                      <span class="role">Support · Anouk de Vries</span>
                       <span class="name">Closed today</span>
                     </span>
                   </div>
                   <div class="p-page">
                     <b>NCR-2026-0117</b><br>
-                    Closed &nbsp;Â·&nbsp; 16:04
+                    Closed &nbsp;·&nbsp; 16:04
                   </div>
                 </div>
                 <div class="p-body">
                   <div class="p-action ok">
                     <div class="top">
-                      <span class="chip success"><i></i>Closed Â· resolved</span>
+                      <span class="chip success"><i></i>Closed · resolved</span>
                       <span class="chip ghost">Customer updated automatically</span>
                     </div>
-                    <h3>Acme Industries replied to the same thread â€” with the CAPA evidence.</h3>
+                    <h3>Acme Industries replied to the same thread — with the CAPA evidence.</h3>
                     <p class="why">
                       No one wrote a status email. The system replied on the original thread with the
                       decision, the rev&nbsp;D spec, and a link to <b>CAPA-2026-0089</b>. The trail goes with the part.
@@ -2671,19 +2671,19 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                     <div class="p-trail-row">
                       <time>15:42</time>
                       <span class="role">Manager</span>
-                      <span class="act"><b>Approved</b> CAPA-2026-0089 Â· Erik Janssen</span>
+                      <span class="act"><b>Approved</b> CAPA-2026-0089 · Erik Janssen</span>
                       <span class="tag">SIGN-887</span>
                     </div>
                     <div class="p-trail-row">
                       <time>16:04</time>
                       <span class="role">System</span>
-                      <span class="act"><b>Customer notified</b> Â· reply sent on MSG-INB-44102</span>
+                      <span class="act"><b>Customer notified</b> · reply sent on MSG-INB-44102</span>
                       <span class="tag">auto</span>
                     </div>
                     <div class="p-trail-row">
                       <time>16:04</time>
                       <span class="role">Support</span>
-                      <span class="act"><b>NCR-2026-0117 closed</b> Â· Anouk de&nbsp;Vries</span>
+                      <span class="act"><b>NCR-2026-0117 closed</b> · Anouk de&nbsp;Vries</span>
                       <span class="tag">sealed</span>
                     </div>
                   </div>
@@ -2700,7 +2700,7 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
                     <span class="sep"></span>
                     <div>
                       <span class="num">Audit</span>
-                      <span class="val">self-built Â· sealed</span>
+                      <span class="val">self-built · sealed</span>
                     </div>
                   </div>
                 </div>
@@ -2715,37 +2715,37 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
       <div class="caption-col">
         <div class="caption-stack">
           <div class="caption" data-beat="0">
-            <span class="num">Beat 0 Â· The trigger</span>
+            <span class="num">Beat 0 · The trigger</span>
             <h3>Watch one piece of work move through nianav&nbsp;OS.</h3>
             <p>A customer writes in. From this moment on, the message becomes a piece of work the system can route, time, and prove. The rest of this section shows what happens next.</p>
           </div>
           <div class="caption" data-beat="1">
-            <span class="num">Beat 1 Â· It becomes work</span>
-            <h3>The message becomes a tracked piece of work â€” owned, dated, visible.</h3>
+            <span class="num">Beat 1 · It becomes work</span>
+            <h3>The message becomes a tracked piece of work — owned, dated, visible.</h3>
             <p>Nothing lives in an inbox. The moment something enters nianav&nbsp;OS it has an owner, a timestamp, and a place in a defined process. From here it can only move forward.</p>
           </div>
           <div class="caption" data-beat="2">
-            <span class="num">Beat 2 Â· The right person sees it</span>
-            <h3>The next step opens for a different person â€” and they see it in their own language.</h3>
-            <p>Quality doesn't see "Investigate" â€” they see what investigating means in their world. Same step, rendered for the work they actually do.</p>
+            <span class="num">Beat 2 · The right person sees it</span>
+            <h3>The next step opens for a different person — and they see it in their own language.</h3>
+            <p>Quality doesn't see "Investigate" — they see what investigating means in their world. Same step, rendered for the work they actually do.</p>
           </div>
           <div class="caption" data-beat="3">
-            <span class="num">Beat 3 Â· A step contains a process</span>
-            <h3>A step can contain a whole process â€” the same shape, scaled down.</h3>
-            <p>Real work nests. A change request needs design, parts, and a production update â€” each is its own process, with its own owners. The shape repeats, all the way down.</p>
+            <span class="num">Beat 3 · A step contains a process</span>
+            <h3>A step can contain a whole process — the same shape, scaled down.</h3>
+            <p>Real work nests. A change request needs design, parts, and a production update — each is its own process, with its own owners. The shape repeats, all the way down.</p>
           </div>
           <div class="caption" data-beat="4">
-            <span class="num">Beat 4 Â· Nothing closes early</span>
+            <span class="num">Beat 4 · Nothing closes early</span>
             <h3>The parent step can't close until the work inside it does.</h3>
-            <p>No one has to remember to wait for the sub-process. The system holds the line. When the last nested step completes, the parent unlocks itself â€” not before.</p>
+            <p>No one has to remember to wait for the sub-process. The system holds the line. When the last nested step completes, the parent unlocks itself — not before.</p>
           </div>
           <div class="caption" data-beat="5">
-            <span class="num">Beat 5 Â· The trail builds itself</span>
+            <span class="num">Beat 5 · The trail builds itself</span>
             <h3>Every step records who, what, when, and against which rule.</h3>
-            <p>The audit trail wasn't a project. It's a byproduct of the work moving through the system. By the time the approver opens this step, the evidence is already there â€” and it stays there.</p>
+            <p>The audit trail wasn't a project. It's a byproduct of the work moving through the system. By the time the approver opens this step, the evidence is already there — and it stays there.</p>
           </div>
           <div class="caption" data-beat="6">
-            <span class="num">Beat 6 Â· The whole picture</span>
+            <span class="num">Beat 6 · The whole picture</span>
             <h3>One input. One trail. Six people who never had to chase each other.</h3>
             <p>That is nianav&nbsp;OS. The shape you just saw is one process. Your operation is thousands of them, running the same way, all the time.</p>
           </div>
@@ -2757,11 +2757,11 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
     </div>
   </section>
 
-  <!-- â”€â”€â”€ 4 Â· WHAT YOU JUST SAW â”€â”€â”€ -->
+  <!-- ─── 4 · WHAT YOU JUST SAW ─── -->
   <section class="recap" id="recap">
     <div class="container">
       <div class="section-mark">
-        <span class="label">S.&nbsp;03&nbsp;Â·&nbsp;What you just saw</span>
+        <span class="label">S.&nbsp;03&nbsp;·&nbsp;What you just saw</span>
         <span class="desc">Three properties of the system, in plain language.</span>
       </div>
       <h2>The same shape, <span class="teal">all the way down</span>.</h2>
@@ -2785,11 +2785,11 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
     </div>
   </section>
 
-  <!-- â”€â”€â”€ 5 Â· COMPLIANCE â”€â”€â”€ -->
+  <!-- ─── 5 · COMPLIANCE ─── -->
   <section class="compliance" id="compliance">
     <div class="container">
       <div class="section-mark">
-        <span class="label">S.&nbsp;04&nbsp;Â·&nbsp;Compliance</span>
+        <span class="label">S.&nbsp;04&nbsp;·&nbsp;Compliance</span>
         <span class="desc">The trail as a byproduct, not a project.</span>
       </div>
       <div class="grid">
@@ -2802,7 +2802,7 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
     </div>
   </section>
 
-  <!-- â”€â”€â”€ 6 Â· BUILT FOR + WORKING WITH NIAVICTA â”€â”€â”€ -->
+  <!-- ─── 6 · BUILT FOR + WORKING WITH NIAVICTA ─── -->
   <section class="builtfor" id="builtfor">
     <div class="container">
       <div class="grid">
@@ -2883,7 +2883,7 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
     </div>
   </section>
 
-  <!-- â”€â”€â”€ 7 Â· CLOSE / CTA â”€â”€â”€ -->
+  <!-- ─── 7 · CLOSE / CTA ─── -->
   <section class="close" id="close">
     <div class="container">
       <h2>Start the conversation.</h2>
@@ -2897,8 +2897,8 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
 
   <footer class="foot">
     <div class="container row">
-      <span>Niavicta Â· Utrecht, NL</span>
-      <span>Â© 2026 â€” nianav OS</span>
+      <span>Niavicta · Utrecht, NL</span>
+      <span>© 2026 — nianav OS</span>
     </div>
   </footer>
 
@@ -2971,5 +2971,4 @@ Sales asking Ops where something is. Quality asking Engineering for a record. A 
 
 <script src="legal.js"></script>
 </body></html>
-
 
