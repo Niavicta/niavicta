@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What nianav OS replaces</title>
-<meta name="description" content="nianav OS replaces workflow-shaped tools and connects specialist engines around one procedure-native operational record.">
+<title>nianav OS | Regulated startup operating system</title>
+<meta name="description" content="A practical hub for nianav OS: the problem it solves, how it works, why it exists, and who it is built for.">
 <!--SEO-->
-<link rel="canonical" href="https://niavicta.com/software.html">
+<link rel="canonical" href="https://niavicta.com/nianav-os.html">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Niavicta">
 <meta property="og:locale" content="en">
-<meta property="og:title" content="What nianav OS replaces">
-<meta property="og:description" content="nianav OS replaces workflow-shaped tools and connects specialist engines around one procedure-native operational record.">
-<meta property="og:url" content="https://niavicta.com/software.html">
+<meta property="og:title" content="nianav OS | Regulated startup operating system">
+<meta property="og:description" content="A practical hub for nianav OS: the problem it solves, how it works, why it exists, and who it is built for.">
+<meta property="og:url" content="https://niavicta.com/nianav-os.html">
 <meta property="og:image" content="https://niavicta.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="nianav OS · Simple systems. Serious impact.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="What nianav OS replaces">
-<meta name="twitter:description" content="nianav OS replaces workflow-shaped tools and connects specialist engines around one procedure-native operational record.">
+<meta name="twitter:title" content="nianav OS | Regulated startup operating system">
+<meta name="twitter:description" content="A practical hub for nianav OS: the problem it solves, how it works, why it exists, and who it is built for.">
 <meta name="twitter:image" content="https://niavicta.com/og-image.png">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -85,10 +85,10 @@
     },
     {
       "@type": "WebPage",
-      "@id": "https://niavicta.com/software.html#webpage",
-      "url": "https://niavicta.com/software.html",
-      "name": "What nianav OS replaces",
-      "description": "nianav OS replaces workflow-shaped tools and connects specialist engines around one procedure-native operational record.",
+      "@id": "https://niavicta.com/nianav-os.html#webpage",
+      "url": "https://niavicta.com/nianav-os.html",
+      "name": "nianav OS | Regulated startup operating system",
+      "description": "A practical hub for nianav OS: the problem it solves, how it works, why it exists, and who it is built for.",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://niavicta.com/#website"
@@ -97,6 +97,24 @@
         "@id": "https://niavicta.com/#organization"
       },
       "primaryImageOfPage": "https://niavicta.com/og-image.png"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://niavicta.com/#nianavos",
+      "name": "nianav OS",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://niavicta.com/nianav-os.html",
+      "description": "nianav OS is an operating system for regulated startups. Procedures, records, evidence, and AI governance run in one connected system, so audit-ready evidence is produced as work happens instead of reconstructed before an audit.",
+      "publisher": {
+        "@id": "https://niavicta.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/PreOrder",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
     }
   ]
 }
@@ -106,17 +124,37 @@
 <link rel="stylesheet" href="console.css">
 <link rel="stylesheet" href="site-chrome.css">
 <style>
-  /* card kickers match the homepage tile kickers (DM Sans, teal) - not mono/gold */
-  .card .num{font-family:var(--font);font-weight:700;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:var(--teal-deep)}
-  .dark .card .num{color:var(--teal)}
-  /* hero brand lockup - free-floating, no card chrome (matches nianav OS / FAQ heroes) */
+  /* ── Visual-model cards (page-local) ────────────────── */
+  .vmodel{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .vmodel .wide{grid-column:1 / -1}
+  @media (max-width:760px){.vmodel{grid-template-columns:1fr}}
+  .vizfig{border:1px solid var(--line-strong);border-radius:10px;background:var(--paper);padding:24px 26px}
+  .vizfig .cap{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+  .vizfig .cap .num{font-family:var(--mono);font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+  .vizfig .cap h3{margin:0;font-size:19px;color:var(--ink);font-weight:600;letter-spacing:-0.014em;line-height:1.28}
+  .vizfig .cap p{margin:0;font-size:14px;line-height:1.6;color:var(--muted)}
+  .mono{font-family:var(--mono)}
+  /* hero brand lockup - free-floating, no card chrome */
   .hero-lockup{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:16px;padding:12px}
   .hero-lockup .logo{width:424px;max-width:92%;height:auto;display:block}
   .hero-lockup .tag{font-size:21px;font-weight:700;color:#0E2240;letter-spacing:-0.01em;line-height:1.18}
   .hero-lockup .tag em{color:#4FB3A2;font-style:normal}
+  /* how-it-works step tiles - homepage-style image-top / text-bottom.
+     Placeholder icons live in .thumb for now; to use a photo later, replace the
+     <svg> inside .thumb with <img src="dirs/img/NAME.jpg" alt="..."> (it covers). */
+  .cards.c5 .card{padding:0;gap:0;overflow:hidden}
+  .cards.c5 .card .thumb{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:linear-gradient(150deg,var(--teal-soft),#fff);border-bottom:1px solid var(--line);color:var(--teal-deep);position:relative;overflow:hidden}
+  .cards.c5 .card .thumb svg{width:38px;height:38px}
+  .cards.c5 .card .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  /* text block matches the homepage tile .body exactly (fonts + sizes + layout) */
+  .cards.c5 .card .body{flex:1;display:flex;flex-direction:column;gap:8px;padding:22px 24px 24px}
+  .cards.c5 .card .body .num{font-family:var(--font);font-size:12.5px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--teal-deep)}
+  .cards.c5 .card .body h3{font-size:21px}
+  .cards.c5 .card .body p{font-size:14.5px;line-height:1.55}
+  .cards.c5 .card .body .more-link{margin-top:auto;padding-top:18px;font-size:14.5px}
 </style>
 </head>
-<body data-screen-label="Software · Console">
+<body data-screen-label="nianav OS · Console">
 
 <!-- announcement strip -->
 <div class="strip"><div class="wrap"><span>Niavicta builds nianav&nbsp;OS in the open, with the people who use it.</span><a href="mailto:hello@niavicta.com">Talk to us &rsaquo;</a></div></div>
@@ -183,12 +221,12 @@
   <section class="page-hero">
     <div class="inner grid">
       <div data-reveal>
-        <div class="eyebrow">Software</div>
-        <h1>What nianav&nbsp;OS <em>replaces</em>.</h1>
-        <p class="lede">Most of your tools quietly do the same job: they move work between people and keep a record of it. <b>nianav&nbsp;OS replaces that whole layer</b> across quality, operations, product, people, and evidence, with one connected system.</p>
+        <div class="eyebrow">nianav OS</div>
+        <h1>One operating system for regulated <em>startups</em>.</h1>
+        <p class="lede">The short version: what problem nianav&nbsp;OS solves, how the system is put together, why it exists, and who it is built for.</p>
         <div class="btn-row">
-          <a class="btn p" href="#boundary">The boundary <span class="arrow"></span></a>
-          <a class="btn g" href="#not-replace">What stays outside</a>
+          <a class="btn p" href="#problem">Start with the problem <span class="arrow"></span></a>
+          <a class="btn g" href="#visual-model">Under the hood</a>
         </div>
       </div>
       <div class="hero-lockup" data-reveal>
@@ -206,198 +244,129 @@
     </div>
   </section>
 
-  <!-- S.01 THE BOUNDARY -->
-  <section class="band white" id="boundary">
+  <!-- S.01 PROBLEM -->
+  <section class="band white" id="problem">
     <div class="container">
       <div class="section-mark" data-reveal>
-        <span class="lbl">The boundary</span>
-        <span class="desc">The work that moves between people comes inside. The specialist tools stay where they are.</span>
-      </div>
-      <div class="cards c2" data-reveal>
-        <article class="card">
-          <span class="num">01 · It replaces</span>
-          <h3>Tools that just move work around.</h3>
-          <ul>
-            <li>Tools whose value is routing work through people, roles, records, approvals, evidence, and status.</li>
-            <li>Single-purpose tools that each own one slice of how you operate.</li>
-            <li>Spreadsheets, inboxes, and meetings used as connective tissue between those tools.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <span class="num">02 · It does not replace</span>
-          <h3>Tools that do specialist work.</h3>
-          <ul>
-            <li>CAD modelling, EDA simulation, git storage, payroll tax calculation, clearance networks, or specialist analytics.</li>
-            <li>Regulators, notified bodies, auditors, lawyers, accountants, or qualified human judgement.</li>
-            <li>Tools whose value is the heavy calculation or the specialist output they produce.</li>
-          </ul>
-        </article>
-        <article class="card">
-          <span class="num">03 · The test</span>
-          <h3>The test is simple.</h3>
-          <p>If the value is <b>who does what, in which order, against which rule, with which evidence</b>, it belongs in nianav&nbsp;OS. If the value is a specialist engine doing specialist work, nianav&nbsp;OS connects to it and governs the workflow around it.</p>
-        </article>
-        <article class="card">
-          <span class="num">04 · Why it matters</span>
-          <h3>One connected system.</h3>
-          <p>The company stops being a patchwork of tools. The procedures, the records, the view each role sees, and the log of what happened all run from the same place.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- S.02 WHAT COMES INSIDE -->
-  <section class="band" id="categories">
-    <div class="container">
-      <div class="section-mark" data-reveal>
-        <span class="lbl">What comes inside</span>
-        <span class="desc">These look like different tools. Underneath, they are the same thing: steps run over shared records.</span>
-      </div>
-      <div class="cards c3" data-reveal>
-        <article class="card">
-          <span class="num">Quality</span>
-          <h3>QMS, change control, CAPA, audits, training.</h3>
-          <p>Quality work is not a document library. It is procedures, responsibilities, evidence, reviews, approvals, deviations, and records. All of it lives natively in nianav&nbsp;OS.</p>
-        </article>
-        <article class="card">
-          <span class="num">Operations</span>
-          <h3>ERP workflow, procurement, supplier qualification, inventory.</h3>
-          <p>The purchasing manager can feel like they are using an ERP, but the underlying step still lives once in the shared record of what happened, with the records it touches.</p>
-        </article>
-        <article class="card">
-          <span class="num">Product</span>
-          <h3>Design review, release approval, engineering changes.</h3>
-          <p>nianav&nbsp;OS does not draw the CAD model or run the simulation. It owns the review, sign-off, change record, release evidence, and downstream carry-through.</p>
-        </article>
-        <article class="card">
-          <span class="num">People</span>
-          <h3>HRIS workflow, onboarding, capability, training, handover.</h3>
-          <p>People records, roles, capabilities, assignments, training debt, and handover are part of the operating system because they determine who can perform which step.</p>
-        </article>
-        <article class="card">
-          <span class="num">Customer &amp; IT</span>
-          <h3>Ticketing, support, service management, escalations.</h3>
-          <p>A ticket is a piece of tracked work with an owner, a deadline, evidence, comments, escalations, and a clear close. It is structured work, not another isolated queue.</p>
-        </article>
-        <article class="card">
-          <span class="num">Finance &amp; admin</span>
-          <h3>Approvals, period close, payroll workflow, submissions.</h3>
-          <p>The workflow comes inside. The specialist calculation or filing engine stays connected. The system knows what was approved, by whom, against which requirement, and where the external output lives.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- S.03 WHAT STAYS OUTSIDE -->
-  <section class="band white" id="not-replace">
-    <div class="container">
-      <div class="section-mark" data-reveal>
-        <span class="lbl">What stays outside</span>
-        <span class="desc">Not because it does not matter. Because it does specialist work, not workflow.</span>
+        <span class="lbl">The problem</span>
+        <span class="desc">Fragmentation is expensive long before the first audit.</span>
       </div>
       <div class="split-2">
-        <h2 data-reveal>Specialist tools remain <em>specialist</em>.</h2>
-        <div class="defstack" data-reveal>
-          <div class="def"><b>CAD, EDA, modelling, simulation.</b><span>nianav&nbsp;OS governs design review, release approval, ECOs, evidence, and carry-through. The specialist modelling environment remains the source for the technical artifact.</span></div>
-          <div class="def"><b>Git, code hosting, developer tooling.</b><span>Code review, release authorisation, deployment approval, and audit evidence can run in nianav&nbsp;OS. The git engine, repository, diff rendering, and code search stay specialist.</span></div>
-          <div class="def"><b>Payroll, tax, e-invoicing, statutory accounting.</b><span>Approval, exception review, evidence archive, and connector governance come inside. Gross-to-net math, statutory accounts, tax advice, and clearance protocols stay with specialist providers.</span></div>
-          <div class="def"><b>Regulators, auditors, notified bodies, legal advice.</b><span>nianav&nbsp;OS organises readiness, evidence, findings, CAPA, and traceability. It does not replace the authority or judgement of external bodies and qualified advisors.</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- S.04 WHAT THAT MEANS -->
-  <section class="band" id="means">
-    <div class="container">
-      <div class="section-mark" data-reveal>
-        <span class="lbl">What that means</span>
-        <span class="desc">One source of truth, shown the way each role expects.</span>
-      </div>
-      <div class="split-2">
-        <h2 data-reveal>The same work can look like a different tool to <em>each person</em>.</h2>
+        <h2 data-reveal>Most teams do not lose because they are careless. They lose because the work is <em>scattered</em>.</h2>
         <div class="prose" data-reveal>
-          <p>A quality officer can feel like they are using a quality system. A purchaser can feel like they are using an ERP. A production worker can feel like they are using a shop-floor system. An HR manager can feel like they are using an HR platform.</p>
-          <p><b>The point is that the work exists only once.</b> The same record, owner, evidence, due date, and history show up differently for each role, without becoming separate copies in separate systems.</p>
-          <p>That is how nianav&nbsp;OS lets you simply ask the company a question. What is blocked, who owns it, which rule applies, what evidence exists, what changed, and what happens next. No piecing the truth back together from a dozen tools.</p>
+          <p>Procedures live in one place, evidence in another, decisions in email, and status in a project tool. People translate between systems all day, then try to reconstruct what happened when pressure arrives.</p>
+          <p><b>nianav&nbsp;OS starts by connecting that reality.</b> It gives regulated startups a shared operating model so the work, the rule, the owner, and the evidence stay linked from the beginning.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- S.05 EVIDENCE -->
-  <section class="band white" id="evidence">
+
+  <!-- S.02 UNDER THE HOOD -->
+  <section class="band" id="visual-model">
     <div class="container">
       <div class="section-mark" data-reveal>
-        <span class="lbl">Evidence</span>
-        <span class="desc">Clinical evidence becomes visible work.</span>
+        <span class="lbl">Under the hood</span>
+        <span class="desc">One data layer. Role-based views.</span>
       </div>
       <div class="split-2">
-        <h2 data-reveal>Clinical evidence without the <em>fear</em>.</h2>
+        <h2 data-reveal>Everything is one record, rendered for each <em>role</em>.</h2>
         <div class="prose" data-reveal>
-          <p>Clinical trials, real-world evidence, design validation, and post-market evidence are how a regulated company shows that its product does what it claims, for the people it is intended to serve, under the conditions it will actually face.</p>
-          <p>nianav&nbsp;OS makes that evidence visible: what requirement is being tested, what evidence supports it, what record was created, who approved it, what changed, and what still needs follow-up.</p>
+          <p>Underneath the whole system there is one data layer. Every procedure, record, and piece of evidence lives there once, as a single source of truth.</p>
+          <p>What each person sees is a view onto that one record. The production operator, the QA officer, and the auditor are not looking at separate copies that have to be kept in sync. They are looking at the same record, rendered the way their role needs to read it.</p>
+          <p>So nothing is duplicated and nothing drifts. Update the record once and every role&rsquo;s view reflects it. <b>The work and the evidence are the same object, seen through different lenses.</b></p>
         </div>
-      </div>
-      <div class="defstack" data-reveal style="margin-top:36px">
-        <div class="def"><b>Requirement under test</b><span>The system connects evidence work to the claim, risk, procedure, or intended-use requirement it supports.</span></div>
-        <div class="def"><b>Record created</b><span>Work produces the record while it happens, instead of asking the team to reconstruct it before a review or audit.</span></div>
-        <div class="def"><b>Follow-up controlled</b><span>Changes, exceptions, CAPAs, and approvals stay attached to the same operating record.</span></div>
       </div>
     </div>
   </section>
 
-  <!-- S.06 AGENTIC GOVERNANCE -->
-  <section class="band" id="agentic">
+  <!-- S.03 HOW IT WORKS -->
+  <section class="band white" id="how-it-works">
     <div class="container">
       <div class="section-mark" data-reveal>
-        <span class="lbl">Agentic governance</span>
-        <span class="desc">When AI does the work, it still needs an owner and a record.</span>
+        <span class="lbl">How it works</span>
+        <span class="desc">Your answers cascade through five layers. Every operational thing traces back to something you said.</span>
+      </div>
+      <div class="cards c5" data-reveal>
+        <a class="card" href="how-it-works-answers.html">
+          <span class="thumb"><img src="dirs/img/step-answers.jpg" alt="Close-up of hands typing on a laptop keyboard"></span>
+          <span class="body">
+            <span class="num">Step 01 · Inputs</span>
+            <h3>Your answers.</h3>
+            <p>A short set of answers about your company, market, product, and stage, gathered once in Project Zero. The only thing you provide.</p>
+            <span class="more-link">Open step 1 <span class="arr" aria-hidden="true"></span></span>
+          </span>
+        </a>
+        <a class="card" href="how-it-works-standards.html">
+          <span class="thumb"><img src="dirs/img/step-law-standards.jpg" alt="Europe at night seen from space, city lights spread across the continent"></span>
+          <span class="body">
+            <span class="num">Step 02 · Derived</span>
+            <h3>Applicable law &amp; standards.</h3>
+            <p>The exact regulations and standards that apply to you are resolved from your answers. No manual mapping, no guesswork.</p>
+            <span class="more-link">Open step 2 <span class="arr" aria-hidden="true"></span></span>
+          </span>
+        </a>
+        <a class="card" href="how-it-works-matrix.html">
+          <span class="thumb"><img src="dirs/img/step-compliance-matrix.jpg" alt="A compliance checklist with ISO 13485, ISO 9001, EU AI Act and MDR ticked off"></span>
+          <span class="body">
+            <span class="num">Step 03 · Mapping</span>
+            <h3>Compliance matrix.</h3>
+            <p>Every clause is pre-mapped to a procedure, an evidence type, and an owner. Gaps surface in real time, before any work starts.</p>
+            <span class="more-link">Open step 3 <span class="arr" aria-hidden="true"></span></span>
+          </span>
+        </a>
+        <a class="card" href="how-it-works-procedures.html">
+          <span class="thumb"><img src="dirs/img/step-procedures.jpg" alt="A hand with a stylus over a workflow board moving tasks across To Do, In Progress and Testing columns"></span>
+          <span class="body">
+            <span class="num">Step 04 · Operations</span>
+            <h3>Procedures.</h3>
+            <p>The procedures you actually need switch on from the Niavicta library, tailored to your answers. The rest stay off.</p>
+            <span class="more-link">Open step 4 <span class="arr" aria-hidden="true"></span></span>
+          </span>
+        </a>
+        <a class="card" href="how-it-works-operating-system.html">
+          <span class="thumb"><img src="dirs/img/step-operating-system.jpg" alt="A network of glowing connected nodes on a dark blue background"></span>
+          <span class="body">
+            <span class="num">Step 05 · Live</span>
+            <h3>Your operating system.</h3>
+            <p>Running and audit-ready. Every operational step traces back to an answer you gave on day one.</p>
+            <span class="more-link">Open step 5 <span class="arr" aria-hidden="true"></span></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- S.04 WHY -->
+  <section class="band" id="why">
+    <div class="container">
+      <div class="section-mark" data-reveal>
+        <span class="lbl">Why it was built</span>
+        <span class="desc">The rules arrive earlier than most teams expect.</span>
       </div>
       <div class="split-2">
-        <h2 data-reveal>When AI does the work, it needs clear limits and a named <em>owner</em>.</h2>
+        <h2 data-reveal>Regulated startups need scaffolding before the burden <em>shows up</em>.</h2>
         <div class="prose" data-reveal>
-          <p>In regulated work, an AI agent is not a chatbot. It does real work, so it needs the same things a person would. A named version, an approved task, clear limits, a human who owns the result, the data it was allowed to touch, and a sealed record of what it read and wrote.</p>
-          <p><b>That is the difference between "we used AI" and "we can defend how AI was used."</b> nianav&nbsp;OS lets startups use agentic workflows without losing control of evidence, review, or accountability.</p>
+          <p>Companies often meet the cost of compliance at the exact moment they can least afford to improvise: an audit, a submission, a milestone review, a quality issue, or diligence from an investor or partner.</p>
+          <p>nianav&nbsp;OS turns that pressure into leverage by making the company easier to run, easier to prove, and easier to grow with confidence.</p>
         </div>
-      </div>
-      <div class="defstack" data-reveal style="margin-top:36px">
-        <div class="def"><b>Version</b><span>Which agent or capability ran.</span></div>
-        <div class="def"><b>Scope</b><span>What it was allowed to do.</span></div>
-        <div class="def"><b>Input</b><span>Which record or data boundary it used.</span></div>
-        <div class="def"><b>Review</b><span>Who supervised and approved the result.</span></div>
-        <div class="def"><b>Record</b><span>What was sealed into the audit trail.</span></div>
       </div>
     </div>
   </section>
 
-  <!-- S.07 STANDARDS · dark -->
-  <section class="dark" id="standards">
+  <!-- S.05 WHO IT'S FOR -->
+  <section class="band white" id="who-its-for">
     <div class="container">
       <div class="section-mark" data-reveal>
-        <span class="lbl">Standards &amp; regulation</span>
-        <span class="desc">You turn on the frameworks that apply to you. The rest stays off.</span>
+        <span class="lbl">Who it's for</span>
+        <span class="desc">The people who feel the weight of the process most directly.</span>
       </div>
-      <h2 data-reveal style="color:#fff;max-width:20ch;margin-bottom:40px">Regulated or not, the workflow shape is the <em>same</em>.</h2>
-      <div class="cards c3" data-reveal style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.14)">
-        <article class="card" style="background:rgba(255,255,255,0.03)">
-          <span class="num">Quality systems</span>
-          <h3 style="color:#fff">ISO 9001, ISO 13485, GxP and GMP logic</h3>
-          <p style="color:rgba(232,236,243,0.7)">Controlled processes, role-based responsibilities, training awareness, deviations, CAPA, change control, approval trails, and evidence capture.</p>
-        </article>
-        <article class="card" style="background:rgba(255,255,255,0.03)">
-          <span class="num">Product &amp; medical</span>
-          <h3 style="color:#fff">EU MDR, IVDR, FDA QMSR and 21 CFR Part 11</h3>
-          <p style="color:rgba(232,236,243,0.7)">Design controls, traceability, electronic records, review gates, sign-off logic, and the link between work performed and evidence retained.</p>
-        </article>
-        <article class="card" style="background:rgba(255,255,255,0.03)">
-          <span class="num">Security &amp; governance</span>
-          <h3 style="color:#fff">ISO 27001, GDPR and SOC 2-ready controls</h3>
-          <p style="color:rgba(232,236,243,0.7)">Access control, ownership, auditability, data boundaries, policy-to-work mapping, and operational proof for governance reviews.</p>
-        </article>
-      </div>
-      <div class="note-band" data-reveal style="margin-top:28px;background:rgba(214,162,76,0.08);color:rgba(232,236,243,0.8);border-color:rgba(214,162,76,0.4)">
-        <b style="color:#fff">Important:</b> nianav&nbsp;OS should not be read as a legal, regulatory, notified-body, or auditor replacement. It maps obligations into executable workflow, captures evidence, and keeps the system current around your declared scope. The responsibility for compliance remains with the company and its qualified advisors.
+      <div class="split-2">
+        <h2 data-reveal>Built for teams that need structure without losing <em>speed</em>.</h2>
+        <div class="prose" data-reveal>
+          <p>If you are a founder, CEO, COO, quality lead, compliance lead, or product and operations leader in a regulated company, nianav&nbsp;OS gives you a clearer operating base.</p>
+          <p>When the company starts carrying more evidence, more oversight, and more moving parts, the system should help the team stay aligned instead of adding another layer of friction.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -410,12 +379,11 @@
         <path d="M11 20 L6 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path><path d="M29 20 L34 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path>
         <circle cx="6" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="34" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="11" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="29" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="20" cy="32" r="4" fill="#4FB3A2"></circle><circle cx="20" cy="8" r="4" fill="#4FB3A2"></circle>
       </svg>
-      <div class="eyebrow" style="margin-bottom:20px">Start the conversation</div>
-      <h2>Your company should run on one system, where work moves on its own and every team sees the same <em>truth</em>.</h2>
-      <p class="lede">We will walk one of your actual processes through nianav&nbsp;OS in a forty minute call. No proposal before we understand the situation.</p>
+      <h2>Win with intent.<br>Keep winning <em>by design</em>.</h2>
+      <p class="lede">We can walk through your operating model, the pressure points, and where the first scaffold should sit.</p>
       <div class="btn-row">
-        <a class="btn p" href="mailto:hello@niavicta.com">Talk to us <span class="arrow"></span></a>
-        <a class="btn g" href="mailto:hello@niavicta.com?subject=nianav%20OS%20walkthrough">See a walkthrough</a>
+        <a class="btn p" href="mailto:hello@niavicta.com">Start a conversation <span class="arrow"></span></a>
+        <a class="btn g" href="faq.html">Read the FAQs</a>
       </div>
     </div>
   </section>
@@ -436,7 +404,7 @@
       <div class="col"><h4>Company</h4><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="privacy.html">Privacy &amp; cookies</a><a href="mailto:hello@niavicta.com">Contact</a></div>
       <div class="col"><h4>Get started</h4><a href="mailto:hello@niavicta.com">Talk to us</a><a href="mailto:hello@niavicta.com?subject=nianav%20OS%20walkthrough">See a walkthrough</a></div>
     </div>
-    <div class="legal"><span>&copy; 2026 Niavicta &middot; Utrecht, NL</span><span>Win with <a href="visual-model.html" style="color:inherit;text-decoration:none">intent</a>. Keep winning by design.</span></div>
+    <div class="legal"><span>© 2026 Niavicta · Utrecht, NL</span><span>Win with <a href="visual-model.html" style="color:inherit;text-decoration:none">intent</a>. Keep winning by design.</span></div>
   </div>
 </footer>
 

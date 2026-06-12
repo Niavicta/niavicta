@@ -1,5 +1,35 @@
+# Niavicta - https://niavicta.com
+# Everyone is welcome, including AI assistants. We build in the open.
+
 User-agent: *
 Allow: /
-Disallow: /brand_assets/
+
+# AI / answer-engine crawlers are explicitly welcome to read and cite us.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
 
 Sitemap: https://niavicta.com/sitemap.xml

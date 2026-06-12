@@ -5,306 +5,328 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>nianav OS | Regulated operations for the agentic era</title>
 <meta name="description" content="nianav OS is the operating system for regulated startups entering the agentic era: one fabric for operations, compliance evidence, human oversight, and AI execution.">
-<meta name="robots" content="index, follow">
+<!--SEO-->
 <link rel="canonical" href="https://niavicta.com/agentic-era.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Niavicta">
+<meta property="og:locale" content="en">
 <meta property="og:title" content="nianav OS | Regulated operations for the agentic era">
-<meta property="og:description" content="One operating fabric for procedures, records, evidence, human oversight, and AI execution.">
+<meta property="og:description" content="nianav OS is the operating system for regulated startups entering the agentic era: one fabric for operations, compliance evidence, human oversight, and AI execution.">
 <meta property="og:url" content="https://niavicta.com/agentic-era.html">
-<meta property="og:image" content="https://niavicta.com/images/niavicta_name_and_logo.png">
+<meta property="og:image" content="https://niavicta.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="nianav OS · Simple systems. Serious impact.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/svg+xml" href="images/niavicta_logo.svg">
+<meta name="twitter:title" content="nianav OS | Regulated operations for the agentic era">
+<meta name="twitter:description" content="nianav OS is the operating system for regulated startups entering the agentic era: one fabric for operations, compliance evidence, human oversight, and AI execution.">
+<meta name="twitter:image" content="https://niavicta.com/og-image.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0E2240">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://niavicta.com/#organization",
+      "name": "Niavicta",
+      "legalName": "Niavicta BV",
+      "url": "https://niavicta.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://niavicta.com/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "image": "https://niavicta.com/og-image.png",
+      "email": "hello@niavicta.com",
+      "description": "Niavicta builds nianav OS, an operating system for regulated startups. Procedures, records, evidence, and AI governance run in one connected system, so audit-ready evidence is produced as work happens.",
+      "foundingDate": "2026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Utrecht",
+        "addressCountry": "NL"
+      },
+      "knowsAbout": [
+        "Regulated operations",
+        "Quality management systems",
+        "Medical device compliance",
+        "ISO 13485",
+        "EU MDR",
+        "AI governance",
+        "ISO 42001",
+        "EU AI Act"
+      ],
+      "slogan": "Win with intent. Keep winning by design.",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Chani Galgut"
+        },
+        {
+          "@type": "Person",
+          "name": "Jasmine Beukema"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://niavicta.com/#website",
+      "url": "https://niavicta.com/",
+      "name": "Niavicta",
+      "publisher": {
+        "@id": "https://niavicta.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://niavicta.com/agentic-era.html#webpage",
+      "url": "https://niavicta.com/agentic-era.html",
+      "name": "nianav OS | Regulated operations for the agentic era",
+      "description": "nianav OS is the operating system for regulated startups entering the agentic era: one fabric for operations, compliance evidence, human oversight, and AI execution.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://niavicta.com/#website"
+      },
+      "about": {
+        "@id": "https://niavicta.com/#organization"
+      },
+      "primaryImageOfPage": "https://niavicta.com/og-image.png"
+    }
+  ]
+}
+</script>
+<!--/SEO-->
+<link rel="stylesheet" href="dirs/_fonts.css">
+<link rel="stylesheet" href="console.css">
+<link rel="stylesheet" href="site-chrome.css">
+<style>
+  /* agent envelope - discrete rounded chips instead of a seamed grid */
+  .agent-env-ttl{font-family:var(--mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--teal);margin:0 0 14px;display:flex;align-items:center;gap:9px}
+  .agent-env-ttl::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px rgba(79,179,162,0.8)}
+  .agent-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .agent-list span{display:flex;align-items:center;gap:11px;background:#fff;border-radius:10px;padding:13px 14px;font-family:var(--mono);font-size:10px;letter-spacing:0.07em;text-transform:uppercase;color:var(--ink);line-height:1.3;box-shadow:0 1px 2px rgba(0,0,0,0.18);transition:transform .2s,box-shadow .2s}
+  .agent-list span:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,0.30)}
+  .agent-list span::before{content:"\2713";flex:none;display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;background:rgba(79,179,162,0.18);color:var(--teal-deep);font-family:var(--font);font-size:12px;font-weight:800;line-height:1}
+  @media (max-width:480px){.agent-list{grid-template-columns:1fr}}
+</style>
 </head>
-<body>
-<div class="stage-bg"></div>
-<nav class="top">
-      <a class="brand" href="index.html" aria-label="Niavicta � nianav OS home">
-    <img class="brand-logo" src="images/niavicta_logo.svg" alt="Niavicta logo">
-    Niavicta <span class="product"><b>nianav</b> OS</span>
-  </a>
-  <div class="links">
-    <div class="nav-dropdown">
-      <a class="nav-drop-trigger" href="niavicta-os.html" aria-haspopup="true">nianav OS</a>
-      <div class="nav-menu" role="menu">
-        <div class="nav-menu__group">
-          <div class="nav-menu__nested">
-            <a href="niavicta-os.html#problem" role="menuitem">The problem</a>
-            <a href="niavicta-os.html#visual-model" role="menuitem">Visual model</a>
-            <a href="niavicta-os.html#how-it-works" role="menuitem">How it works</a>
-            <a href="niavicta-os.html#why" role="menuitem">Why it was built</a>
-            <a href="niavicta-os.html#who-its-for" role="menuitem">Who it&rsquo;s for</a>
-            <a href="niavicta-os-work-with-us.html" role="menuitem">Work with Us</a>
-          </div>
-        </div>
+<body data-screen-label="Agentic Era · Console">
+
+<!-- announcement strip -->
+<div class="strip"><div class="wrap"><span>Niavicta builds nianav&nbsp;OS in the open, with the people who use it.</span><a href="mailto:hello@niavicta.com">Talk to us &rsaquo;</a></div></div>
+
+<!-- header -->
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="lk" viewBox="0 0 190 48" fill="none" aria-label="Niavicta">
+        <g transform="translate(4 4)">
+          <path d="M20 8 L11 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M20 8 L29 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M11 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M29 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M11 20 L6 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path><path d="M29 20 L34 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path>
+          <circle cx="6" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="34" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="11" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="29" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="20" cy="32" r="4" fill="#4FB3A2"></circle><circle cx="20" cy="8" r="4" fill="#4FB3A2"></circle>
+        </g>
+        <text x="56" y="31" fill="#0E2240" font-family="DM Sans, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.6">Niavicta</text>
+      </svg>
+      <span class="prod"><b>nianav</b> OS</span>
+    </a>
+    <nav>
+      <div class="navitem"><a class="nav-a" href="nianav-os.html">nianav OS <span class="cv"></span></a>
+        <div class="dd"><div class="panel">
+          <a class="h" href="nianav-os.html">nianav OS</a>
+          <a href="nianav-os.html#problem">The problem</a>
+          <a href="nianav-os.html#visual-model">Under the hood</a>
+          <a href="nianav-os.html#how-it-works">How it works</a>
+          <a href="nianav-os.html#who-its-for">Who it's for</a>
+        </div></div>
       </div>
-    </div>
-    <div class="nav-dropdown">
-      <a class="nav-drop-trigger" href="software.html" aria-haspopup="true">Software</a>
-      <div class="nav-menu" role="menu">
-        <div class="nav-menu__group">
-          <a class="nav-menu__bar" href="software.html" role="menuitem">What nianav OS replaces</a>
-          <div class="nav-menu__nested">
-            <a href="software.html#boundary" role="menuitem">The boundary</a>
-            <a href="software.html#categories" role="menuitem">What comes inside</a>
-            <a href="software.html#not-replace" role="menuitem">What stays outside</a>
-            <a href="software.html#agentic" role="menuitem">AI governance</a>
-            <a href="software.html#standards" role="menuitem">Standards &amp; regulation</a>
-          </div>
-        </div>
+      <div class="navitem"><a class="nav-a" href="software.html">Software <span class="cv"></span></a>
+        <div class="dd"><div class="panel">
+          <a class="h" href="software.html">What nianav OS replaces</a>
+          <a href="software.html#boundary">The boundary</a>
+          <a href="software.html#categories">What comes inside</a>
+          <a href="software.html#not-replace">What stays outside</a>
+          <a href="software.html#standards">Standards</a>
+        </div></div>
       </div>
-    </div>
-    <div class="nav-dropdown">
-      <a class="nav-drop-trigger" href="agentic-era.html" aria-haspopup="true">Agentic era</a>
-      <div class="nav-menu" role="menu">
-        <div class="nav-menu__group">
-          <a class="nav-menu__bar" href="agentic-era.html" role="menuitem">The agentic era</a>
-          <div class="nav-menu__nested">
-            <a href="agentic-era.html#does" role="menuitem">What it does</a>
-            <a href="agentic-era.html#why-now" role="menuitem">Why now</a>
-            <a href="agentic-era.html#agentic" role="menuitem">Agentic governance</a>
-            <a href="agentic-era.html#fit" role="menuitem">Who it is for</a>
-          </div>
-        </div>
+      <div class="navitem"><a class="nav-a" href="agentic-era.html">Agentic era <span class="cv"></span></a>
+        <div class="dd"><div class="panel">
+          <a class="h" href="agentic-era.html">The agentic era</a>
+          <a href="agentic-era.html#why-now">Why now</a>
+          <a href="agentic-era.html#agentic">Agentic governance</a>
+          <a href="agentic-era.html#fit">Who it is for</a>
+        </div></div>
       </div>
-    </div>
-    <div class="nav-dropdown">
-      <a class="nav-drop-trigger" href="about-us.html" aria-haspopup="true">About</a>
-      <div class="nav-menu" role="menu">
-        <div class="nav-menu__group">
-          <a class="nav-menu__bar" href="about-us.html" role="menuitem">About Niavicta</a>
-          <div class="nav-menu__nested">
-            <a href="faq.html" role="menuitem">FAQs</a>
-            <a href="privacy-policy.html" role="menuitem">Privacy</a>
-          </div>
-        </div>
+      <div class="navitem"><a class="nav-a" href="about.html">About <span class="cv"></span></a>
+        <div class="dd"><div class="panel">
+          <a class="h" href="about.html">About Niavicta</a>
+          <a href="about.html#origin">The origin</a>
+          <a href="faq.html">FAQs</a>
+          <a href="privacy.html">Privacy &amp; cookies</a>
+        </div></div>
       </div>
-    </div>
+      <div class="navitem"><a class="nav-a" href="build-with-us.html">Build with us</a></div>
+    </nav>
+    <div class="spacer"></div>
+    <a class="hcta" href="mailto:hello@niavicta.com">Talk to us</a>
+    <button class="navtoggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <a class="cta" href="mailto:hello@niavicta.com">Start a conversation</a>
-</nav>
+</header>
 
 <main>
-  <!-- ─── HERO ─── -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="eyebrow">Regulated operations · Agentic era</div>
-        <h1>Control the work AI is about to <span class="teal">execute</span>.</h1>
-        <p class="lede">nianav&nbsp;OS is the operating system for regulated startups entering the agentic era,  one fabric for operations, compliance evidence, human oversight, and AI execution.</p>
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="inner grid">
+      <div data-reveal>
+        <div class="eyebrow">Regulated operations · the agentic era</div>
+        <h1>Control the work AI is about to <em>execute</em>.</h1>
+        <p class="lede">nianav&nbsp;OS is the operating system for regulated startups entering the agentic era. <b>One fabric for operations, compliance evidence, human oversight, and AI execution.</b></p>
         <div class="btn-row">
-          <a class="btn-primary" href="#why-now">Why this matters now <span class="arrow"></span></a>
-          <a class="btn-ghost" href="#agentic">What &ldquo;agentic&rdquo; means here</a>
+          <a class="btn p" href="#why-now">Why this matters now <span class="arrow"></span></a>
+          <a class="btn g" href="#agentic">What "agentic" means</a>
         </div>
       </div>
-
-      <!--
-        Operating-fabric hero panel.
-        Rebuilt from the old .control-panel: that one relied on display:block
-        from generic descendant selectors (.control-flow span, .control-flow b)
-        and left <small> as inline, so when a child was wrapped in another
-        element the text collapsed onto one line. This version uses dedicated
-        class names with explicit block layout on every text node, so nothing
-        can ever inline-merge again.
-      -->
-      <aside class="op-fabric" aria-label="nianav OS operating fabric">
-        <header class="op-fabric__head">
-          <span class="op-fabric__kicker">Operating fabric</span>
-          <strong class="op-fabric__title">Procedure &middot; record &middot; agent &middot; evidence</strong>
-        </header>
-        <ol class="op-fabric__flow">
-          <li>
-            <span class="op-num">01</span>
-            <div class="op-text">
-              <strong>Scoped work enters</strong>
-              <span>Human or AI agent, named scope</span>
-            </div>
-          </li>
-          <li>
-            <span class="op-num">02</span>
-            <div class="op-text">
-              <strong>Procedure governs</strong>
-              <span>Permitted action, data boundary, review</span>
-            </div>
-          </li>
-          <li>
-            <span class="op-num">03</span>
-            <div class="op-text">
-              <strong>Evidence seals</strong>
-              <span>Who, what, why, data, result</span>
-            </div>
-          </li>
-        </ol>
-        <footer class="op-fabric__foot">
-          <span class="op-chip">Audit debt avoided</span>
-          <span class="op-chip">Oversight retained</span>
-        </footer>
-      </aside>
+      <div class="orbit-card" data-reveal aria-hidden="true" style="align-items:stretch;text-align:left">
+        <div class="mono" style="font-family:var(--mono);font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal-deep)">Operating fabric</div>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
+          <div style="display:grid;grid-template-columns:30px 1fr;gap:10px"><span class="mono" style="color:var(--teal);font-size:12px">01</span><div><b style="color:var(--ink);font-size:14px;display:block">Scoped work enters</b><span style="font-size:12px;color:var(--muted)">Human or AI agent, named scope</span></div></div>
+          <div style="display:grid;grid-template-columns:30px 1fr;gap:10px"><span class="mono" style="color:var(--teal);font-size:12px">02</span><div><b style="color:var(--ink);font-size:14px;display:block">Procedure governs</b><span style="font-size:12px;color:var(--muted)">Permitted action, data boundary, review</span></div></div>
+          <div style="display:grid;grid-template-columns:30px 1fr;gap:10px"><span class="mono" style="color:var(--teal);font-size:12px">03</span><div><b style="color:var(--ink);font-size:14px;display:block">Evidence seals</b><span style="font-size:12px;color:var(--muted)">Who, what, why, data, result</span></div></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ─── 1 · WHY NOW (lead with this so the urgency lands first) ─── -->
-  <section class="section warm" id="why-now">
+  <!-- S.01 WHY NOW -->
+  <section class="band white" id="why-now">
     <div class="container">
-      <div class="section-mark">
-        <span class="label">S.&nbsp;01 &middot; Why now</span>
+      <div class="section-mark" data-reveal>
+        <span class="lbl">Why now</span>
         <span class="desc">Agentic workflow changes the governance problem for regulated startups.</span>
       </div>
-      <div class="split">
-        <h2>AI is moving from <span class="teal">answering questions</span> to executing work.</h2>
-        <div class="copy">
+      <div class="split-2">
+        <h2 data-reveal>AI is moving from answering questions to <em>executing work</em>.</h2>
+        <div class="prose" data-reveal>
           <p>AI is beginning to read records, use tools, draft outputs, route decisions, and coordinate workflows. For an ordinary company this is a productivity shift. <b>For a regulated company it is a governance shift.</b></p>
-          <p>Every AI-assisted action must be scoped, explainable, logged, reviewed, and connected to the procedure it belongs to. The question is no longer &ldquo;can AI do the task?&rdquo;, it is whether the company can prove what happened, why it happened, who supervised it, what data was used, and whether the result stayed inside the approved operating envelope.</p>
+          <p>Every AI-assisted action must be scoped, explainable, logged, reviewed, and connected to the procedure it belongs to. The question is no longer "can AI do the task?" It is whether the company can prove what happened, why, who supervised it, what data was used, and whether the result stayed inside what it was allowed to do.</p>
         </div>
       </div>
-      <div class="proof-grid">
-        <article class="proof-card">
-          <span>01</span>
-          <h3>The regulated industry gap</h3>
-          <p>Most AI products are built for speed first. Regulated companies need speed and evidence. Plugging agents into Slack, Notion, or a tracker will not make the audit trail appear later.</p>
-        </article>
-        <article class="proof-card">
-          <span>02</span>
-          <h3>Audit debt starts on day one</h3>
-          <p>Evidence accumulates whether the system captures it or not. Scattered procedures, CAPAs, risks, training, clinical evidence, and AI outputs become debt the moment they are not connected to the work that produced them.</p>
-        </article>
-        <article class="proof-card">
-          <span>03</span>
-          <h3>Earlier than founders think</h3>
-          <p>Regulated startups usually defer operating infrastructure until after the next raise or the first audit. That is backwards. The system needs to be in place before the first inspection, not assembled in response to it.</p>
-        </article>
+      <div class="cards c3" data-reveal style="margin-top:40px">
+        <article class="card"><span class="num">01</span><h3>The regulated industry gap</h3><p>Most AI products are built for speed first. Regulated companies need speed and evidence. Plugging agents into Slack, Notion, or a tracker will not make the audit trail appear later.</p><a class="more-link" href="nianav-os.html">More information <span class="arr" aria-hidden="true"></span></a></article>
+        <article class="card"><span class="num">02</span><h3>Audit debt starts on day one</h3><p>Evidence accumulates whether the system captures it or not. Scattered procedures, CAPAs, risks, training, and AI outputs become debt the moment they are not connected to the work that produced them.</p><a class="more-link" href="nianav-os.html">More information <span class="arr" aria-hidden="true"></span></a></article>
+        <article class="card"><span class="num">03</span><h3>Earlier than founders think</h3><p>Regulated startups usually defer operating infrastructure until after the next raise or the first audit. That is backwards. The system needs to be in place before the first inspection, not assembled in response to it.</p><a class="more-link" href="nianav-os.html">More information <span class="arr" aria-hidden="true"></span></a></article>
       </div>
     </div>
   </section>
 
-  <!-- ─── 2 · WHAT "AGENTIC" MEANS HERE ─── -->
-  <section class="section dark" id="agentic">
+  <!-- S.02 WHAT AGENTIC MEANS · dark -->
+  <section class="dark" id="agentic">
     <div class="container">
-      <div class="section-mark">
-        <span class="label">S.&nbsp;02 &middot; What &ldquo;agentic&rdquo; means here</span>
-        <span class="desc">In regulated work an AI agent is not a chatbot. It is an executor.</span>
+      <div class="section-mark" data-reveal>
+        <span class="lbl">What "agentic" means here</span>
+        <span class="desc">In regulated work, AI does not just answer. It does the work.</span>
       </div>
-      <div class="head-row">
-        <h2>An agent needs an operating envelope, not just a prompt.</h2>
-        <p>&ldquo;Agentic&rdquo; is shorthand for AI that reads records, calls tools, drafts outputs, and routes decisions on its own. In a regulated company that work needs the same shape as the rest of the operation: a named owner, a permitted scope, a review path, and a sealed record of what happened.</p>
-      </div>
-      <div class="agent-shell">
-        <div class="agent-list">
-          <span>Named version</span>
-          <span>Validated capability</span>
-          <span>Permitted scope</span>
-          <span>Human principal</span>
-          <span>Custodian</span>
-          <span>Input contract</span>
-          <span>Execution trace</span>
-          <span>Sealed read/write record</span>
+      <div class="ag-grid">
+        <div data-reveal>
+          <h2 style="color:#fff;max-width:16ch">When AI does the work, it needs clear limits and a named <em>owner</em>.</h2>
+          <p class="body">"Agentic" is shorthand for AI that reads records, calls tools, drafts outputs, and routes decisions on its own. In a regulated company that work needs the same shape as the rest of the operation: <b>a named owner, a permitted scope, a review path, and a sealed record of what happened.</b></p>
+          <p class="body" style="margin-top:16px">That is the difference between "we used AI" and "we can defend how AI was used."</p>
+          <div class="btn-row" style="margin-top:28px"><a class="btn p" href="software.html#agentic">See the software model <span class="arrow"></span></a></div>
         </div>
-        <div class="agent-copy">
-          <h3>The difference between &ldquo;we used AI&rdquo; and &ldquo;we can defend how AI was used.&rdquo;</h3>
-          <p>nianav&nbsp;OS gives agentic workflows a governed place to run. Each AI-assisted step is connected to a procedure, a human owner, a permitted data boundary, review logic, and the record it creates or changes. This happens by default, not by configuration.</p>
-          <a class="btn-primary" href="software.html#agentic">See the software model <span class="arrow"></span></a>
-        </div>
+        <aside data-reveal aria-label="Agent envelope">
+          <p class="agent-env-ttl">The agent envelope</p>
+          <div class="agent-list">
+            <span>Named version</span>
+            <span>A checked capability</span>
+            <span>Permitted scope</span>
+            <span>A human who owns it</span>
+            <span>A data custodian</span>
+            <span>Agreed inputs</span>
+            <span>A record of what it did</span>
+            <span>Sealed read/write record</span>
+          </div>
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- ─── 3 · WHO IT IS FOR ─── -->
-  <section class="section" id="fit">
+  <!-- S.03 WHO IT IS FOR -->
+  <section class="band" id="fit">
     <div class="container">
-      <div class="section-mark">
-        <span class="label">S.&nbsp;03 &middot; Who it is for</span>
+      <div class="section-mark" data-reveal>
+        <span class="lbl">Who it is for</span>
         <span class="desc">Regulated startups, before audit debt hardens.</span>
       </div>
-      <div class="head-row">
-        <h2>Built for teams where evidence is part of the product.</h2>
-        <p>Health AI, medtech, biotech, and fintech startups need to move quickly without letting compliance evidence, human oversight, and AI outputs scatter across disconnected tools.</p>
-      </div>
-      <div class="card-grid cols-4">
-        <article class="card">
-          <span class="num">Health AI</span>
-          <h3>Agentic workflows with defensible supervision.</h3>
-          <p>Keep AI-assisted work tied to intended use, data scope, review requirements, and the record of what was read and written.</p>
-        </article>
-        <article class="card">
-          <span class="num">Medtech</span>
-          <h3>Design control, quality work, and evidence in one flow.</h3>
-          <p>Connect requirements, validation, change control, CAPA, training, and post-market follow-up around one operating record.</p>
-        </article>
-        <article class="card">
-          <span class="num">Biotech</span>
-          <h3>Process discipline without slowing the company down.</h3>
-          <p>Route scientific, quality, supplier, and operational work through controlled steps that produce traceable evidence.</p>
-        </article>
-        <article class="card">
-          <span class="num">Fintech</span>
-          <h3>Operational proof around regulated decisions.</h3>
-          <p>Make approvals, exceptions, controls, model use, and customer-impacting work visible, reviewable, and logged.</p>
-        </article>
+      <h2 data-reveal style="margin-bottom:14px">Built for teams where <em>evidence is part of the product</em>.</h2>
+      <p class="lede" data-reveal style="max-width:760px;margin-bottom:40px">Health AI, medtech, biotech, and fintech startups need to move quickly without letting compliance evidence, human oversight, and AI outputs scatter across disconnected tools.</p>
+      <div class="cards c4" data-reveal>
+        <article class="card"><span class="num">Governed AI</span><h3>Agentic workflows with defensible supervision.</h3><p>Keep AI-assisted work tied to intended use, data scope, review requirements, and the record of what was read and written.</p></article>
+        <article class="card"><span class="num">Design &amp; evidence</span><h3>Design control, quality, and evidence in one flow.</h3><p>Connect requirements, validation, change control, CAPA, training, and post-market follow-up around one operating record.</p></article>
+        <article class="card"><span class="num">Speed with proof</span><h3>Process discipline without slowing down.</h3><p>Route scientific, quality, supplier, and operational work through controlled steps that produce traceable evidence.</p></article>
+        <article class="card"><span class="num">Decisions on record</span><h3>Operational proof around regulated decisions.</h3><p>Make approvals, exceptions, controls, model use, and customer-impacting work visible, reviewable, and logged.</p></article>
       </div>
     </div>
   </section>
 
-  <!-- ─── 4 · WHAT THE SOFTWARE DOES ─── -->
-  <section class="section warm" id="does">
+  <!-- S.04 WHAT IT DOES -->
+  <section class="band white" id="does">
     <div class="container">
-      <div class="section-mark">
-        <span class="label">S.&nbsp;04 &middot; What the software does</span>
+      <div class="section-mark" data-reveal>
+        <span class="lbl">What the software does</span>
         <span class="desc">The procedure becomes the operating system.</span>
       </div>
-      <div class="head-row">
-        <h2>One fabric for work, rules, records, and AI execution.</h2>
-        <p>nianav&nbsp;OS treats procedures, records, views, triggers, and connectors as one operating fabric. A procedure is not a document sitting beside the work,  it is the work.</p>
-      </div>
-      <div class="card-grid cols-4">
-        <article class="card">
-          <span class="num">Procedures</span>
-          <h3>Work runs inside the approved operating model.</h3>
-          <p>Every step knows its owner, rule, permitted input, review requirement, evidence output, and next action.</p>
-        </article>
-        <article class="card">
-          <span class="num">Records</span>
-          <h3>Evidence is created while work happens.</h3>
-          <p>Steps produce records, capture signatures, trigger follow-up, and preserve the audit trail without a separate reconstruction project.</p>
-        </article>
-        <article class="card">
-          <span class="num">Agents</span>
-          <h3>AI operates under named scope and supervision.</h3>
-          <p>Humans and AI agents can be assigned to steps, but the work stays connected to the procedure, data boundary, custodian, and review path.</p>
-        </article>
-        <article class="card">
-          <span class="num">Connectors</span>
-          <h3>Specialist tools stay connected.</h3>
-          <p>CAD, clinical systems, finance engines, repositories, and filing tools remain specialist while nianav&nbsp;OS governs the workflow around them.</p>
-        </article>
+      <h2 data-reveal style="margin-bottom:40px">One fabric for work, rules, records, and AI <em>execution</em>.</h2>
+      <div class="cards c4" data-reveal>
+        <article class="card"><span class="num">Procedures</span><h3>Work runs inside the approved model.</h3><p>Every step knows its owner, rule, permitted input, review requirement, evidence output, and next action.</p></article>
+        <article class="card"><span class="num">Records</span><h3>Evidence is created while work happens.</h3><p>Steps produce records, capture signatures, trigger follow-up, and preserve the audit trail without a separate reconstruction project.</p></article>
+        <article class="card"><span class="num">Agents</span><h3>AI operates under named scope.</h3><p>Humans and AI agents can be assigned to steps, but the work stays connected to the procedure, data boundary, custodian, and review path.</p></article>
+        <article class="card"><span class="num">Connectors</span><h3>Specialist tools stay connected.</h3><p>CAD, clinical systems, finance engines, repositories, and filing tools remain specialist while nianav&nbsp;OS governs the workflow around them.</p></article>
       </div>
     </div>
   </section>
 
-  <!-- ─── 5 · START ─── -->
-  <section class="section" id="start">
-    <div class="container">
-      <div class="split">
-        <h2>Project Zero installs the first operating system.</h2>
-        <div class="copy">
-          <p>Project Zero turns your regulatory scope, org chart, selected archetypes, and customised templates into working procedure-native workflows. The regulatory intelligence layer keeps the system current. The AI governance model lets your startup use agentic workflows without losing control of evidence.</p>
-          <div class="btn-row">
-            <a class="btn-primary" href="mailto:hello@niavicta.com">Talk to Niavicta <span class="arrow"></span></a>
-            <a class="btn-ghost" href="software.html">Explore the software</a>
-          </div>
-        </div>
+  <!-- CLOSE -->
+  <section class="close" id="close">
+    <div class="container" data-reveal>
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M20 8 L11 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M20 8 L29 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M11 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M29 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path>
+        <path d="M11 20 L6 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path><path d="M29 20 L34 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path>
+        <circle cx="6" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="34" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="11" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="29" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="20" cy="32" r="4" fill="#4FB3A2"></circle><circle cx="20" cy="8" r="4" fill="#4FB3A2"></circle>
+      </svg>
+      <h2>Project Zero installs the first operating <em>system</em>.</h2>
+      <p class="lede">It turns your regulatory scope, org chart, selected archetypes, and customised templates into working, connected workflows, so your startup can use agentic workflows without losing control of evidence.</p>
+      <div class="btn-row">
+        <a class="btn p" href="mailto:hello@niavicta.com">Talk to Niavicta <span class="arrow"></span></a>
+        <a class="btn g" href="software.html">Explore the software</a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="foot">
-  <div class="container row">
-    <span>Niavicta &middot; Utrecht, NL</span>
-    <span><a href="privacy-policy.html">Privacy policy</a> &middot; &copy; 2026 &middot; nianav OS</span>
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div class="col">
+        <svg class="lk" viewBox="0 0 190 48" fill="none" aria-label="Niavicta"><g transform="translate(4 4)">
+          <path d="M20 8 L11 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M20 8 L29 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M11 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M29 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M11 20 L6 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path><path d="M29 20 L34 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path>
+          <circle cx="6" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="34" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="11" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="29" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="20" cy="32" r="4" fill="#4FB3A2"></circle><circle cx="20" cy="8" r="4" fill="#4FB3A2"></circle>
+        </g><text x="56" y="31" fill="#0E2240" font-family="DM Sans, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.6">Niavicta</text></svg>
+        <p class="tag">One system for how a regulated company actually runs. Built in Utrecht.</p>
+      </div>
+      <div class="col"><h4>Product</h4><a href="nianav-os.html">nianav OS</a><a href="software.html">What it replaces</a><a href="agentic-era.html">Agentic era</a></div>
+      <div class="col"><h4>Company</h4><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="privacy.html">Privacy &amp; cookies</a><a href="mailto:hello@niavicta.com">Contact</a></div>
+      <div class="col"><h4>Get started</h4><a href="mailto:hello@niavicta.com">Talk to us</a><a href="mailto:hello@niavicta.com?subject=nianav%20OS%20walkthrough">See a walkthrough</a></div>
+    </div>
+    <div class="legal"><span>&copy; 2026 Niavicta &middot; Utrecht, NL</span><span>Win with <a href="visual-model.html" style="color:inherit;text-decoration:none">intent</a>. Keep winning by design.</span></div>
   </div>
 </footer>
-<script src="legal.js"></script>
+
+<script src="console-home.js"></script>
 </body>
 </html>
-

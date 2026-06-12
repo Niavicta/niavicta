@@ -1,0 +1,31 @@
+# Niavicta: nianav OS
+
+> Niavicta builds nianav OS, the operating system for regulated startups. It puts procedures, records, evidence, and AI governance in one connected system, so audit-ready evidence is produced as work happens instead of reconstructed before an audit.
+
+nianav OS is built for medical device, health AI, biotech, and fintech companies in the window before scale: the moment after the product works and before serious growth, when the operating foundation has to be right. Niavicta was founded in 2026 by two compliance professionals and is based in Utrecht, the Netherlands. The product is being built in the open with a small number of design partners. Contact: hello@niavicta.com.
+
+Key facts:
+- What it is: one connected operating system for procedures, records, evidence, training, change control, and AI governance.
+- Who it is for: regulated startups, especially medical device (EU MDR / IVDR), health AI, biotech, and fintech.
+- The idea: the rule lives inside the step, so compliance evidence is a byproduct of doing the work.
+- AI governance: AI agents operate under a named owner, a permitted scope, a review path, and a sealed record.
+- Stage: the regulated-work engine is built and tested; the first version people can log into is being built now.
+- Tagline: Win with intent. Keep winning by design.
+
+## Core pages
+- [nianav OS](https://niavicta.com/nianav-os.html): What nianav OS is, the problem it solves, how it works, and who it is for.
+- [What nianav OS replaces](https://niavicta.com/software.html): The workflow tools nianav OS replaces and the specialist systems it connects to.
+- [The agentic era](https://niavicta.com/agentic-era.html): How nianav OS lets startups use AI agents without losing control of evidence.
+- [About Niavicta](https://niavicta.com/about.html): Why Niavicta was started, and what the name means (Nia, purpose; Victa, victory).
+- [Build with us](https://niavicta.com/build-with-us.html): Where the product is today and how to become a design partner.
+
+## How it works
+- [Step 1: Your answers](https://niavicta.com/how-it-works-answers.html): The short set of answers that configures your operating system.
+- [Step 2: Applicable law and standards](https://niavicta.com/how-it-works-standards.html): Your regulatory scope switches on the standards that apply.
+- [Step 3: The compliance matrix](https://niavicta.com/how-it-works-matrix.html): Clauses map to procedures, evidence, and owners.
+- [Step 4: Procedures](https://niavicta.com/how-it-works-procedures.html): Procedures become running, owned workflows.
+- [Step 5: Your operating system](https://niavicta.com/how-it-works-operating-system.html): The whole company runs on one connected record.
+
+## Questions
+- [FAQ](https://niavicta.com/faq.html): Common questions about nianav OS, answered plainly.
+- [All questions](https://niavicta.com/all-questions.html): The full, searchable question library.

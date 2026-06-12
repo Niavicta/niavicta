@@ -5,184 +5,436 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Frequently asked questions | Niavicta and nianav OS</title>
 <meta name="description" content="Answers for regulated startup founders and teams about nianav OS, Project Zero, evidence, workflows, AI governance, and operating with more confidence.">
-<meta name="robots" content="index, follow">
+<!--SEO-->
 <link rel="canonical" href="https://niavicta.com/faq.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Niavicta">
+<meta property="og:locale" content="en">
 <meta property="og:title" content="Frequently asked questions | Niavicta and nianav OS">
-<meta property="og:description" content="Practical answers for regulated startups building structure, evidence, workflows, and visibility from the beginning.">
+<meta property="og:description" content="Answers for regulated startup founders and teams about nianav OS, Project Zero, evidence, workflows, AI governance, and operating with more confidence.">
 <meta property="og:url" content="https://niavicta.com/faq.html">
-<meta property="og:image" content="https://niavicta.com/images/niavicta_name_and_logo.png">
+<meta property="og:image" content="https://niavicta.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="nianav OS · Simple systems. Serious impact.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/svg+xml" href="images/niavicta_logo.svg">
+<meta name="twitter:title" content="Frequently asked questions | Niavicta and nianav OS">
+<meta name="twitter:description" content="Answers for regulated startup founders and teams about nianav OS, Project Zero, evidence, workflows, AI governance, and operating with more confidence.">
+<meta name="twitter:image" content="https://niavicta.com/og-image.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0E2240">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://niavicta.com/#organization",
+      "name": "Niavicta",
+      "legalName": "Niavicta BV",
+      "url": "https://niavicta.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://niavicta.com/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "image": "https://niavicta.com/og-image.png",
+      "email": "hello@niavicta.com",
+      "description": "Niavicta builds nianav OS, an operating system for regulated startups. Procedures, records, evidence, and AI governance run in one connected system, so audit-ready evidence is produced as work happens.",
+      "foundingDate": "2026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Utrecht",
+        "addressCountry": "NL"
+      },
+      "knowsAbout": [
+        "Regulated operations",
+        "Quality management systems",
+        "Medical device compliance",
+        "ISO 13485",
+        "EU MDR",
+        "AI governance",
+        "ISO 42001",
+        "EU AI Act"
+      ],
+      "slogan": "Win with intent. Keep winning by design.",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Chani Galgut"
+        },
+        {
+          "@type": "Person",
+          "name": "Jasmine Beukema"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://niavicta.com/#website",
+      "url": "https://niavicta.com/",
+      "name": "Niavicta",
+      "publisher": {
+        "@id": "https://niavicta.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://niavicta.com/faq.html#webpage",
+      "url": "https://niavicta.com/faq.html",
+      "name": "Frequently asked questions | Niavicta and nianav OS",
+      "description": "Answers for regulated startup founders and teams about nianav OS, Project Zero, evidence, workflows, AI governance, and operating with more confidence.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://niavicta.com/#website"
+      },
+      "about": {
+        "@id": "https://niavicta.com/#organization"
+      },
+      "primaryImageOfPage": "https://niavicta.com/og-image.png"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://niavicta.com/faq.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is nianav OS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "nianav OS is an operating system for regulated startups. It gives teams one connected place to run procedures, assign work, capture evidence, manage records, and see what is happening across the company."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is it for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is built for startups and scaleups in regulated industries, especially medtech, health AI, biotech, and other companies where evidence, traceability, quality, and audit readiness matter from the beginning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do regulated startups need something different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Starting a regulated company is not like starting a normal company. There are rules to the game, and many founders only discover them when something becomes expensive: an audit, a submission, a clinical milestone, an investor diligence process, or a quality issue. nianav OS puts the scaffolding in place earlier, so the company grows with structure instead of rebuilding it later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does nianav OS make my company compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No software can honestly promise that on its own. Compliance still depends on the company, the product, the decisions made, and the evidence produced. What nianav OS does is make the work easier to structure, trace, review, and prove, so teams operate in a way that supports compliance instead of scrambling to reconstruct it afterwards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What problem does it solve first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It solves the fragmentation problem. In many regulated startups, procedures live in documents, evidence lives in folders, decisions live in email, tasks live in project tools, and knowledge lives in people's heads. nianav OS connects the work to the evidence as it happens."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this a QMS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It includes important QMS capabilities, but it is broader than a traditional QMS. nianav OS is designed as an operational fabric: quality, operations, projects, training, change control, compliance evidence, and AI governance all run from the same connected system."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why not just use spreadsheets, SharePoint, Notion, or project tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Those tools can work early on, but they usually become stressful as the company grows. They do not naturally know which procedure created which record, who approved what, what evidence supports a requirement, or whether the latest version of the process is actually being followed. nianav OS is built around those relationships from the start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Project Zero?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Project Zero is the setup process that helps a new company get its operating scaffold in place. Instead of starting from a blank system, the company is guided through the procedures, records, roles, and regulatory scope it needs to begin operating in a more controlled way."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should a startup start thinking about this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Earlier than most teams expect. The best time is before the company has accumulated months of undocumented decisions, scattered evidence, and informal workarounds. If clinical work, product development, quality processes, AI use, supplier work, or regulatory submissions are on the horizon, the structure should already be forming."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does this help with clinical or product evidence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It helps by linking evidence to the work that produced it. Requirements, risks, tests, decisions, reviews, changes, and records can be connected instead of stored as separate fragments. That makes it easier to understand what has been done, what still needs proof, and what can be shown during review or audit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this replace specialist tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not always. Some specialist tools should stay specialist: CAD, GitHub, Microsoft 365, e-signature tools, lab systems, or other domain-specific platforms may remain external. nianav OS connects the operating and evidence layer around them, so the company can still understand the full picture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does nianav OS handle AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "nianav OS treats AI as something that needs governance, not as a magic feature. AI-assisted work should have a defined scope, a responsible human, version control, evidence, and an audit trail, because regulated companies need to know not only what AI produced, but how it was used and who was accountable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will this add more work for the team?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The goal is the opposite. Regulated work already exists; the question is whether it is captured clearly or reconstructed under pressure later. nianav OS makes the right way the easier way, so evidence is created during normal work rather than as a separate panic project before an audit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why did Niavicta build this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Niavicta was started by two compliance professionals with two and a half decades of experience across medtech and regulated industries. They kept seeing the same avoidable setbacks: good teams, good ideas, but disconnected systems and late evidence. nianav OS was built to give founders a clearer path from day one, so regulation becomes less of a hidden burden and more of a lever for getting strong products to market."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!--/SEO-->
+<link rel="stylesheet" href="dirs/_fonts.css">
+<link rel="stylesheet" href="console.css">
+<link rel="stylesheet" href="site-chrome.css">
+<style>
+  /* hero brand lockup - free-floating, no card chrome (matches nianav OS hero) */
+  .hero-lockup{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:16px;padding:12px}
+  .hero-lockup .logo{width:424px;max-width:92%;height:auto;display:block}
+  .hero-lockup .tag{font-size:21px;font-weight:700;color:#0E2240;letter-spacing:-0.01em;line-height:1.18}
+  .hero-lockup .tag em{color:#4FB3A2;font-style:normal}
+</style>
 </head>
-<body>
-<div class="stage-bg"></div>
-<nav class="top">
-      <a class="brand" href="index.html" aria-label="Niavicta � nianav OS home">
-    <img class="brand-logo" src="images/niavicta_logo.svg" alt="Niavicta logo">
-    Niavicta <span class="product"><b>nianav</b> OS</span>
-  </a>
-  <div class="links">
-    <div class="nav-dropdown">
-      <a class="nav-drop-trigger" href="niavicta-os.html" aria-haspopup="true">nianav OS</a>
-      <div class="nav-menu" role="menu">
-        <div class="nav-menu__group">
-          <div class="nav-menu__nested">
-            <a href="niavicta-os.html#problem" role="menuitem">The problem</a>
-            <a href="niavicta-os.html#visual-model" role="menuitem">Visual model</a>
-            <a href="niavicta-os.html#how-it-works" role="menuitem">How it works</a>
-            <a href="niavicta-os.html#why" role="menuitem">Why it was built</a>
-            <a href="niavicta-os.html#who-its-for" role="menuitem">Who it&rsquo;s for</a>
-            <a href="niavicta-os-work-with-us.html" role="menuitem">Work with Us</a>
-          </div>
-        </div>
+<body data-screen-label="FAQ · Console">
+
+<!-- announcement strip -->
+<div class="strip"><div class="wrap"><span>Niavicta builds nianav&nbsp;OS in the open, with the people who use it.</span><a href="mailto:hello@niavicta.com">Talk to us &rsaquo;</a></div></div>
+
+<!-- header -->
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="lk" viewBox="0 0 190 48" fill="none" aria-label="Niavicta">
+        <g transform="translate(4 4)">
+          <path d="M20 8 L11 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M20 8 L29 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M11 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M29 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M11 20 L6 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path><path d="M29 20 L34 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path>
+          <circle cx="6" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="34" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="11" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="29" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="20" cy="32" r="4" fill="#4FB3A2"></circle><circle cx="20" cy="8" r="4" fill="#4FB3A2"></circle>
+        </g>
+        <text x="56" y="31" fill="#0E2240" font-family="DM Sans, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.6">Niavicta</text>
+      </svg>
+      <span class="prod"><b>nianav</b> OS</span>
+    </a>
+    <nav>
+      <div class="navitem"><a class="nav-a" href="nianav-os.html">nianav OS <span class="cv"></span></a>
+        <div class="dd"><div class="panel">
+          <a class="h" href="nianav-os.html">nianav OS</a>
+          <a href="nianav-os.html#problem">The problem</a>
+          <a href="nianav-os.html#visual-model">Under the hood</a>
+          <a href="nianav-os.html#how-it-works">How it works</a>
+          <a href="nianav-os.html#who-its-for">Who it's for</a>
+        </div></div>
       </div>
-    </div>
-    <div class="nav-dropdown">
-      <a class="nav-drop-trigger" href="software.html" aria-haspopup="true">Software</a>
-      <div class="nav-menu" role="menu">
-        <div class="nav-menu__group">
-          <a class="nav-menu__bar" href="software.html" role="menuitem">What nianav OS replaces</a>
-          <div class="nav-menu__nested">
-            <a href="software.html#boundary" role="menuitem">The boundary</a>
-            <a href="software.html#categories" role="menuitem">What comes inside</a>
-            <a href="software.html#not-replace" role="menuitem">What stays outside</a>
-            <a href="software.html#agentic" role="menuitem">AI governance</a>
-            <a href="software.html#standards" role="menuitem">Standards &amp; regulation</a>
-          </div>
-        </div>
+      <div class="navitem"><a class="nav-a" href="software.html">Software <span class="cv"></span></a>
+        <div class="dd"><div class="panel">
+          <a class="h" href="software.html">What nianav OS replaces</a>
+          <a href="software.html#boundary">The boundary</a>
+          <a href="software.html#categories">What comes inside</a>
+          <a href="software.html#not-replace">What stays outside</a>
+          <a href="software.html#standards">Standards</a>
+        </div></div>
       </div>
-    </div>
-    <div class="nav-dropdown">
-      <a class="nav-drop-trigger" href="agentic-era.html" aria-haspopup="true">Agentic era</a>
-      <div class="nav-menu" role="menu">
-        <div class="nav-menu__group">
-          <a class="nav-menu__bar" href="agentic-era.html" role="menuitem">The agentic era</a>
-          <div class="nav-menu__nested">
-            <a href="agentic-era.html#does" role="menuitem">What it does</a>
-            <a href="agentic-era.html#why-now" role="menuitem">Why now</a>
-            <a href="agentic-era.html#agentic" role="menuitem">Agentic governance</a>
-            <a href="agentic-era.html#fit" role="menuitem">Who it is for</a>
-          </div>
-        </div>
+      <div class="navitem"><a class="nav-a" href="agentic-era.html">Agentic era <span class="cv"></span></a>
+        <div class="dd"><div class="panel">
+          <a class="h" href="agentic-era.html">The agentic era</a>
+          <a href="agentic-era.html#why-now">Why now</a>
+          <a href="agentic-era.html#agentic">Agentic governance</a>
+          <a href="agentic-era.html#fit">Who it is for</a>
+        </div></div>
       </div>
-    </div>
-    <div class="nav-dropdown">
-      <a class="nav-drop-trigger" href="about-us.html" aria-haspopup="true">About</a>
-      <div class="nav-menu" role="menu">
-        <div class="nav-menu__group">
-          <a class="nav-menu__bar" href="about-us.html" role="menuitem">About Niavicta</a>
-          <div class="nav-menu__nested">
-            <a href="faq.html" role="menuitem">FAQs</a>
-            <a href="privacy-policy.html" role="menuitem">Privacy</a>
-          </div>
-        </div>
+      <div class="navitem"><a class="nav-a" href="about.html">About <span class="cv"></span></a>
+        <div class="dd"><div class="panel">
+          <a class="h" href="about.html">About Niavicta</a>
+          <a href="about.html#origin">The origin</a>
+          <a href="faq.html">FAQs</a>
+          <a href="privacy.html">Privacy &amp; cookies</a>
+        </div></div>
       </div>
-    </div>
+      <div class="navitem"><a class="nav-a" href="build-with-us.html">Build with us</a></div>
+    </nav>
+    <div class="spacer"></div>
+    <a class="hcta" href="mailto:hello@niavicta.com">Talk to us</a>
+    <button class="navtoggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-  <a class="cta" href="mailto:hello@niavicta.com">Start a conversation</a>
-</nav>
+</header>
+
 <main>
-  <section class="hero faq-hero">
-    <div class="container hero-grid">
-      <div>
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="inner grid">
+      <div data-reveal>
         <div class="eyebrow">Frequently asked questions</div>
-        <h1>Clear answers for regulated teams building from <span class="teal">day one</span>.</h1>
-        <p class="lede">Regulated startups meet rules earlier than most teams expect. nianav&nbsp;OS helps turn that pressure into structure: clearer workflows, stronger evidence, better visibility, and a company that can operate with more confidence.</p>
+        <h1>Clear answers for regulated teams building from <em>day one</em>.</h1>
+        <p class="lede">Regulated startups meet rules earlier than most teams expect. nianav&nbsp;OS helps turn that pressure into structure: <b>clearer workflows, stronger evidence, better visibility</b>, and a company that can operate with more confidence.</p>
       </div>
-      <div class="orbit-card" aria-hidden="true">
-        <div class="orbit-mark"><span></span></div>
-        <div class="orbit-note"><span>structure</span><span>evidence</span><span>confidence</span></div>
+      <div class="hero-lockup" data-reveal>
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187 77" role="img" aria-label="nianav OS logo">
+  <g shape-rendering="geometricPrecision">
+    <circle fill="none" stroke="#4FB3A2" stroke-width="3.5" cx="37.5" cy="37.5" r="31.25"></circle>
+    <circle fill="#4FB3A2" cx="37.8" cy="37.0" r="12.35"></circle>
+    <path fill="#0E2240" d="M 58.962 46.668 Q 61.136 46.668 62.474 47.926 Q 63.815 49.185 63.815 51.968 L 63.815 61.400 L 59.575 61.400 L 59.575 52.945 Q 59.575 51.384 59.111 50.601 Q 58.648 49.819 57.637 49.819 Q 56.101 49.819 55.571 51.053 Q 55.041 52.282 55.041 54.589 L 55.041 61.400 L 50.801 61.400 L 50.801 46.933 L 54.010 46.933 L 54.590 48.788 L 54.776 48.788 Q 55.439 47.674 56.524 47.173 Q 57.612 46.668 58.962 46.668 Z M 71.577 46.933 L 71.577 61.400 L 67.337 61.400 L 67.337 46.933 L 71.577 46.933 Z M 81.330 46.639 Q 84.005 46.639 85.475 47.897 Q 86.949 49.156 86.949 51.752 L 86.949 61.400 L 84.005 61.400 L 83.185 59.437 L 83.077 59.437 Q 82.204 60.605 81.235 61.135 Q 80.270 61.665 78.547 61.665 Q 76.771 61.665 75.566 60.539 Q 74.361 59.413 74.361 57.081 Q 74.361 54.775 75.885 53.678 Q 77.409 52.576 80.378 52.469 L 82.709 52.390 L 82.709 51.752 Q 82.709 50.614 82.204 50.084 Q 81.703 49.554 80.825 49.554 Q 79.926 49.554 78.945 49.860 Q 77.964 50.162 76.982 50.614 L 75.686 47.939 Q 76.850 47.330 78.266 46.986 Q 79.686 46.639 81.330 46.639 Z M 81.462 54.750 Q 79.926 54.800 79.301 55.438 Q 78.680 56.075 78.680 57.106 Q 78.680 58.009 79.115 58.394 Q 79.554 58.775 80.270 58.775 Q 81.276 58.775 82.005 58.021 Q 82.734 57.268 82.734 55.889 L 82.734 54.696 L 81.462 54.750 Z M 98.633 46.668 Q 100.807 46.668 102.144 47.926 Q 103.486 49.185 103.486 51.968 L 103.486 61.400 L 99.246 61.400 L 99.246 52.945 Q 99.246 51.384 98.782 50.601 Q 98.318 49.819 97.308 49.819 Q 95.772 49.819 95.242 51.053 Q 94.712 52.282 94.712 54.589 L 94.712 61.400 L 90.472 61.400 L 90.472 46.933 L 93.681 46.933 L 94.260 48.788 L 94.447 48.788 Q 95.109 47.674 96.194 47.173 Q 97.283 46.668 98.633 46.668 Z M 113.156 46.639 Q 115.831 46.639 117.301 47.897 Q 118.775 49.156 118.775 51.752 L 118.775 61.400 L 115.831 61.400 L 115.011 59.437 L 114.904 59.437 Q 114.030 60.605 113.061 61.135 Q 112.096 61.665 110.374 61.665 Q 108.598 61.665 107.393 60.539 Q 106.188 59.413 106.188 57.081 Q 106.188 54.775 107.712 53.678 Q 109.235 52.576 112.204 52.469 L 114.535 52.390 L 114.535 51.752 Q 114.535 50.614 114.030 50.084 Q 113.529 49.554 112.651 49.554 Q 111.753 49.554 110.771 49.860 Q 109.790 50.162 108.809 50.614 L 107.513 47.939 Q 108.676 47.330 110.092 46.986 Q 111.513 46.639 113.156 46.639 Z M 113.289 54.750 Q 111.753 54.800 111.128 55.438 Q 110.506 56.075 110.506 57.106 Q 110.506 58.009 110.941 58.394 Q 111.380 58.775 112.096 58.775 Q 113.103 58.775 113.831 58.021 Q 114.560 57.268 114.560 55.889 L 114.560 54.696 L 113.289 54.750 Z M 125.718 61.400 L 120.497 46.933 L 124.923 46.933 L 127.333 55.172 Q 127.544 55.889 127.635 56.696 Q 127.731 57.504 127.760 58.141 L 127.863 58.141 Q 127.892 57.450 127.996 56.671 Q 128.103 55.889 128.314 55.172 L 130.753 46.933 L 135.204 46.933 L 129.983 61.400 L 125.718 61.400 Z" fill="#0E2240" fill-rule="nonzero"></path>
+    <text class="os" x="141" y="61.2" font-family="'DM Sans', sans-serif" font-weight="420" font-size="27" letter-spacing="-0.6" fill="#5B6F82">OS</text>
+    <circle fill="#4FB3A2" cx="69" cy="40" r="5.25"></circle>
+  </g>
+</svg>
+        <span class="tag">Simple systems<br>Serious <em>impact</em>.</span>
       </div>
     </div>
   </section>
 
-  <section class="section compact faq-page">
+  <!-- FAQ -->
+  <section class="band white">
     <div class="container">
-      <div class="section-mark">
-        <span class="label">FAQ</span>
-        <span class="desc">Click the information icon to open an answer.</span>
+      <div class="section-mark" data-reveal>
+        <span class="lbl">FAQ</span>
+        <span class="desc">Search any question, or open a common one below.</span>
       </div>
-      <div class="faq-list">
+      <div data-reveal>
+        <div class="faq-search">
+          <span class="si" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"></circle><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg></span>
+          <input id="faq-search" type="search" autocomplete="off" placeholder="Search questions, e.g. does it make us compliant?" aria-label="Search questions">
+        </div>
+        <div class="faq-status" id="faq-status" aria-live="polite"></div>
+        <div id="faq-featured">
+          <div class="faq-list">
         <details class="faq-item">
-          <summary><span>What is nianav OS?</span><i aria-hidden="true">i</i></summary>
-          <p>nianav&nbsp;OS is an operating system for regulated startups. It gives teams one connected place to run procedures, assign work, capture evidence, manage records, and see what is happening across the company.</p>
+          <summary><span>What is nianav OS?</span><span class="ic"></span></summary>
+          <div class="ans">nianav&nbsp;OS is an operating system for regulated startups. It gives teams one connected place to run procedures, assign work, capture evidence, manage records, and see what is happening across the company.</div>
         </details>
         <details class="faq-item">
-          <summary><span>Who is it for?</span><i aria-hidden="true">i</i></summary>
-          <p>It is built for startups and scaleups working in regulated industries, especially medtech, health AI, biotech, and other companies where evidence, traceability, quality, and audit readiness matter from the beginning.</p>
+          <summary><span>Who is it for?</span><span class="ic"></span></summary>
+          <div class="ans">It is built for startups and scaleups in regulated industries, especially medtech, health AI, biotech, and other companies where evidence, traceability, quality, and audit readiness matter from the beginning.</div>
         </details>
         <details class="faq-item">
-          <summary><span>Why do regulated startups need something different?</span><i aria-hidden="true">i</i></summary>
-          <p>Starting a regulated company is not like starting a normal company. There are rules to the game, and many founders only discover them when something becomes expensive: an audit, a submission, a clinical milestone, an investor diligence process, or a quality issue. nianav&nbsp;OS helps put the scaffolding in place earlier, so the company grows with structure instead of trying to rebuild it later.</p>
+          <summary><span>Why do regulated startups need something different?</span><span class="ic"></span></summary>
+          <div class="ans">Starting a regulated company is not like starting a normal company. There are rules to the game, and many founders only discover them when something becomes expensive: an audit, a submission, a clinical milestone, an investor diligence process, or a quality issue. <b>nianav&nbsp;OS puts the scaffolding in place earlier</b>, so the company grows with structure instead of rebuilding it later.</div>
         </details>
         <details class="faq-item">
-          <summary><span>Does nianav OS make my company compliant?</span><i aria-hidden="true">i</i></summary>
-          <p>No software can honestly promise that on its own. Compliance still depends on the company, the product, the decisions made, and the evidence produced. What nianav&nbsp;OS does is make the work easier to structure, trace, review, and prove. It helps teams operate in a way that supports compliance instead of scrambling to reconstruct it afterwards.</p>
+          <summary><span>Does nianav OS make my company compliant?</span><span class="ic"></span></summary>
+          <div class="ans">No software can honestly promise that on its own. Compliance still depends on the company, the product, the decisions made, and the evidence produced. What nianav&nbsp;OS does is make the work easier to structure, trace, review, and prove, so teams operate in a way that supports compliance instead of scrambling to reconstruct it afterwards.</div>
         </details>
         <details class="faq-item">
-          <summary><span>What problem does it solve first?</span><i aria-hidden="true">i</i></summary>
-          <p>It solves the fragmentation problem. In many regulated startups, procedures live in documents, evidence lives in folders, decisions live in email, tasks live in project tools, and knowledge lives in people's heads. nianav&nbsp;OS connects the work to the evidence as it happens.</p>
+          <summary><span>What problem does it solve first?</span><span class="ic"></span></summary>
+          <div class="ans">It solves the fragmentation problem. In many regulated startups, procedures live in documents, evidence lives in folders, decisions live in email, tasks live in project tools, and knowledge lives in people's heads. <b>nianav&nbsp;OS connects the work to the evidence as it happens.</b></div>
         </details>
         <details class="faq-item">
-          <summary><span>Is this a QMS?</span><i aria-hidden="true">i</i></summary>
-          <p>It includes important QMS capabilities, but it is broader than a traditional QMS. nianav&nbsp;OS is designed as an operational fabric: quality, operations, projects, training, change control, compliance evidence, and AI governance all run from the same connected system.</p>
+          <summary><span>Is this a QMS?</span><span class="ic"></span></summary>
+          <div class="ans">It includes important QMS capabilities, but it is broader than a traditional QMS. nianav&nbsp;OS is designed as an operational fabric: quality, operations, projects, training, change control, compliance evidence, and AI governance all run from the same connected system.</div>
         </details>
         <details class="faq-item">
-          <summary><span>Why not just use spreadsheets, SharePoint, Notion, or project management tools?</span><i aria-hidden="true">i</i></summary>
-          <p>Those tools can work early on, but they usually become stressful as the company grows. They do not naturally know which procedure created which record, who approved what, what evidence supports a requirement, or whether the latest version of the process is actually being followed. nianav&nbsp;OS is built around those relationships from the start.</p>
+          <summary><span>Why not just use spreadsheets, SharePoint, Notion, or project tools?</span><span class="ic"></span></summary>
+          <div class="ans">Those tools can work early on, but they usually become stressful as the company grows. They do not naturally know which procedure created which record, who approved what, what evidence supports a requirement, or whether the latest version of the process is actually being followed. nianav&nbsp;OS is built around those relationships from the start.</div>
         </details>
         <details class="faq-item">
-          <summary><span>What is Project Zero?</span><i aria-hidden="true">i</i></summary>
-          <p>Project Zero is the setup process that helps a new company get its operating scaffold in place. Instead of starting from a blank system, the company is guided through the procedures, records, roles, and regulatory scope it needs to begin operating in a more controlled way.</p>
+          <summary><span>What is Project Zero?</span><span class="ic"></span></summary>
+          <div class="ans">Project Zero is the setup process that helps a new company get its operating scaffold in place. Instead of starting from a blank system, the company is guided through the procedures, records, roles, and regulatory scope it needs to begin operating in a more controlled way.</div>
         </details>
         <details class="faq-item">
-          <summary><span>When should a startup start thinking about this?</span><i aria-hidden="true">i</i></summary>
-          <p>Earlier than most teams expect. The best time is before the company has accumulated months of undocumented decisions, scattered evidence, and informal workarounds. If clinical work, product development, quality processes, AI use, supplier work, or regulatory submissions are on the horizon, the structure should already be forming.</p>
+          <summary><span>When should a startup start thinking about this?</span><span class="ic"></span></summary>
+          <div class="ans">Earlier than most teams expect. The best time is before the company has accumulated months of undocumented decisions, scattered evidence, and informal workarounds. If clinical work, product development, quality processes, AI use, supplier work, or regulatory submissions are on the horizon, the structure should already be forming.</div>
         </details>
         <details class="faq-item">
-          <summary><span>How does this help with clinical evidence or product evidence?</span><i aria-hidden="true">i</i></summary>
-          <p>It helps by linking evidence to the work that produced it. Requirements, risks, tests, decisions, reviews, changes, and records can be connected instead of stored as separate fragments. That makes it easier to understand what has been done, what still needs proof, and what can be shown during review or audit.</p>
+          <summary><span>How does this help with clinical or product evidence?</span><span class="ic"></span></summary>
+          <div class="ans">It helps by linking evidence to the work that produced it. Requirements, risks, tests, decisions, reviews, changes, and records can be connected instead of stored as separate fragments. That makes it easier to understand what has been done, what still needs proof, and what can be shown during review or audit.</div>
         </details>
         <details class="faq-item">
-          <summary><span>Does this replace specialist tools?</span><i aria-hidden="true">i</i></summary>
-          <p>Not always. Some specialist tools should stay specialist: CAD, GitHub, Microsoft 365, e-signature tools, lab systems, or other domain-specific platforms may remain external. nianav&nbsp;OS is designed to connect the operating and evidence layer around them, so the company can still understand the full picture.</p>
+          <summary><span>Does this replace specialist tools?</span><span class="ic"></span></summary>
+          <div class="ans">Not always. Some specialist tools should stay specialist: CAD, GitHub, Microsoft 365, e-signature tools, lab systems, or other domain-specific platforms may remain external. nianav&nbsp;OS connects the operating and evidence layer around them, so the company can still understand the full picture.</div>
         </details>
         <details class="faq-item">
-          <summary><span>How does nianav OS handle AI?</span><i aria-hidden="true">i</i></summary>
-          <p>nianav&nbsp;OS treats AI as something that needs governance, not as a magic feature. AI-assisted work should have a defined scope, a responsible human, version control, evidence, and an audit trail. That matters because regulated companies need to know not only what AI produced, but how it was used and who was accountable.</p>
+          <summary><span>How does nianav OS handle AI?</span><span class="ic"></span></summary>
+          <div class="ans">nianav&nbsp;OS treats AI as something that needs governance, not as a magic feature. AI-assisted work should have a defined scope, a responsible human, version control, evidence, and an audit trail, because regulated companies need to know not only what AI produced, but how it was used and who was accountable.</div>
         </details>
         <details class="faq-item">
-          <summary><span>Will this add more work for the team?</span><i aria-hidden="true">i</i></summary>
-          <p>The goal is the opposite. Regulated work already exists; the question is whether it is captured clearly or reconstructed under pressure later. nianav&nbsp;OS is designed to make the right way the easier way, so evidence is created during normal work rather than as a separate panic project before an audit.</p>
+          <summary><span>Will this add more work for the team?</span><span class="ic"></span></summary>
+          <div class="ans">The goal is the opposite. Regulated work already exists; the question is whether it is captured clearly or reconstructed under pressure later. <b>nianav&nbsp;OS makes the right way the easier way</b>, so evidence is created during normal work rather than as a separate panic project before an audit.</div>
         </details>
         <details class="faq-item">
-          <summary><span>Why did Niavicta build this?</span><i aria-hidden="true">i</i></summary>
-          <p>Niavicta was started by two compliance professionals with two and a half decades of experience across medtech and regulated industries. They kept seeing the same avoidable setbacks: good teams, good ideas, but disconnected systems and late evidence. nianav&nbsp;OS was built to give founders a clearer path from day one, so regulation becomes less of a hidden burden and more of a lever for getting strong products to market.</p>
+          <summary><span>Why did Niavicta build this?</span><span class="ic"></span></summary>
+          <div class="ans">Niavicta was started by two compliance professionals with two and a half decades of experience across medtech and regulated industries. They kept seeing the same avoidable setbacks: good teams, good ideas, but disconnected systems and late evidence. nianav&nbsp;OS was built to give founders a clearer path from day one, so regulation becomes less of a hidden burden and more of a lever for getting strong products to market.</div>
         </details>
+          </div>
+        </div>
+        <div id="faq-results" hidden></div>
+        <div style="margin-top:26px"><a class="textlink" href="all-questions.html">Browse all questions by category <span class="arrow"></span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSE -->
+  <section class="close" id="close">
+    <div class="container" data-reveal>
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M20 8 L11 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M20 8 L29 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M11 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M29 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path>
+        <path d="M11 20 L6 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path><path d="M29 20 L34 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path>
+        <circle cx="6" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="34" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="11" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="29" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="20" cy="32" r="4" fill="#4FB3A2"></circle><circle cx="20" cy="8" r="4" fill="#4FB3A2"></circle>
+      </svg>
+      <h2>Have a question specific to your <em>company</em>?</h2>
+      <p class="lede">Tell us where you are in the journey. We'll help you think through the structure before the audit debt builds up.</p>
+      <div class="btn-row">
+        <a class="btn p" href="mailto:hello@niavicta.com">Start a conversation <span class="arrow"></span></a>
+        <a class="btn g" href="software.html">Explore the software</a>
       </div>
     </div>
   </section>
 </main>
-<section class="cta-band">
-  <div class="container">
-    <h2>Have a question that is specific to your company?</h2>
-    <p>Tell us where you are in the journey. We will help you think through the structure before the audit debt builds up.</p>
-    <div class="btn-row" style="justify-content:center">
-      <a class="btn-primary" href="mailto:hello@niavicta.com">Start a conversation <span class="arrow"></span></a>
-      <a class="btn-ghost" href="software.html">Explore the software</a>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div class="col">
+        <svg class="lk" viewBox="0 0 190 48" fill="none" aria-label="Niavicta"><g transform="translate(4 4)">
+          <path d="M20 8 L11 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M20 8 L29 20" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M11 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path><path d="M29 20 L20 32" stroke="#4FB3A2" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M11 20 L6 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path><path d="M29 20 L34 28" stroke="#4FB3A2" stroke-width="1.6" stroke-linecap="round" opacity="0.5"></path>
+          <circle cx="6" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="34" cy="28" r="2.5" fill="#1F3A5F" opacity="0.7"></circle><circle cx="11" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="29" cy="20" r="3" fill="#1F3A5F"></circle><circle cx="20" cy="32" r="4" fill="#4FB3A2"></circle><circle cx="20" cy="8" r="4" fill="#4FB3A2"></circle>
+        </g><text x="56" y="31" fill="#0E2240" font-family="DM Sans, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.6">Niavicta</text></svg>
+        <p class="tag">One system for how a regulated company actually runs. Built in Utrecht.</p>
+      </div>
+      <div class="col"><h4>Product</h4><a href="nianav-os.html">nianav OS</a><a href="software.html">What it replaces</a><a href="agentic-era.html">Agentic era</a></div>
+      <div class="col"><h4>Company</h4><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="privacy.html">Privacy &amp; cookies</a><a href="mailto:hello@niavicta.com">Contact</a></div>
+      <div class="col"><h4>Get started</h4><a href="mailto:hello@niavicta.com">Talk to us</a><a href="mailto:hello@niavicta.com?subject=nianav%20OS%20walkthrough">See a walkthrough</a></div>
     </div>
-  </div>
-</section>
-<footer class="foot">
-  <div class="container row">
-    <span>Niavicta &middot; Utrecht, NL</span>
-    <span><a href="privacy-policy.html">Privacy policy</a> &middot; &copy; 2026 &middot; nianav OS</span>
+    <div class="legal"><span>&copy; 2026 Niavicta &middot; Utrecht, NL</span><span>Win with <a href="visual-model.html" style="color:inherit;text-decoration:none">intent</a>. Keep winning by design.</span></div>
   </div>
 </footer>
-<script src="legal.js"></script>
+
+<script src="console-home.js"></script>
+<script src="faq-data.js"></script>
+<script src="faq.js"></script>
 </body>
 </html>
-

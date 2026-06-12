@@ -1,0 +1,136 @@
+/* ───────────────────────────────────────────────────────────
+   Niavicta · Shared site chrome
+   Brings the homepage (ms.css) look to the console.css pages:
+   clean white canvas, marketing header + announcement strip,
+   sentence-case nav, four-column footer, calm sans eyebrows.
+   Loaded AFTER console.css so these rules win.
+   ─────────────────────────────────────────────────────────── */
+:root{
+  --navy:#0E2240; --navy-deep:#081529;
+  --bg:#FFFFFF; --bg-2:#F3F5F8; --bg-3:#E9EDF2;
+  --line-2:#CDD5DE; --radius:4px;
+  --shadow-lg:0 12px 28px -8px rgba(14,34,64,0.22),0 4px 10px -4px rgba(14,34,64,0.10);
+}
+
+/* white canvas, drop the console grid overlay */
+body{background:var(--bg)}
+body::before{display:none !important}
+
+/* Match the homepage (ms.css) width everywhere so the nav + content never shift
+   between pages. Homepage uses --maxw:1600 with clamp(16px,4vw,60px) padding. */
+.wrap{max-width:1600px;margin:0 auto;padding:0 clamp(16px,4vw,60px)}
+.container{max-width:1600px;margin:0 auto;padding:0 clamp(16px,4vw,60px)}
+
+/* ── Announcement strip ──────────────────────────────── */
+.strip{background:var(--bg-2);border-bottom:1px solid var(--line);font-size:12.5px;color:var(--muted);position:relative;z-index:40}
+.strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:36px;flex-wrap:wrap}
+.strip span{font-family:var(--font);letter-spacing:0;text-transform:none}
+.strip a{color:var(--teal-deep);text-decoration:none;font-weight:600;font-family:var(--font);letter-spacing:0;text-transform:none}
+.strip a:hover{text-decoration:underline}
+
+/* ── Header ──────────────────────────────────────────── */
+header.site{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+header.site .wrap{display:flex;align-items:center;gap:28px;min-height:64px}
+header.site .brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none;font-size:inherit;font-weight:400}
+header.site .brand svg{width:auto}
+header.site .brand .lk{height:28px;width:auto}
+header.site .brand .prod{font-family:var(--font);font-size:12px;color:var(--muted);font-weight:600;border-left:1px solid var(--line-2);padding-left:10px;margin-left:0;white-space:nowrap;letter-spacing:0;text-transform:none}
+header.site .brand .prod b{color:var(--teal-deep);font-weight:700}
+header.site nav{display:flex;gap:4px;align-items:center}
+header.site nav .nav-a{position:relative;display:flex;align-items:center;gap:6px;padding:8px 12px;font-family:var(--font);font-size:14px;font-weight:600;letter-spacing:0;text-transform:none;color:var(--navy);text-decoration:none;border-radius:var(--radius);white-space:nowrap}
+header.site nav .nav-a:hover{background:var(--bg-2);color:var(--navy)}
+header.site nav .nav-a .cv{width:7px;height:7px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(45deg);margin-top:-2px}
+header.site .navitem{position:relative;display:block}
+header.site .navitem .dd{position:absolute;top:100%;left:0;padding-top:8px;display:none;z-index:60}
+header.site .navitem:hover .dd{display:block}
+header.site .navitem .dd .panel{min-width:260px;background:#fff;border:1px solid var(--line-2);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:8px}
+header.site .navitem .dd a{display:block;padding:9px 12px;font-family:var(--font);font-size:13.5px;font-weight:500;letter-spacing:0;text-transform:none;color:var(--navy);text-decoration:none;border-radius:3px}
+header.site .navitem .dd a.h{font-weight:700;border-bottom:1px solid var(--line);border-radius:0;margin-bottom:4px;padding-bottom:10px;color:var(--teal-deep)}
+header.site .navitem .dd a.h::before{display:none}
+header.site .navitem .dd a:not(.h):hover{background:var(--bg-2);color:var(--navy)}
+header.site .spacer{flex:1}
+header.site .hcta{flex:none;background:var(--navy);color:#fff;font-family:var(--font);font-weight:600;font-size:14px;text-decoration:none;padding:9px 18px;border-radius:var(--radius)}
+header.site .hcta:hover{background:var(--navy-deep)}
+/* ── Mobile nav (hamburger) - desktop (>1080px) unchanged ── */
+.navtoggle{display:none}
+@media (max-width:1080px){
+  header.site .wrap{flex-wrap:wrap;gap:12px}
+  .navtoggle{display:flex;flex-direction:column;justify-content:center;gap:5px;flex:none;order:4;width:44px;height:40px;padding:0 9px;background:transparent;border:1px solid rgba(14,34,64,0.2);border-radius:4px;cursor:pointer}
+  .navtoggle span{display:block;height:2px;width:100%;background:#0E2240;border-radius:2px;transition:transform .2s,opacity .2s}
+  header.site.menu-open .navtoggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  header.site.menu-open .navtoggle span:nth-child(2){opacity:0}
+  header.site.menu-open .navtoggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  header.site .brand{order:1}
+  header.site .spacer{order:2}
+  header.site .hcta{order:3}
+  header.site nav{display:none;order:5;flex-basis:100%;width:100%;flex-direction:column;gap:0;align-items:stretch;padding:4px 0 6px;margin-top:4px;border-top:1px solid rgba(14,34,64,0.1)}
+  header.site.menu-open nav{display:flex}
+  header.site nav .navitem{width:100%;position:static}
+  header.site nav .nav-a{padding:14px 4px;font-size:16px;border-radius:0;border-bottom:1px solid rgba(14,34,64,0.08);justify-content:flex-start}
+  header.site nav .nav-a .cv{display:none}
+  header.site .navitem .dd{display:none}
+}
+
+/* ── Calm sans eyebrows (replace mono + gold tick) ───── */
+.eyebrow{font-family:var(--font);font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--teal-deep);display:block;align-items:initial;gap:0;margin-bottom:22px}
+.eyebrow::before{display:none !important}
+.section-mark .lbl{font-family:var(--font);font-size:13px;font-weight:700;letter-spacing:0.04em;color:var(--teal-deep)}
+.section-mark .lbl::before{display:none !important}
+
+/* ── Headings → homepage scale & weight ──────────────── */
+h1{font-size:clamp(38px,4.6vw,60px);font-weight:700;line-height:1.04;letter-spacing:-0.022em}
+.page-hero h1{font-size:clamp(36px,4.6vw,58px)}
+h1 em,.teal-i{color:var(--teal);font-weight:700}
+h2{font-size:clamp(28px,3vw,42px);font-weight:700;line-height:1.08;letter-spacing:-0.02em}
+h2 em{color:var(--teal);font-weight:700}
+
+/* ── Footer ──────────────────────────────────────────── */
+footer.site{background:var(--bg-2);border-top:1px solid var(--line);font-size:13.5px;margin-top:0}
+footer.site .wrap{max-width:1240px}
+footer.site .cols{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px;padding:52px 0 36px}
+@media (max-width:820px){footer.site .cols{grid-template-columns:1fr 1fr}}
+footer.site .col h4{font-family:var(--font);font-size:13px;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:14px;font-weight:700}
+footer.site .col a{display:block;font-family:var(--font);color:var(--ink-soft);text-decoration:none;padding:5px 0;font-weight:500;font-size:13.5px;letter-spacing:0;text-transform:none}
+footer.site .col a:hover{color:var(--teal-deep)}
+footer.site .col .lk{height:26px;width:auto;margin-bottom:14px}
+footer.site .col .tag{color:var(--muted);line-height:1.5;max-width:34ch}
+footer.site .legal{border-top:1px solid var(--line);padding:18px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-family:var(--font);font-size:13px;letter-spacing:0;text-transform:none}
+
+/* ── Motion: homepage-matching staggered reveal ──────── */
+body.reveal-on [data-reveal]{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);will-change:opacity,transform}
+body.reveal-on [data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){body.reveal-on [data-reveal]{opacity:1;transform:none;transition:none}}
+
+/* ── Motion: Microsoft-Store-style hover lift on cards ── */
+.card,.orbit-card,.vizfig,.def{transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s cubic-bezier(.16,1,.3,1),border-color .25s ease}
+.card:hover,.vizfig:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--line-2)}
+.dark .card:hover{border-color:rgba(255,255,255,0.28)}
+a.card,a.tile{will-change:transform}
+
+/* ── Separated cards (Microsoft-Store style) ─────────────
+   Was: one outer border + 1px gridlines fusing the cards.
+   Now: each card is its own elevated, rounded panel.        */
+:root{--shadow:0 1.6px 3.6px rgba(14,34,64,0.10),0 0.3px 0.9px rgba(14,34,64,0.07)}
+.cards{background:transparent !important;border:0 !important;border-radius:0;overflow:visible;gap:22px}
+.cards .card{background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:26px 26px 24px}
+.cards .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--line-2)}
+.cards .card .num{color:var(--teal-deep)}
+/* dark-section card grids keep the gold accent + translucent fill */
+.dark .cards .card{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.16);box-shadow:none}
+.dark .cards .card:hover{border-color:rgba(255,255,255,0.32);box-shadow:none;transform:translateY(-4px)}
+.dark .cards .card .num{color:var(--gold)}
+.dark .cards .card h3{color:#fff}
+/* "More information" link pinned to the bottom of each card */
+.cards .card .more-link{margin-top:auto;padding-top:18px;display:inline-flex;align-items:center;gap:9px;color:var(--teal-deep);font-weight:600;font-size:13.5px;text-decoration:none;align-self:flex-start}
+.cards .card .more-link .arr{width:7px;height:7px;border-right:2px solid currentColor;border-top:2px solid currentColor;transform:rotate(45deg);transition:transform .15s ease}
+.cards .card .more-link:hover .arr{transform:rotate(45deg) translate(2px,-2px)}
+.dark .cards .card .more-link{color:#7fd0c2}
+
+/* ── Unify accent colour with the homepage ──────────────
+   Homepage uses teal on light sections and reserves gold for
+   dark sections. Convert the console pages' light-context gold
+   accents (numbers, ticks, icon chips, note rule) to teal.     */
+.prop .n,.why-card .pt .ph .num{color:var(--teal-deep)}
+.demo-narr .narr::before{background:var(--teal)}
+.bf-item .ic{background:rgba(79,179,162,0.13);color:var(--teal-deep)}
+.note-band{border-left-color:var(--teal);background:rgba(79,179,162,0.05)}
