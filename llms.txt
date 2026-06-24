@@ -31,3 +31,17 @@ Key facts:
 ## Questions
 - [FAQ](https://niavicta.com/faq.html): Common questions about nianav OS, answered plainly.
 - [All questions](https://niavicta.com/all-questions.html): The full, searchable question library.
+
+## Resource pages
+- [What is nianav?](https://niavicta.com/nianav.html): nianav is the product name for nianav OS, the operating system for regulated industries built by Niavicta.
+- [Operating system for regulated industries](https://niavicta.com/operating-system-for-regulated-industries.html): What an operating system for regulated industries means and how nianav OS connects procedures, records, evidence, and AI governance.
+- [Operating system for medtech companies](https://niavicta.com/medtech-operating-system.html): How nianav OS supports medtech operating work across procedures, evidence, design control, quality records, and audit readiness.
+- [Operating system for health AI startups](https://niavicta.com/health-ai-operating-system.html): How health AI startups can use nianav OS to connect AI governance, evidence, scope, human review, and operating records.
+- [Audit readiness for regulated startups](https://niavicta.com/audit-readiness.html): How nianav OS supports audit readiness by connecting procedures, evidence, owners, reviews, and records as work happens.
+- [AI governance operating system](https://niavicta.com/ai-governance-operating-system.html): How nianav OS structures AI governance with scope, named human accountability, review, records, and evidence for regulated teams.
+- [Evidence traceability for regulated teams](https://niavicta.com/evidence-traceability.html): How nianav OS connects evidence to procedures, owners, records, requirements, reviews, and operating decisions.
+- [nianav OS vs spreadsheets](https://niavicta.com/nianav-os-vs-spreadsheets.html): A practical comparison of nianav OS and spreadsheets for regulated operating work, evidence, ownership, and audit readiness.
+- [nianav OS vs Notion](https://niavicta.com/nianav-os-vs-notion.html): A practical comparison of nianav OS and Notion-style workspaces for regulated workflows, evidence, and audit readiness.
+- [ISO 13485 startup evidence](https://niavicta.com/iso-13485-startup-evidence.html): A practical guide to ISO 13485 evidence for startups and how nianav OS keeps procedures, records, owners, and proof connected.
+- [EU AI Act readiness for health AI startups](https://niavicta.com/eu-ai-act-health-ai-startups.html): How health AI startups can think about EU AI Act readiness, AI governance, human accountability, evidence, and operating records.
+- [Project Zero readiness checklist](https://niavicta.com/project-zero-readiness.html): A practical Project Zero readiness checklist for regulated startups preparing to set up nianav OS and their operating foundation.
