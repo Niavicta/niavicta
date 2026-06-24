@@ -13,6 +13,7 @@ Key facts:
 - Tagline: Win with intent. Keep winning by design.
 
 ## Core pages
+- [Sources and standards](https://niavicta.com/sources.html): Official source references for the standards, regulations, and operating-model claims referenced across Niavicta and nianav OS pages.
 - [nianav OS](https://niavicta.com/nianav-os.html): What nianav OS is, the problem it solves, how it works, and who it is for.
 - [What nianav OS replaces](https://niavicta.com/software.html): The workflow tools nianav OS replaces and the specialist systems it connects to.
 - [The agentic era](https://niavicta.com/agentic-era.html): How nianav OS lets startups use AI agents without losing control of evidence.
