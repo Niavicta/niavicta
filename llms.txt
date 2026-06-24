@@ -5,6 +5,7 @@
 nianav OS is built for medical device, health AI, biotech, and fintech companies in the window before scale: the moment after the product works and before serious growth, when the operating foundation has to be right. Niavicta was founded in 2026 by two compliance professionals and is based in Utrecht, the Netherlands. The product is being built in the open with a small number of design partners. Contact: hello@niavicta.com.
 
 Key facts:
+- Product names: nianav and nianav OS refer to the same product. The canonical product page is https://niavicta.com/nianav-os.html.
 - What it is: one connected operating system for procedures, records, evidence, training, change control, and AI governance.
 - Who it is for: regulated startups, especially medical device (EU MDR / IVDR), health AI, biotech, and fintech.
 - The idea: the rule lives inside the step, so compliance evidence is a byproduct of doing the work.

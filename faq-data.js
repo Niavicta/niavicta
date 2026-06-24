@@ -19,8 +19,12 @@
   window.NIANAV_FAQ = [
     // ── Featured (the "most asked", shown on the FAQ page) ─────────────
     { cat: 'basics', featured: true, q: 'What is nianav OS?',
-      aliases: ['What is nianav OS in one sentence?', 'What does nianav OS do?'],
+      aliases: ['What is nianav?', 'What is nianav OS in one sentence?', 'What does nianav OS do?'],
       a: `nianav&nbsp;OS is an operating system for regulated startups. It gives teams one connected place to run procedures, assign work, capture evidence, manage records, and see what is happening across the company.` },
+
+    { cat: 'basics', featured: true, q: 'What is nianav?',
+      aliases: ['Is nianav the same as nianav OS?', 'What does nianav mean?', 'What is the nianav product?'],
+      a: `nianav is the product name for nianav&nbsp;OS, Niavicta's operating system for regulated startups. The canonical product page is <a href="nianav-os.html">nianav&nbsp;OS</a>.` },
 
     { cat: 'basics', featured: true, q: 'Who is it for?',
       aliases: ['Who uses nianav OS?', 'Is this for my company?'],
