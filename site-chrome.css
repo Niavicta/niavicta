@@ -68,7 +68,10 @@ header.site .hcta:hover{background:var(--navy-deep)}
   header.site nav .navitem{width:100%;position:static}
   header.site nav .nav-a{padding:14px 4px;font-size:16px;border-radius:0;border-bottom:1px solid rgba(14,34,64,0.08);justify-content:flex-start}
   header.site nav .nav-a .cv{display:none}
-  header.site .navitem .dd{display:none}
+  header.site .navitem .dd{position:static;display:block;padding:0 0 8px 14px}
+  header.site .navitem .dd .panel{min-width:0;border:0;box-shadow:none;padding:0;background:transparent}
+  header.site .navitem .dd a{padding:8px 4px;font-size:14px;border-radius:0;color:var(--muted)}
+  header.site .navitem .dd a.h{border-bottom:0;margin-bottom:0;padding-bottom:8px;color:var(--teal-deep)}
 }
 
 /* ── Calm sans eyebrows (replace mono + gold tick) ───── */

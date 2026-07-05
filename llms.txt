@@ -19,7 +19,8 @@ Key facts:
 - [What nianav OS replaces](https://niavicta.com/software.html): The workflow tools nianav OS replaces and the specialist systems it connects to.
 - [The agentic era](https://niavicta.com/agentic-era.html): How nianav OS lets startups use AI agents without losing control of evidence.
 - [About Niavicta](https://niavicta.com/about.html): Why Niavicta was started, and what the name means (Nia, purpose; Victa, victory).
-- [Build with us](https://niavicta.com/build-with-us.html): Where the product is today and how to become a design partner.
+- [Become a design partner](https://niavicta.com/build-with-us.html): Where the product is today and how to become a design partner.
+- [Follow the journey](https://niavicta.com/follow-the-journey.html): Founder notes, product lessons, and the public record of building nianav OS in the open.
 
 ## How it works
 - [Step 1: Your answers](https://niavicta.com/how-it-works-answers.html): The short set of answers that configures your operating system.
