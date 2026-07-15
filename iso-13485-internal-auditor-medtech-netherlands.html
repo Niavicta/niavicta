@@ -135,6 +135,23 @@
 <link rel="stylesheet" href="dirs/_fonts.css">
 <link rel="stylesheet" href="console.css">
 <link rel="stylesheet" href="site-chrome.css">
+<style>
+  .qa-grid{display:grid;grid-template-columns:1fr;gap:14px}
+  .qa{border:1px solid var(--line-strong);border-radius:10px;background:var(--paper);overflow:hidden;transition:border-color .15s ease,box-shadow .15s ease}
+  .qa[open]{border-color:#4FB3A2;box-shadow:0 12px 34px rgba(14,34,64,.06)}
+  .qa summary{list-style:none;cursor:pointer;padding:20px 22px;display:block;position:relative}
+  .qa summary::-webkit-details-marker{display:none}
+  .qa .q{display:block;font-size:15.5px;font-weight:600;color:var(--ink);letter-spacing:-.012em;padding-right:26px}
+  .qa .a{display:block;margin-top:8px;font-size:13.5px;line-height:1.5;color:var(--ink-soft)}
+  .qa .yes{color:#2E9E8B;font-weight:600}
+  .qa .more{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+  .qa[open] .more{color:var(--ink-soft)}
+  .qa summary::after{content:"+";position:absolute;top:18px;right:20px;font-size:20px;line-height:1;color:#4FB3A2;font-weight:400}
+  .qa[open] summary::after{content:"\2013"}
+  .qa-body{padding:0 22px 22px;font-size:13.5px;line-height:1.62;color:var(--muted)}
+  .qa-body p{margin:0 0 10px}
+  .qa-body p:last-child{margin:0}
+</style>
 </head>
 <body data-screen-label="Medtech audit · Console">
 
