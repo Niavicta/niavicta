@@ -1,0 +1,359 @@
+{
+  "_meta": {
+    "purpose": "Searchable catalog of reusable website images. AI/authors read this to pick images for blog posts and page updates. See dirs/img/README.md.",
+    "generated": "2026-07-15T09:58:27Z",
+    "count": 18
+  },
+  "images": [
+    {
+      "file": "dirs/img/agentic-architecture.jpg",
+      "alt": "Looking up through a geometric glass-and-steel atrium roof",
+      "description": "Upward view through a geometric glass-and-steel atrium roof; clean structural lines.",
+      "tags": [
+        "architecture",
+        "structure",
+        "abstract",
+        "ai",
+        "agentic",
+        "systems"
+      ],
+      "use": [
+        "hero",
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 4460,
+      "height": 2974
+    },
+    {
+      "file": "dirs/img/audit-electronics.jpg",
+      "alt": "An engineer probing a circuit board with a multimeter at a workbench",
+      "description": "Engineer probing a circuit board with a multimeter at a workbench.",
+      "tags": [
+        "audit",
+        "engineering",
+        "hardware",
+        "medtech",
+        "inspection",
+        "electronics"
+      ],
+      "use": [
+        "inline",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "dirs/img/audit-lab.jpg",
+      "alt": "A scientist in a white coat working at a laboratory bench",
+      "description": "Scientist in a white coat working at a laboratory bench.",
+      "tags": [
+        "lab",
+        "science",
+        "medtech",
+        "audit",
+        "research"
+      ],
+      "use": [
+        "inline",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 3000,
+      "height": 2000
+    },
+    {
+      "file": "dirs/img/audit-meeting.jpg",
+      "alt": "A small team working together over notebooks at a table",
+      "description": "Small team working together over notebooks at a table.",
+      "tags": [
+        "team",
+        "collaboration",
+        "people",
+        "audit",
+        "meeting"
+      ],
+      "use": [
+        "inline",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 4460,
+      "height": 2974
+    },
+    {
+      "file": "dirs/img/coding.jpg",
+      "alt": "A developer writing code on a laptop",
+      "description": "A developer writing code on a laptop.",
+      "tags": [
+        "coding",
+        "software",
+        "developer",
+        "engineering",
+        "building"
+      ],
+      "use": [
+        "inline",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 4460,
+      "height": 2973
+    },
+    {
+      "file": "dirs/img/connection-matrix.png",
+      "alt": "A web of glowing connections in the dark, several links broken",
+      "description": "A web of glowing network connections in the dark, several links broken.",
+      "tags": [
+        "network",
+        "abstract",
+        "ai",
+        "systems",
+        "connected",
+        "fragmented"
+      ],
+      "use": [
+        "inline",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "dirs/img/lab-beaker.jpg",
+      "alt": "Gloved hand pipetting a red sample into a beaker in a lab",
+      "description": "Gloved hand pipetting a red sample into a beaker in a lab.",
+      "tags": [
+        "lab",
+        "science",
+        "biotech",
+        "medtech",
+        "research"
+      ],
+      "use": [
+        "inline",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 4460,
+      "height": 2973
+    },
+    {
+      "file": "dirs/img/lab-microscope.jpg",
+      "alt": "Confocal microscope rig on an optical bench",
+      "description": "Confocal microscope rig on an optical bench.",
+      "tags": [
+        "lab",
+        "science",
+        "optics",
+        "research",
+        "medtech"
+      ],
+      "use": [
+        "inline",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 4460,
+      "height": 2974
+    },
+    {
+      "file": "dirs/img/lightbulb.jpg",
+      "alt": "A hand holding a glowing filament light bulb against a warm circle of light",
+      "description": "A hand holding a glowing filament light bulb against a warm circle of light.",
+      "tags": [
+        "ideas",
+        "innovation",
+        "insight",
+        "abstract",
+        "warm"
+      ],
+      "use": [
+        "hero",
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 4460,
+      "height": 2974
+    },
+    {
+      "file": "dirs/img/motherboard.jpg",
+      "alt": "Macro close-up of a circuit board and processor",
+      "description": "Macro close-up of a circuit board and processor.",
+      "tags": [
+        "hardware",
+        "electronics",
+        "technology",
+        "abstract",
+        "engineering"
+      ],
+      "use": [
+        "inline",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 4460,
+      "height": 2973
+    },
+    {
+      "file": "dirs/img/process-flow.jpg",
+      "alt": "Hands typing on a laptop with a process flow diagram of connected steps floating above the keyboard",
+      "description": "Hands typing on a laptop with a process-flow diagram of connected steps floating above the keyboard.",
+      "tags": [
+        "software",
+        "workflow",
+        "process",
+        "coding",
+        "abstract",
+        "systems"
+      ],
+      "use": [
+        "hero",
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "dirs/img/project-zero-racetrack.jpg",
+      "alt": "A racetrack curving toward a glowing sunrise on the horizon, the open road ahead",
+      "description": "A racetrack curving toward a glowing sunrise on the horizon, the open road ahead.",
+      "tags": [
+        "journey",
+        "growth",
+        "scale",
+        "abstract",
+        "motivation",
+        "start"
+      ],
+      "use": [
+        "hero",
+        "inline"
+      ],
+      "orientation": "portrait",
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "file": "dirs/img/step-answers.jpg",
+      "alt": "Close-up of hands typing on a laptop keyboard",
+      "description": "Close-up of hands typing on a laptop keyboard.",
+      "tags": [
+        "software",
+        "coding",
+        "workflow",
+        "keyboard",
+        "input"
+      ],
+      "use": [
+        "hero",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 1350,
+      "height": 900
+    },
+    {
+      "file": "dirs/img/step-compliance-matrix.jpg",
+      "alt": "A compliance checklist with ISO 13485, ISO 9001, EU AI Act and MDR ticked off",
+      "description": "A compliance checklist with ISO 13485, ISO 9001, EU AI Act and MDR ticked off.",
+      "tags": [
+        "compliance",
+        "standards",
+        "regulatory",
+        "checklist",
+        "iso",
+        "audit"
+      ],
+      "use": [
+        "hero",
+        "thumbnail"
+      ],
+      "orientation": "square",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "file": "dirs/img/step-law-standards.jpg",
+      "alt": "Europe at night seen from space, city lights spread across the continent",
+      "description": "Europe at night seen from space, city lights spread across the continent.",
+      "tags": [
+        "europe",
+        "regulatory",
+        "standards",
+        "abstract",
+        "night",
+        "scale"
+      ],
+      "use": [
+        "hero",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 1606,
+      "height": 900
+    },
+    {
+      "file": "dirs/img/step-operating-system.jpg",
+      "alt": "A network of glowing connected nodes on a dark blue background",
+      "description": "A network of glowing connected nodes on a dark blue background.",
+      "tags": [
+        "network",
+        "systems",
+        "abstract",
+        "ai",
+        "connected",
+        "operating-system"
+      ],
+      "use": [
+        "hero",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 1500,
+      "height": 900
+    },
+    {
+      "file": "dirs/img/step-procedures.jpg",
+      "alt": "A hand with a stylus over a workflow board moving tasks across To Do, In Progress and Testing columns",
+      "description": "A hand with a stylus over a kanban board moving tasks across To Do, In Progress and Testing columns.",
+      "tags": [
+        "workflow",
+        "procedures",
+        "process",
+        "kanban",
+        "operations"
+      ],
+      "use": [
+        "hero",
+        "thumbnail"
+      ],
+      "orientation": "landscape",
+      "width": 2250,
+      "height": 900
+    },
+    {
+      "file": "dirs/img/team-meeting.jpg",
+      "alt": "A team working together at a shared table, one person taking notes by hand",
+      "description": "A team working together at a shared table, one person taking notes by hand.",
+      "tags": [
+        "team",
+        "collaboration",
+        "people",
+        "founders",
+        "meeting"
+      ],
+      "use": [
+        "hero",
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 4460,
+      "height": 2974
+    }
+  ]
+}
