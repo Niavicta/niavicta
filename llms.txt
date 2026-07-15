@@ -19,6 +19,7 @@ Key facts:
 - [What nianav OS replaces](https://niavicta.com/software.html): The workflow tools nianav OS replaces and the specialist systems it connects to.
 - [The agentic era](https://niavicta.com/agentic-era.html): How nianav OS lets startups use AI agents without losing control of evidence.
 - [About Niavicta](https://niavicta.com/about.html): Why Niavicta was started, and what the name means (Nia, purpose; Victa, victory).
+- [Other services](https://niavicta.com/other-services.html): Niavicta's hands-on services beyond the software: ISO 13485 and ISO 9001 internal audits by CQI/IRCA and BSI certified lead auditors, plus operations diagnostics, mapping, implementation, and handover for regulated and unregulated companies.
 - [Become a design partner](https://niavicta.com/build-with-us.html): Where the product is today and how to become a design partner.
 - [Follow the journey](https://niavicta.com/follow-the-journey.html): Founder notes, product lessons, and the public record of building nianav OS in the open.
 
