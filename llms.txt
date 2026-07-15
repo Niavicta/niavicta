@@ -35,6 +35,9 @@ Key facts:
 - [FAQ](https://niavicta.com/faq.html): Common questions about nianav OS, answered plainly.
 - [All questions](https://niavicta.com/all-questions.html): The full, searchable question library.
 
+## Follow the journey
+- [You don't lose your work to AI. You lose it to going narrow.](https://niavicta.com/you-dont-lose-your-work-to-ai.html): Founder insight from Chani Galgut on staying in charge of your work while building with AI by holding a wide, visible operating overview instead of tunnelling into one vertical.
+
 ## Resource pages
 - [What is nianav?](https://niavicta.com/nianav.html): nianav is the product name for nianav OS, the operating system for regulated industries built by Niavicta.
 - [Operating system for regulated industries](https://niavicta.com/operating-system-for-regulated-industries.html): What an operating system for regulated industries means and how nianav OS connects procedures, records, evidence, and AI governance.
