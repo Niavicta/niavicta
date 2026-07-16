@@ -22,6 +22,31 @@ When a page or blog post needs a photo or diagram:
 To add a new image: drop it in `dirs/img/`, run `python build-image-bank.py`,
 then fill in the new entry's `description`, `tags`, `use`, and `alt`.
 
+## Publishing or editing a blog post — check sync before you push
+
+**The vault draft is the source of truth for the words.** Chani edits the
+markdown draft in the brain vault (`content/blog/*.md`); the page here is a
+separate hand-published HTML file. Nothing syncs them automatically, so an edit
+in the vault can silently fail to reach the live page. This has happened.
+
+Before pushing any change to a post, run:
+
+```bash
+python check-post-sync.py
+```
+
+It pairs each vault draft to its page via the draft's `website-path:`
+frontmatter field, compares the `## Draft` body against the page's
+`<div class="prose article">` paragraphs, and exits non-zero on any drift,
+naming the paragraph and showing where the wording diverges.
+
+- **Exit 0** — every published post matches its draft. Safe to push.
+- **Exit 1** — reconcile first. Take the vault draft's wording as correct unless
+  Chani says otherwise, update the HTML, and re-run until it passes.
+
+When you publish a new post, set `website-path:` (and `canonical-url:`) in the
+draft's frontmatter, or the checker cannot see the post and will skip it.
+
 ## Content voice
 
 Brand copy follows the Niavicta voice rules: no em dashes, affirmative framing,
