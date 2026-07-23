@@ -47,6 +47,22 @@ naming the paragraph and showing where the wording diverges.
 When you publish a new post, set `website-path:` (and `canonical-url:`) in the
 draft's frontmatter, or the checker cannot see the post and will skip it.
 
+## Blog post layout — author avatar and image styling
+
+Every blog post's byline carries a circular black-and-white portrait of its
+author, from `dirs/img/team/` (`chani-bw.png` for Chani Galgut,
+`jasmine-bw.png` for Jasmine Beukema). The pattern, inside `.article-meta`:
+
+```html
+<span class="author"><img class="author-avatar" src="dirs/img/team/chani-bw.png" alt="Chani Galgut">Chani Galgut</span>
+```
+
+Post images stay inside the reading column: the hero uses
+`<figure class="article-hero">`, inline images inherit the `.prose.article img`
+rule, and `.prose.article` is centered with `margin:0 auto`. Copy the `<style>`
+block from `you-dont-lose-your-work-to-ai.html` (the reference post) when
+creating a new post. Never full-bleed an image beside the 720px text column.
+
 ## Content voice
 
 Brand copy follows the Niavicta voice rules: no em dashes, affirmative framing,
