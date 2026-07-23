@@ -37,6 +37,7 @@ Key facts:
 
 ## Follow the journey
 - [You don't lose your work to AI. You lose it to going narrow.](https://niavicta.com/you-dont-lose-your-work-to-ai.html): Founder insight from Chani Galgut on staying in charge of your work while building with AI by holding a wide, visible operating overview instead of tunnelling into one vertical.
+- [Building a company while building a company-building tool](https://niavicta.com/building-a-company-that-builds-companies.html): Founder diary from Chani Galgut on Niavicta running itself on the same operating idea nianav OS sells, living each operational lesson first-hand before customers meet it.
 
 ## Resource pages
 - [What is nianav?](https://niavicta.com/nianav.html): nianav is the product name for nianav OS, the operating system for regulated industries built by Niavicta.
