@@ -49,12 +49,16 @@ draft's frontmatter, or the checker cannot see the post and will skip it.
 
 ## Blog post layout — author avatar and image styling
 
-Every blog post's byline carries a circular black-and-white portrait of its
-author, from `dirs/img/team/` (`chani-bw.png` for Chani Galgut,
-`jasmine-bw.png` for Jasmine Beukema). The pattern, inside `.article-meta`:
+Every blog post's hero carries a large circular black-and-white portrait of
+its author in the right-hand grid column, next to the title, from
+`dirs/img/team/` (`chani-bw.png` for Chani Galgut, `jasmine-bw.png` for
+Jasmine Beukema). The pattern, as the second child of the page-hero's
+`.inner.grid`:
 
 ```html
-<span class="author"><img class="author-avatar" src="dirs/img/team/chani-bw.png" alt="Chani Galgut">Chani Galgut</span>
+<div class="hero-portrait" data-reveal>
+  <img src="dirs/img/team/chani-bw.png" alt="Chani Galgut, founder of Niavicta">
+</div>
 ```
 
 Post images stay inside the reading column: the hero uses
