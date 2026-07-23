@@ -92,8 +92,9 @@
 <style>
   .article-meta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:18px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
   .article-meta .tagpill{border:1px solid var(--line-strong);border-radius:4px;padding:5px 10px}
-  .article-meta .author{display:inline-flex;align-items:center;gap:9px}
-  .author-avatar{width:38px;height:38px;border-radius:50%;object-fit:cover;display:block;border:1px solid var(--line-strong);background:#fff}
+  .hero-portrait{display:flex;justify-content:center}
+  .hero-portrait img{width:min(300px,60vw);aspect-ratio:1/1;border-radius:50%;object-fit:cover;object-position:top;border:1px solid var(--line-strong);background:#fff}
+  @media (max-width:980px){.hero-portrait img{width:180px}}
   .prose.article p{font-size:18px;line-height:1.7;margin:0 0 20px}
   .prose.article{max-width:720px;margin:0 auto}
   .prose.article img{width:100%;height:auto;display:block;border-radius:10px;margin:8px 0 28px}
@@ -178,9 +179,12 @@
         <p class="lede">Building with AI keeps you close to your work when you hold a wide, visible view of the whole company.</p>
         <div class="article-meta">
           <span class="tagpill">Founder Insights</span>
-          <span class="author"><img class="author-avatar" src="dirs/img/team/chani-bw.png" alt="Chani Galgut">Chani Galgut</span>
+          <span>Chani Galgut</span>
           <span>15 July 2026</span>
         </div>
+      </div>
+      <div class="hero-portrait" data-reveal>
+        <img src="dirs/img/team/chani-bw.png" alt="Chani Galgut, founder of Niavicta">
       </div>
     </div>
   </section>
