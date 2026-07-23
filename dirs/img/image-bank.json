@@ -1,10 +1,121 @@
 {
   "_meta": {
     "purpose": "Searchable catalog of reusable website images. AI/authors read this to pick images for blog posts and page updates. See dirs/img/README.md.",
-    "generated": "2026-07-15T09:58:27Z",
-    "count": 18
+    "generated": "2026-07-23T11:49:49Z",
+    "count": 44
   },
   "images": [
+    {
+      "file": "dirs/img/12019-boats-123778_1920.jpg",
+      "alt": "Tour boats moored on the Thames in front of a cable-stayed footbridge and the London skyline under dramatic storm clouds.",
+      "description": "Moody HDR river scene: boats and a slender cable-stayed bridge over the Thames with heavy dark clouds above the city. Dramatic blue-grey palette with a dark upper region, good for text overlay on infrastructure, resilience, or operations-under-pressure pieces.",
+      "tags": [
+        "river",
+        "bridge",
+        "boats",
+        "city",
+        "london",
+        "infrastructure",
+        "storm",
+        "dramatic",
+        "blue",
+        "engineering"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1130
+    },
+    {
+      "file": "dirs/img/12019-mountain-biking-95032_1920.jpg",
+      "alt": "A mountain biker in yellow mid-air over a rocky desert drop against an overcast sky.",
+      "description": "High-energy action shot of a downhill rider launching off a rocky ledge, muted grey sky with earthy desert tones. Big empty sky region suits headline overlay; fits risk, courage, skill, and momentum themes.",
+      "tags": [
+        "mountain-biking",
+        "action",
+        "risk",
+        "courage",
+        "desert",
+        "jump",
+        "momentum",
+        "adventure",
+        "sport"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "file": "dirs/img/30829289-town-7590138_1920.jpg",
+      "alt": "A half-timbered European old town glowing with warm lights in a valley at dusk.",
+      "description": "Cosy aerial view of a historic European town (Monschau-style) at blue hour, warm golden windows against slate rooftops and dark wooded hills. Warm, inviting mood; good for Europe, heritage, community, and craftsmanship stories.",
+      "tags": [
+        "europe",
+        "town",
+        "night",
+        "warm",
+        "heritage",
+        "community",
+        "dusk",
+        "lights",
+        "cozy"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "file": "dirs/img/8268513-european-union-4886120_1920.jpg",
+      "alt": "The EU flag flying above a classical stone parliament building against a pale grey sky.",
+      "description": "The European Union flag on the Reichstag corner, sandstone columns and statues below, large soft grey sky. Institutional and calm; the empty sky is ideal for text overlay on EU regulation, MDR, or policy content.",
+      "tags": [
+        "europe",
+        "eu",
+        "flag",
+        "regulation",
+        "government",
+        "institution",
+        "policy",
+        "grey",
+        "landmark"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "file": "dirs/img/a_different_perspective-stone-tower-3280616_1920.jpg",
+      "alt": "A cairn of flat pebbles stacked in balance on a pebble beach against a pale misty background.",
+      "description": "Zen stone tower carefully balanced on a shingle beach, soft grey-blue light with warm sand accents. Calm, minimal, lots of negative space at left for overlay; suits balance, stability, foundations, and step-by-step build themes.",
+      "tags": [
+        "balance",
+        "stones",
+        "calm",
+        "stability",
+        "foundations",
+        "zen",
+        "minimal",
+        "grey",
+        "structure"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
     {
       "file": "dirs/img/agentic-architecture.jpg",
       "alt": "Looking up through a geometric glass-and-steel atrium roof",
@@ -24,6 +135,28 @@
       "orientation": "landscape",
       "width": 4460,
       "height": 2974
+    },
+    {
+      "file": "dirs/img/anncapictures-tartan-track-2678544_1920.jpg",
+      "alt": "Numbered lanes 1 and 2 of a red running track curving away between green grass verges.",
+      "description": "Bright red tartan athletics track with crisp white lane markings and fresh green grass, daylight. Energetic and orderly; fits starting lines, lanes, discipline, process, and Project Zero journey framing.",
+      "tags": [
+        "track",
+        "start",
+        "lanes",
+        "discipline",
+        "process",
+        "journey",
+        "red",
+        "sport",
+        "precision"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
     },
     {
       "file": "dirs/img/audit-electronics.jpg",
@@ -84,6 +217,28 @@
       "height": 2974
     },
     {
+      "file": "dirs/img/bru-no-lightbulb-3489395_1920.jpg",
+      "alt": "A row of glowing filament light bulbs receding into darkness, the nearest in sharp focus.",
+      "description": "Macro of warm Edison filament bulbs in a line on a black background, golden light against deep shadow. Warm and focused with large dark regions perfect for text overlay; suits ideas, innovation, and clarity themes.",
+      "tags": [
+        "lightbulb",
+        "ideas",
+        "innovation",
+        "warm",
+        "dark",
+        "filament",
+        "light",
+        "insight",
+        "abstract"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
       "file": "dirs/img/coding.jpg",
       "alt": "A developer writing code on a laptop",
       "description": "A developer writing code on a laptop.",
@@ -101,6 +256,28 @@
       "orientation": "landscape",
       "width": 4460,
       "height": 2973
+    },
+    {
+      "file": "dirs/img/colin00b-light-2156209_1920.jpg",
+      "alt": "One lit bulb glowing among many unlit light bulbs scattered on a sepia surface.",
+      "description": "Conceptual render of a single illuminated bulb standing out among dark unlit ones, sepia monochrome with strong shadows. Strong one-signal-in-the-noise metaphor for differentiation, insight, and the idea that works.",
+      "tags": [
+        "lightbulb",
+        "ideas",
+        "standout",
+        "differentiation",
+        "sepia",
+        "concept",
+        "innovation",
+        "dark",
+        "abstract"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1080
     },
     {
       "file": "dirs/img/connection-matrix.png",
@@ -121,6 +298,114 @@
       "orientation": "landscape",
       "width": 1536,
       "height": 1024
+    },
+    {
+      "file": "dirs/img/hermann-mountaineer-396533_1920.jpg",
+      "alt": "Silhouetted climbers gathered at a summit cross on a rocky ridge at sunrise.",
+      "description": "Mountaineers in silhouette on the Zugspitze summit around the golden cross, warm orange sunrise fading to cool grey sky. Aspirational team-achievement mood; wide clean sky is good for text overlay on milestone and summit content.",
+      "tags": [
+        "summit",
+        "mountaineering",
+        "team",
+        "achievement",
+        "silhouette",
+        "sunrise",
+        "journey",
+        "milestone",
+        "aspiration"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1152
+    },
+    {
+      "file": "dirs/img/hugohilflos-zeppelin-594437_1920.jpg",
+      "alt": "A small airship seen from directly below against a blue sky with light clouds.",
+      "description": "Portrait shot of a zeppelin overhead in a soft blue-and-white sky, calm and slightly whimsical. Plenty of sky for overlay; suits perspective shifts, slow-and-steady travel, and lofty-ambition themes.",
+      "tags": [
+        "airship",
+        "zeppelin",
+        "sky",
+        "blue",
+        "perspective",
+        "flight",
+        "calm",
+        "journey"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "file": "dirs/img/jingoba-racing-217425_1920.jpg",
+      "alt": "Six superbike racers leaning through a tight corner on a race circuit.",
+      "description": "Motorcycle racers cornering in close formation on grey asphalt with red-white-blue kerbs and green infield. Fast, competitive, precise; fits speed, competition, cornering-under-control, and peloton themes.",
+      "tags": [
+        "racing",
+        "motorbikes",
+        "speed",
+        "competition",
+        "precision",
+        "cornering",
+        "sport",
+        "track"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "file": "dirs/img/jplenio-skyscraper-3094696_1920.jpg",
+      "alt": "Two glass skyscrapers seen from below reflecting clouds against a deep blue sky.",
+      "description": "Dramatic upward view of twin mirrored towers with cloud reflections, saturated blue sky. Ambitious, corporate-modern feel; suits scale, growth, enterprise, and architecture-of-systems framing.",
+      "tags": [
+        "skyscraper",
+        "architecture",
+        "glass",
+        "blue",
+        "scale",
+        "growth",
+        "corporate",
+        "ambition",
+        "city"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1093
+    },
+    {
+      "file": "dirs/img/katerinavulcova-seed-3944361_1920.jpg",
+      "alt": "A single seedling with its seed husk still attached emerging from dark soil.",
+      "description": "Macro of a pale green sprout pushing out of rich brown earth, soft bokeh and warm side light against a dark background. Gentle beginnings-and-growth mood; dark regions are good for text overlay on start-small, grow-strong stories.",
+      "tags": [
+        "seedling",
+        "growth",
+        "beginnings",
+        "soil",
+        "green",
+        "macro",
+        "potential",
+        "nature",
+        "dark"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
     },
     {
       "file": "dirs/img/lab-beaker.jpg",
@@ -180,6 +465,71 @@
       "height": 2974
     },
     {
+      "file": "dirs/img/lubovlisitsa-buildings-5582974_1920.jpg",
+      "alt": "Amsterdam canal houses lit warmly at dusk, reflected in the still canal with a tour boat passing.",
+      "description": "Classic Dutch gabled facades on the Damrak at blue hour, golden windows mirrored in calm water. Warm, distinctly Netherlands mood; suits Dutch/European identity, home-market, and calm-evening framing. Portrait orientation.",
+      "tags": [
+        "amsterdam",
+        "netherlands",
+        "canal",
+        "dusk",
+        "reflection",
+        "europe",
+        "warm",
+        "architecture",
+        "heritage"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "portrait",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "file": "dirs/img/marcelkessler-bridge-4607792.jpg",
+      "alt": "View from the water beneath two parallel road bridges with a cable-stayed pylon between them, autumn trees on the banks.",
+      "description": "Underside of twin motorway bridges over a calm green river, concrete piers and steel girders in warm autumn light. Structural-engineering feel; fits bridging, connection, hidden infrastructure, and load-carrying themes.",
+      "tags": [
+        "bridge",
+        "infrastructure",
+        "engineering",
+        "river",
+        "structure",
+        "autumn",
+        "connection",
+        "concrete"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 5100,
+      "height": 3400
+    },
+    {
+      "file": "dirs/img/marcinjozwiak-production-4408573.jpg",
+      "alt": "Aerial top-down view of a logistics warehouse with trucks and trailers docked at angled loading bays.",
+      "description": "Drone view of a distribution centre: white trailers in neat diagonal rows, crisp lane markings, long evening shadows. Orderly, systematic mood; strong fit for logistics, supply chain, operations, and everything-in-its-place themes.",
+      "tags": [
+        "logistics",
+        "warehouse",
+        "aerial",
+        "trucks",
+        "supply-chain",
+        "operations",
+        "order",
+        "manufacturing",
+        "distribution"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 5464,
+      "height": 3640
+    },
+    {
       "file": "dirs/img/motherboard.jpg",
       "alt": "Macro close-up of a circuit board and processor",
       "description": "Macro close-up of a circuit board and processor.",
@@ -197,6 +547,117 @@
       "orientation": "landscape",
       "width": 4460,
       "height": 2973
+    },
+    {
+      "file": "dirs/img/noname_13-lake-2063957_1920.jpg",
+      "alt": "Close-up of gentle water ripples catching blue and golden sunset reflections.",
+      "description": "Abstract water surface at dusk, deep blue ripples threaded with copper-gold light. Calm, meditative texture that works as a wide banner background; good for text overlay and flow/calm-operations metaphors.",
+      "tags": [
+        "water",
+        "ripples",
+        "abstract",
+        "calm",
+        "blue",
+        "gold",
+        "texture",
+        "flow",
+        "banner"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 783
+    },
+    {
+      "file": "dirs/img/pexels-canyon-1846707_1920.jpg",
+      "alt": "Smooth curved sandstone walls of a slot canyon glowing orange and purple from light above.",
+      "description": "Antelope-style slot canyon with flowing rock waves, warm orange light falling into cool violet shadow. Sculptural and atmospheric; large calm dark regions suit text overlay for depth, layers, and shaped-by-time themes.",
+      "tags": [
+        "canyon",
+        "sandstone",
+        "abstract",
+        "orange",
+        "purple",
+        "light",
+        "texture",
+        "nature",
+        "depth"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "file": "dirs/img/pexels-controls-1853330_1920.jpg",
+      "alt": "A vintage power station control room with long consoles of dials and switches under a grid of cool ceiling lights.",
+      "description": "Symmetrical retro control room in cold blue-grey light, wall-to-wall instrument panels and a yellow accent stripe. Mission-control mood; strong fit for operations, monitoring, control, and one-place-to-run-everything framing.",
+      "tags": [
+        "control-room",
+        "operations",
+        "controls",
+        "monitoring",
+        "industrial",
+        "retro",
+        "blue",
+        "symmetry",
+        "systems"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "file": "dirs/img/pineapple22productions-machined-parts-4673363.jpg",
+      "alt": "Rows of identical polished CNC-machined metal parts with hexagonal heads and flanges on a dark surface.",
+      "description": "Precision-machined steel components arranged in gleaming ranks, warm highlights on cold metal against a dark background. Repeatability-and-precision mood; ideal for manufacturing quality, consistency, and batch-production themes.",
+      "tags": [
+        "machining",
+        "precision",
+        "manufacturing",
+        "metal",
+        "parts",
+        "quality",
+        "repeatability",
+        "engineering",
+        "industry"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 3669,
+      "height": 2446
+    },
+    {
+      "file": "dirs/img/placidplace-frequency-wave-7776034_1920.jpg",
+      "alt": "Abstract dark blue digital background with connected node networks and flowing dotted wave lines.",
+      "description": "Deep navy tech abstract: fine plexus lines, glowing nodes, and sweeping particle waves. Calm dark regions across the whole frame make it an excellent text-overlay hero for data, networks, AI, and connected-systems topics.",
+      "tags": [
+        "network",
+        "abstract",
+        "data",
+        "nodes",
+        "wave",
+        "dark",
+        "blue",
+        "technology",
+        "ai",
+        "connected"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1078
     },
     {
       "file": "dirs/img/process-flow.jpg",
@@ -237,6 +698,27 @@
       "orientation": "portrait",
       "width": 1024,
       "height": 1536
+    },
+    {
+      "file": "dirs/img/ralphs_fotos-milling-cutters-3738903_1920.jpg",
+      "alt": "A milling machine cutter head over a workpiece clamped in a blue vice, metal shavings scattered around.",
+      "description": "Close-up of an indexable face mill above a steel block in a worn blue machine vice, violet swarf catching the light. Hands-on machine-shop feel; suits precision machining, tooling, and real-manufacturing-floor stories.",
+      "tags": [
+        "milling",
+        "machining",
+        "manufacturing",
+        "tooling",
+        "precision",
+        "metal",
+        "workshop",
+        "industry"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1262
     },
     {
       "file": "dirs/img/step-answers.jpg",
@@ -337,6 +819,49 @@
       "height": 900
     },
     {
+      "file": "dirs/img/suju-foto-lighthouse-4846854_1920.jpg",
+      "alt": "The lit lantern room of a lighthouse cutting a beam through dark storm clouds at dusk.",
+      "description": "Lighthouse top at nightfall, warm beacon glowing against heavy blue-black clouds. Guidance-through-uncertainty mood; the dark sky is ideal for text overlay on navigation, guidance, and steady-signal themes.",
+      "tags": [
+        "lighthouse",
+        "beacon",
+        "guidance",
+        "night",
+        "storm",
+        "navigation",
+        "light",
+        "dark",
+        "trust"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "file": "dirs/img/tama66-pforphoto-6811307.jpg",
+      "alt": "Inside an abandoned industrial hall with large insulated pipes, valves, and graffiti on the walls.",
+      "description": "Atmospheric derelict power plant interior: huge silver pipework, rusted valves, daylight falling through a skylight onto graffiti-covered machinery. Gritty legacy-infrastructure mood; suits old-systems, modernisation, and technical-debt framing.",
+      "tags": [
+        "industrial",
+        "pipes",
+        "legacy",
+        "abandoned",
+        "machinery",
+        "gritty",
+        "infrastructure",
+        "modernisation"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 5353,
+      "height": 3562
+    },
+    {
       "file": "dirs/img/team-meeting.jpg",
       "alt": "A team working together at a shared table, one person taking notes by hand",
       "description": "A team working together at a shared table, one person taking notes by hand.",
@@ -354,6 +879,49 @@
       "orientation": "landscape",
       "width": 4460,
       "height": 2974
+    },
+    {
+      "file": "dirs/img/timhill-ferrybridge-5428427_1920.jpg",
+      "alt": "Long-exposure light trails on a motorway curving past a power station with cooling towers at night.",
+      "description": "Night scene of red and white traffic light trails sweeping toward the Ferrybridge cooling towers under a deep blue sky. Energetic industrial-scale mood; suits energy, throughput, flow, and always-running-operations themes.",
+      "tags": [
+        "motorway",
+        "light-trails",
+        "power-station",
+        "night",
+        "energy",
+        "flow",
+        "industry",
+        "movement",
+        "scale"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "file": "dirs/img/yamu_jay-conveyor-9062779_1920.jpg",
+      "alt": "Cardboard parcels moving along curved roller conveyor belts in a warehouse.",
+      "description": "Labelled boxes travelling on winding steel roller conveyors in soft warm light, teal-and-tan palette. Smooth-flow logistics mood; fits fulfilment, routing, throughput, and work-moving-through-the-system metaphors.",
+      "tags": [
+        "conveyor",
+        "logistics",
+        "parcels",
+        "warehouse",
+        "flow",
+        "fulfilment",
+        "automation",
+        "operations"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1920,
+      "height": 1280
     }
   ]
 }
