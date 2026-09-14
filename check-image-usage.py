@@ -21,7 +21,8 @@ What it reports:
   2. Overused    - any image on more than --max pages, with the pages named.
   3. Unused      - bank images nobody has reached for yet. Shop here first.
   4. Off-bank    - images referenced by the site but missing from image-bank.json
-                   (team portraits live outside the bank by design and are ignored).
+                   (team portraits and resource previews live outside the bank by design
+                   and are ignored).
 
 Exit codes:
   0 = report printed (default, even with overuse)
@@ -40,7 +41,8 @@ BANK_FILE = REPO / "dirs" / "img" / "image-bank.json"
 
 # Referenced by design but deliberately outside the bank, and exempt from the
 # overuse check: every post carries its author's portrait, that is the pattern.
-OFF_BANK_OK = ("dirs/img/team/",)
+# Resource previews each belong to one resource landing page and its hub card.
+OFF_BANK_OK = ("dirs/img/team/", "dirs/img/resources/")
 
 DEFAULT_MAX_PAGES = 2
 

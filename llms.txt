@@ -41,6 +41,10 @@ Key facts:
 - [The company that starts your next company](https://niavicta.com/the-company-that-starts-your-next-company.html): Founder diary from Chani Galgut on the operational scaffolding nobody hands a founder on day one, and what changes when a company starts with that structure already standing.
 - [It's a gift that keeps on giving](https://niavicta.com/documentation-compounds-like-interest.html): Founder insight from Chani Galgut on why active medical devices that connect to hospital systems pull ISO 27001 together with medical device regulation and data anonymization, and why the systems you write down compound in value over time instead of costing you.
 
+## Resources and downloads
+- [Resources](https://niavicta.com/resources.html): Free templates, white papers and learning for medtech and regulated teams, filterable by type and topic.
+- [Medtech QMS and PLM vendor evaluation template](https://niavicta.com/medtech-qms-plm-vendor-evaluation.html): Free Excel workbook to compare up to 10 QMS and PLM providers on 38 criteria, mandatory gates, verified evidence and full cost, with tips on change control, validation and supplier qualification when switching systems. Direct download: https://niavicta.com/files/medtech-qms-plm-vendor-evaluation-niavicta.xlsx
+
 ## Resource pages
 - [What is nianav?](https://niavicta.com/nianav.html): nianav is the product name for nianav OS, the operating system for regulated industries built by Niavicta.
 - [Operating system for regulated industries](https://niavicta.com/operating-system-for-regulated-industries.html): What an operating system for regulated industries means and how nianav OS connects procedures, records, evidence, and AI governance.
