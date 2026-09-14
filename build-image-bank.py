@@ -31,7 +31,8 @@ EXTS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif", ".svg"}
 SKIP_NAMES = {"image-bank.json"}
 # Subfolders of dirs/img that are deliberately NOT part of the searchable bank.
 # Founder portraits are placed by hand on specific pages, never auto-suggested.
-SKIP_DIRS = {"team"}
+# Resource previews (dirs/img/resources/) each belong to one resource page.
+SKIP_DIRS = {"team", "resources"}
 
 
 def excluded(path: Path) -> bool:
