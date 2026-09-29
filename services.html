@@ -814,6 +814,7 @@
     var h = location.hash.replace('#','');
     var id = MAP[h] || (document.getElementById(h) && document.getElementById(h).classList.contains('path') ? h : null);
     show(id || 'path-build');
+    if(id && !MAP[h]){ setTimeout(function(){ document.getElementById('services').scrollIntoView({block:'start'}); }, 30); }
     if(id && MAP[h] && document.getElementById(h) && h !== 'services'){ setTimeout(function(){ document.getElementById(h).scrollIntoView({block:'center'}); }, 30); }
   }
   window.addEventListener('hashchange', fromHash);
