@@ -9,6 +9,10 @@
       { t:'A gap assessment before our CE mark or certification audit.', w:{}, need:'MDR / ISO 13485 gap assessment' },
       { t:'Ongoing QA/RA leadership, part-time.', w:{}, need:'Fractional QA/RA lead' },
       { t:'EUDAMED registration or regulatory work: registrations, technical documentation, regulatory strategy.', w:{j:5}, need:'EUDAMED and regulatory' },
+      { t:'A supplier or contract-manufacturer audit.', w:{c:2}, need:'Supplier audit' },
+      { t:'Operations: mapping how we work, or automating it.', w:{c:8}, need:'Operations assessment or automation' },
+      { t:'Due diligence or a portfolio assessment, as an investor or incubator.', w:{j:5}, need:'Due diligence or portfolio readiness' },
+      { t:'Training for our team.', w:{}, need:'Training' },
       { t:'Not sure yet. We want to talk it through.', w:{}, need:'Not sure yet' }
     ]},
     { kicker:'Stage', q:'Where are you right now?', options:[
