@@ -25,6 +25,10 @@ Key facts:
 
 ## Core pages
 - [Services and prices](https://niavicta.com/services.html): Medtech QA/RA services with published prices: ISO 13485 internal audits, MDR and ISO 13485 gap assessments, and a fractional QA/RA lead, delivered by two certified ISO 13485 lead auditors.
+- [Supplier audits](https://niavicta.com/supplier-audits.html): ISO 13485 audits of suppliers and contract manufacturers, single audits or a full programme, EUR 1,200 per auditor day.
+- [Operations and systems](https://niavicta.com/operations-and-systems.html): Operations assessment, process mapping and workflow automation for growing companies, fixed price per phase.
+- [Investors and incubators](https://niavicta.com/investors-and-incubators.html): Regulatory and quality due diligence on medtech companies, and readiness assessments for incubator and fund portfolios.
+- [Training](https://niavicta.com/training.html): In-company ISO 13485 or ISO 9001 internal auditor course and a half-day quality system workshop, in English or Dutch.
 - [Book a 20-minute call](https://niavicta.com/book.html): Free call with a lead auditor to scope an audit, gap assessment or fractional QA/RA support.
 - [Sources and standards](https://niavicta.com/sources.html): Official source references for the standards, regulations, and operating-model claims referenced across Niavicta and nianav OS pages.
 - [nianav OS](https://niavicta.com/nianav-os.html): What nianav OS is, the problem it solves, how it works, and who it is for.
