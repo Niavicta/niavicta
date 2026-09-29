@@ -170,7 +170,7 @@ section.tight{padding:clamp(32px,4vw,56px) 0}
 
 /* ── Footer ──────────────────────────────────────────── */
 footer.site{background:var(--bg-2);border-top:1px solid var(--line);font-size:13.5px}
-footer.site .cols{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px;padding:52px 0 36px}
+footer.site .cols{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:32px;padding:52px 0 36px}
 @media (max-width:820px){footer.site .cols{grid-template-columns:1fr 1fr}}
 footer.site .col h4{font-size:13px;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);margin-bottom:14px;font-weight:700}
 footer.site .col a{display:block;color:var(--ink-soft);text-decoration:none;padding:5px 0;font-weight:500}
