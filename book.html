@@ -275,26 +275,44 @@
 
   function esc(s){ var d=document.createElement('div'); d.textContent=s||''; return d.innerHTML; }
 
-  function showBooking(key, summary){
+  function mailHref(p, summary){
+    var to = (p && p.email) || 'hello@niavicta.com';
+    var lines = ['Company:', 'Device class:'];
+    if(summary){ lines.push('What we need: ' + summary.need, '', 'Quiz answers:'); lines = lines.concat(summary.answers); lines.push(''); }
+    else { lines.push('What we need:'); }
+    lines.push('Two times that suit us:');
+    var subject = encodeURIComponent('20-minute QA/RA call' + (p ? ' with ' + p.first : ''));
+    return 'mailto:' + to + '?subject=' + subject + '&amp;body=' + lines.map(encodeURIComponent).join('%0A');
+  }
+
+  function card(key, summary, compact){
     var people = window.NiavictaQuiz ? window.NiavictaQuiz.PEOPLE : {};
-    var p = key ? people[key] : null;
-    var url = ((p && cfg.person && cfg.person[key]) || cfg.shared || '').trim();
-    label.textContent = p ? 'Step 2 · Book your call with ' + p.first : 'Step 2 · Pick a time';
+    var p = people[key];
+    var url = ((cfg.person && cfg.person[key]) || '').trim();
+    var img = '<img src="' + p.img + '" alt="' + esc(p.name) + '" style="width:96px;height:120px;object-fit:contain;object-position:bottom">';
+    var body;
     if(url){
       var safe = url.replace(/"/g,'&quot;');
-      slot.innerHTML = '<iframe class="book-frame" title="Book a 20-minute call with Niavicta" src="'+safe+'" loading="lazy"></iframe>'
-        + '<p class="vatnote">Booking page not showing? <a href="'+safe+'" target="_blank" rel="noopener">Open it in a new tab</a>.</p>';
+      body = '<h3 style="margin:0 0 8px">' + (compact ? esc(p.name) : 'Great. Pick a time in ' + esc(p.first) + '’s calendar') + '</h3>'
+        + '<p style="margin:0 0 16px">Twenty minutes on Teams. Your invite arrives straight away.' + (compact ? '' : ' The calendar opens in a new tab.') + '</p>'
+        + '<p style="margin:0"><a class="btn p" href="' + safe + '" target="_blank" rel="noopener">Choose a time with ' + esc(p.first) + ' <span class="arrow"></span></a></p>'
+        + (summary ? '<p class="vatnote" style="margin-top:12px">Want ' + esc(p.first) + ' to see your quiz answers before the call? <a href="' + mailHref(p, summary) + '">Send them by email</a>.</p>' : '');
     } else {
-      var to = (p && p.email) || 'hello@niavicta.com';
-      var lines = ['Company:', 'Device class:'];
-      if(summary){ lines.push('What we need: ' + summary.need, '', 'Quiz answers:'); lines = lines.concat(summary.answers); lines.push(''); }
-      else { lines.push('What we need:'); }
-      lines.push('Two times that suit us:');
-      var body = lines.map(encodeURIComponent).join('%0A');
-      var subject = encodeURIComponent('20-minute QA/RA call' + (p ? ' with ' + p.first : ''));
-      slot.innerHTML = '<div class="book-fallback"><h3 style="margin-top:0">' + (p ? 'Great. Send ' + esc(p.first) + ' two times that suit you' : 'Send us two times that suit you') + '</h3>'
-        + '<p>Tell us your company, your device class and two times that work for you. We reply within one working day with a Teams invite.' + (summary ? ' Your quiz answers are already in the email.' : '') + '</p>'
-        + '<p><a class="btn p" href="mailto:' + to + '?subject=' + subject + '&amp;body=' + body + '">Email ' + (p ? esc(p.first) : 'us') + ' <span class="arrow"></span></a></p></div>';
+      body = '<h3 style="margin:0 0 8px">' + (compact ? esc(p.name) : 'Great. Send ' + esc(p.first) + ' two times that suit you') + '</h3>'
+        + '<p style="margin:0 0 16px">Tell ' + esc(p.first) + ' your company, your device class and two times that work for you. You get a Teams invite within one working day.' + (summary ? ' Your quiz answers are already in the email.' : '') + '</p>'
+        + '<p style="margin:0"><a class="btn p" href="' + mailHref(p, summary) + '">Email ' + esc(p.first) + ' <span class="arrow"></span></a></p>';
+    }
+    return '<div class="book-fallback" style="display:grid;grid-template-columns:96px 1fr;gap:22px;align-items:start">' + img + '<div>' + body + '</div></div>';
+  }
+
+  function showBooking(key, summary){
+    var people = window.NiavictaQuiz ? window.NiavictaQuiz.PEOPLE : {};
+    if(key && people[key]){
+      label.textContent = 'Step 2 · Book your call with ' + people[key].first;
+      slot.innerHTML = card(key, summary, false);
+    } else {
+      label.textContent = 'Step 2 · Pick who you would like to speak to';
+      slot.innerHTML = '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px">' + card('chani', null, true) + card('jasmine', null, true) + '</div>';
     }
   }
 
@@ -313,22 +331,6 @@
   if(m){ setTimeout(function(){ document.getElementById('book').scrollIntoView({ block:'start' }); }, 50); }
 })();
 </script>
-<script>
-(function(){
-  var slot=document.getElementById('booking-slot');
-  var url=(window.NIAVICTA_BOOKING_URL||'').trim();
-  if(url){
-    var safe=url.replace(/"/g,'&quot;');
-    slot.innerHTML='<iframe class="book-frame" title="Book a 20-minute call with Niavicta" src="'+safe+'" loading="lazy"></iframe>'
-      +'<p class="vatnote">Booking page not showing? <a href="'+safe+'" target="_blank" rel="noopener">Open it in a new tab</a>.</p>';
-  } else {
-    slot.innerHTML='<div class="book-fallback"><h3 style="margin-top:0">Send us two times that suit you</h3>'
-      +'<p>Email us your company, your device class, what you need and two times that work for you. We reply within one working day with a calendar invite.</p>'
-      +'<p><a class="btn p" href="mailto:hello@niavicta.com?subject=20-minute%20QA%2FRA%20call&amp;body=Company%3A%0ADevice%20class%3A%0AWhat%20we%20need%3A%0ATwo%20times%20that%20suit%20us%3A%0A">Email hello@niavicta.com <span class="arrow"></span></a></p></div>';
-  }
-})();
-</script>
-
 <footer class="site">
   <div class="wrap">
     <div class="cols">

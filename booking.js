@@ -1,8 +1,7 @@
-/* Where every "Book a call" goes. Paste Microsoft Bookings links between the quotes.
-   PERSON: each founder's own "Bookings with me" page, used after the quiz matches a visitor to them.
-   SHARED: the Niavicta booking page, used when someone skips the quiz.
-   Any link left empty falls back to the next one, and finally to email. */
+/* Where every "Book a call" goes. Microsoft blocks its booking pages from being embedded,
+   so book.html shows a button that opens the right calendar in a new tab.
+   Paste each founder's "Bookings with me" link between the quotes.
+   An empty link falls back to an email to that person. */
 window.NIAVICTA_BOOKING = {
-  shared: "",
-  person: { chani: "", jasmine: "" }
+  person: { chani: "https://bookings.cloud.microsoft/bookwithme/user/3d15e819173f4ebfa67db67c45cfbcca@niavicta.com/meetingtype/SVRwCe7HMUGxuT6WGxi68g2?anonymous&ismsaljsauthenabled&ep=mlink", jasmine: "" }
 };
