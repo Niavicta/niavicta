@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://niavicta.com/services.html</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://niavicta.com/book.html</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq></url>
   <url><loc>https://niavicta.com/about.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
-  <url><loc>https://niavicta.com/other-services.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq></url>
-  <url><loc>https://niavicta.com/iso-13485-internal-auditor-medtech-netherlands.html</loc><lastmod>2026-07-15</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://niavicta.com/other-services.html</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://niavicta.com/iso-13485-internal-auditor-medtech-netherlands.html</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://niavicta.com/agentic-era.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://niavicta.com/all-questions.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://niavicta.com/build-with-us.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
@@ -17,7 +19,7 @@
   <url><loc>https://niavicta.com/how-it-works-operating-system.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://niavicta.com/how-it-works-procedures.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://niavicta.com/how-it-works-standards.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
-  <url><loc>https://niavicta.com/</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
+  <url><loc>https://niavicta.com/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://niavicta.com/nianav-os.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://niavicta.com/privacy.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>
   <url><loc>https://niavicta.com/software.html</loc><lastmod>2026-06-24</lastmod><changefreq>weekly</changefreq></url>

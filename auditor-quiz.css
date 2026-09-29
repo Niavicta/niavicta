@@ -1,0 +1,38 @@
+/* Auditor matcher, shared by book.html and other-services.html */
+  /* Auditor matcher: a short quiz that recommends one founder, certs behind a dropdown. */
+.matcher{max-width:720px;margin:0 auto;background:#ffffff;border:1px solid var(--line-strong);border-radius:16px;padding:40px 40px 34px;box-shadow:0 30px 70px -38px rgba(14,34,64,0.4)}
+@media (max-width:560px){.matcher{padding:26px 22px}}
+.mq-progress{height:4px;background:var(--line-strong);border-radius:2px;overflow:hidden;margin-bottom:30px}
+.mq-progress>i{display:block;height:100%;width:0;background:#4FB3A2;transition:width .35s ease}
+.mq-kicker{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.mq-q{font-size:23px;font-weight:600;letter-spacing:-0.02em;color:var(--ink);margin:0 0 24px;line-height:1.25}
+.mq-options{display:grid;gap:12px}
+.mq-opt{position:relative;text-align:left;border:1.5px solid #bcc9d6;border-radius:12px;background:#fff;padding:18px 46px 18px 20px;font-size:15px;line-height:1.45;font-weight:500;color:var(--ink);cursor:pointer;transition:all .15s ease;font-family:inherit;box-shadow:0 1px 2px rgba(14,34,64,0.05)}
+.mq-opt:hover{border-color:#4FB3A2;background:#f2faf8;box-shadow:0 10px 24px -14px rgba(14,34,64,0.45)}
+.mq-opt::after{content:"\203A";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:#4FB3A2;font-size:22px;line-height:1}
+.mq-nav{display:flex;align-items:center;gap:16px;margin-top:24px}
+.mq-back{background:none;border:none;color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;padding:0}
+.mq-back[hidden]{display:none}
+.mq-intro{text-align:center;padding:8px 0}
+.mq-intro h3{font-size:24px;letter-spacing:-0.02em;margin:0 0 12px}
+.mq-intro p{font-size:15px;line-height:1.6;color:var(--muted);max-width:520px;margin:0 auto 26px}
+
+/* Result panel */
+.mr{display:grid;grid-template-columns:180px 1fr;gap:30px;align-items:start}
+@media (max-width:620px){.mr{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.mr>img{width:180px;height:250px;object-fit:contain;object-position:bottom center;background:transparent}
+.mr-kicker{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.mr h3{margin:0 0 5px;font-size:24px;letter-spacing:-0.02em}
+.mr .role{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:#2E9E8B;margin:0 0 15px}
+.mr>div>p{font-size:14px;line-height:1.62;color:var(--ink-soft);margin:0 0 18px}
+.cert-dd{border-top:1px solid var(--line-strong);padding-top:14px}
+.cert-dd summary{cursor:pointer;list-style:none;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#2E9E8B;display:flex;align-items:center}
+.cert-dd summary::-webkit-details-marker{display:none}
+.cert-dd summary::after{content:"+";margin-left:auto;font-size:16px;color:#4FB3A2}
+.cert-dd[open] summary::after{content:"\2013"}
+.cert-dd ul{margin:15px 0 0;padding:0;list-style:none;display:grid;gap:8px;text-align:left}
+.cert-dd li{font-size:12.5px;line-height:1.4;color:var(--ink);padding-left:16px;position:relative}
+.cert-dd li::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:50%;background:#4FB3A2}
+.mr-actions{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-top:24px}
+.mr-link{background:none;border:none;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);cursor:pointer;padding:0;text-decoration:none}
+.mr-link:hover{color:var(--ink)}

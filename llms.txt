@@ -1,8 +1,14 @@
-# Niavicta: nianav OS
+# Niavicta: medtech QA/RA services and nianav OS
 
-> Niavicta builds nianav OS, the operating system for regulated startups. It puts procedures, records, evidence, and AI governance in one connected system, so audit-ready evidence is produced as work happens instead of reconstructed before an audit.
+> Niavicta runs ISO 13485 internal audits, MDR and ISO 13485 gap assessments, and fractional QA/RA leadership for medical device companies. The work is done by the two founders, both certified ISO 13485 lead auditors. Niavicta is also building nianav OS, an operating system for regulated companies, in development with design partners.
 
-nianav OS is built for medical device, health AI, biotech, and fintech companies in the window before scale: the moment after the product works and before serious growth, when the operating foundation has to be right. Niavicta was founded in 2026 by two compliance professionals and is based in Utrecht, the Netherlands. The product is being built in the open with a small number of design partners. Contact: hello@niavicta.com.
+Niavicta was founded in 2026 by two QA/RA professionals and is based in Utrecht, the Netherlands. It serves medical device, health AI and IVD companies across the Netherlands and the EU. A first 20-minute call is free: https://niavicta.com/book.html. Contact: hello@niavicta.com.
+
+Services and prices (excluding VAT):
+- ISO 13485 internal audit: EUR 1,200 per auditor day, most audits 2 to 3 days, report included.
+- MDR and ISO 13485 gap assessment: EUR 4,950 fixed, one week, with a gap register and a 90-day roadmap.
+- Fractional QA/RA lead: from EUR 3,000 per month, from two days a month.
+- Free 20-minute QA/RA call to scope any of the above.
 
 Key facts:
 - Product names: nianav and nianav OS refer to the same product. The canonical product page is https://niavicta.com/nianav-os.html.
@@ -10,16 +16,18 @@ Key facts:
 - Who it is for: regulated startups, especially medical device (EU MDR / IVDR), health AI, biotech, and fintech.
 - The idea: the rule lives inside the step, so compliance evidence is a byproduct of doing the work.
 - AI governance: AI agents operate under a named owner, a permitted scope, a review path, and a sealed record.
-- Stage: the regulated-work engine is built and tested; the first version people can log into is being built now.
+- Stage: nianav OS is in development (TRL 4). The regulated-work engine is built and tested in the lab. The first version people can log into is being built now.
 - Tagline: Win with intent. Keep winning by design.
 
 ## Core pages
+- [Services and prices](https://niavicta.com/services.html): Medtech QA/RA services with published prices: ISO 13485 internal audits, MDR and ISO 13485 gap assessments, and a fractional QA/RA lead, delivered by two certified ISO 13485 lead auditors.
+- [Book a 20-minute call](https://niavicta.com/book.html): Free call with a lead auditor to scope an audit, gap assessment or fractional QA/RA support.
 - [Sources and standards](https://niavicta.com/sources.html): Official source references for the standards, regulations, and operating-model claims referenced across Niavicta and nianav OS pages.
 - [nianav OS](https://niavicta.com/nianav-os.html): What nianav OS is, the problem it solves, how it works, and who it is for.
 - [What nianav OS replaces](https://niavicta.com/software.html): The workflow tools nianav OS replaces and the specialist systems it connects to.
 - [The agentic era](https://niavicta.com/agentic-era.html): How nianav OS lets startups use AI agents without losing control of evidence.
 - [About Niavicta](https://niavicta.com/about.html): Why Niavicta was started, and what the name means (Nia, purpose; Victa, victory).
-- [Audit and systems consulting](https://niavicta.com/other-services.html): Niavicta's hands-on audit and systems consulting beyond the software: ISO 13485 and ISO 9001 internal audits by CQI/IRCA and BSI certified lead auditors, plus operations diagnostics, mapping, implementation, and handover for regulated and unregulated companies.
+- [Audit and systems consulting](https://niavicta.com/other-services.html): Niavicta's hands-on audit and systems consulting beyond the software: ISO 13485 and ISO 9001 internal audits by certified ISO 13485 lead auditors with BSI MDR and clause-by-clause training, plus operations diagnostics, mapping, implementation, and handover for regulated and unregulated companies.
 - [ISO 13485 internal auditor for medtech in the Netherlands](https://niavicta.com/iso-13485-internal-auditor-medtech-netherlands.html): Local service page for medtech internal audit queries, covering ISO 13485 and ISO 9001 internal audits, Utrecht/Netherlands/EU service area, certified lead auditor credentials, audit deliverables, objective evidence, and CAPA-ready findings.
 - [Become a design partner](https://niavicta.com/build-with-us.html): Where the product is today and how to become a design partner.
 - [Follow the journey](https://niavicta.com/follow-the-journey.html): Founder notes, product lessons, and the public record of building nianav OS in the open.
