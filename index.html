@@ -312,6 +312,9 @@
   .svc .pr small{display:block;font-size:13px;font-weight:500;color:var(--muted)}
   .svc p{margin:0;font-size:14.5px;line-height:1.6;color:var(--ink-soft)}
   .svc .chev{margin-top:auto;font-weight:700;color:var(--teal-deep);font-size:14px}
+  .svc-grid.four{grid-template-columns:repeat(4,1fr)}
+  @media (max-width:1100px){.svc-grid.four{grid-template-columns:1fr 1fr}}
+  @media (max-width:600px){.svc-grid.four{grid-template-columns:1fr}}
   .svc-foot{margin-top:22px;font-size:13.5px;color:var(--muted)}
   .building{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
   @media (max-width:900px){.building{grid-template-columns:1fr}}
@@ -343,10 +346,10 @@
           <a href="services.html#internal-audit">ISO 13485 internal audit</a>
           <a href="services.html#gap-assessment">MDR gap assessment</a>
           <a href="services.html#fractional">Fractional QA/RA lead</a>
-          <a href="services.html#supplier-audit">Supplier audit</a>
-          <a href="services.html#operations">Operations and systems</a>
-          <a href="services.html#investors">Investors and incubators</a>
-          <a href="services.html#training">Training</a>
+          <a href="supplier-audits.html">Supplier audit</a>
+          <a href="operations-and-systems.html">Operations and systems</a>
+          <a href="investors-and-incubators.html">Investors and incubators</a>
+          <a href="training.html">Training</a>
           <a href="book.html">Book a 20-minute call</a>
         </div></div>
       </div>
@@ -461,7 +464,33 @@
           <span class="chev">See what is included</span>
         </a>
       </div>
-      <p class="svc-foot" data-reveal>Also: <a href="services.html#supplier-audit">supplier audits</a>, <a href="services.html#operations">operations assessments and automation</a>, <a href="services.html#investors">due diligence for investors and incubators</a>, and <a href="services.html#training">in-company training</a>. Prices exclude VAT. <a href="book.html">Book a free 20-minute call</a> to scope yours.</p>
+      <div class="svc-grid four" style="margin-top:18px">
+        <a class="svc" href="supplier-audits.html" data-reveal>
+          <span class="k">Supplier audits</span>
+          <h3>Supplier and contract-manufacturer audits</h3>
+          <p>ISO 13485 audits of the suppliers your device depends on, on site or remote, at &euro;1,200 per auditor day.</p>
+          <span class="chev">Supplier audits</span>
+        </a>
+        <a class="svc" href="operations-and-systems.html" data-reveal>
+          <span class="k">Operations and systems</span>
+          <h3>Operations that run without you</h3>
+          <p>We map how your company really runs, then automate the work your team repeats every week.</p>
+          <span class="chev">Operations and systems</span>
+        </a>
+        <a class="svc" href="investors-and-incubators.html" data-reveal>
+          <span class="k">Investors and incubators</span>
+          <h3>Due diligence and portfolio readiness</h3>
+          <p>Know where a medtech company stands, and what it will cost to close the gaps, before you invest.</p>
+          <span class="chev">For investors</span>
+        </a>
+        <a class="svc" href="training.html" data-reveal>
+          <span class="k">Training</span>
+          <h3>Internal auditor course and QMS workshop</h3>
+          <p>In-company training for your team or cohort, taught by practising lead auditors.</p>
+          <span class="chev">Training</span>
+        </a>
+      </div>
+      <p class="svc-foot" data-reveal>Prices exclude VAT. <a href="services.html">See all services</a>, or <a href="book.html">book a free 20-minute call</a>.</p>
     </div>
   </section>
 
@@ -747,7 +776,7 @@
   <div class="pn-card">
     <div class="pn-body">
       <strong>We don't track you.</strong>
-      <p>This site sets no cookies and stores nothing about you, unless you email us, in which case we only use your message to reply. Read more in our <a href="privacy.html">Privacy &amp; Cookies</a> policy.</p>
+      <p>This site sets no cookies and stores nothing about you, unless you email us or book a call, in which case we only use what you send to reply. Read more in our <a href="privacy.html">Privacy &amp; Cookies</a> policy.</p>
     </div>
     <div class="pn-actions">
       <button type="button" class="btn primary" id="privnote-ok">Got it</button>
