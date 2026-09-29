@@ -8,6 +8,7 @@
       { t:'An ISO 13485 internal audit.', w:{}, need:'ISO 13485 internal audit' },
       { t:'A gap assessment before our CE mark or certification audit.', w:{}, need:'MDR / ISO 13485 gap assessment' },
       { t:'Ongoing QA/RA leadership, part-time.', w:{}, need:'Fractional QA/RA lead' },
+      { t:'EUDAMED registration or regulatory work: registrations, technical documentation, regulatory strategy.', w:{j:5}, need:'EUDAMED and regulatory' },
       { t:'Not sure yet. We want to talk it through.', w:{}, need:'Not sure yet' }
     ]},
     { kicker:'Stage', q:'Where are you right now?', options:[
@@ -51,8 +52,8 @@
     },
     jasmine: {
       name:'Jasmine Beukema', first:'Jasmine', img:'dirs/img/team/jasmine-bw.png', email:'jasmine.beukema@niavicta.com',
-      role:'Strategic direction and regulatory · Dutch or English',
-      why:'You are setting direction, and that is Jasmine’s strength. With close to twenty years across medical devices, from diagnostics and genomics software to autonomous robotics, she builds QA and RA at executive level and sets the regulatory strategy with your leadership team. She steered the world’s first fully autonomous robotic medical device through CE marking and FDA De Novo. She can run the work in Dutch or English.',
+      role:'Strategic direction, regulatory and EUDAMED · Dutch or English',
+      why:'You are setting direction, and that is Jasmine’s strength. With close to twenty years across medical devices, from diagnostics and genomics software to autonomous robotics, she builds QA and RA at executive level and sets the regulatory strategy with your leadership team. She steered the world’s first fully autonomous robotic medical device through CE marking and FDA De Novo, and she leads our regulatory work: EUDAMED registration, technical documentation and regulatory strategy. She can run the work in Dutch or English.',
       certs:[
         'ISO 13485:2016 Lead Auditor, BSI',
         'Executive Development Program for Regulatory Affairs Professionals, Kellogg (Northwestern)',
