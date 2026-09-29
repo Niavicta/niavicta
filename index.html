@@ -318,6 +318,32 @@
   .svc-foot{margin-top:22px;font-size:13.5px;color:var(--muted)}
   .building{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
   @media (max-width:900px){.building{grid-template-columns:1fr}}
+
+  .proofband{background:var(--navy);padding:22px 0}
+  .proof-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  @media (max-width:900px){.proof-row{grid-template-columns:1fr 1fr}}
+  .proof-row b{display:block;font-size:19px;color:#6FCBBB;letter-spacing:-0.01em}
+  .proof-row span{font-size:13px;line-height:1.45;color:#D5DEE8}
+  .sit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
+  @media (max-width:1100px){.sit-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:640px){.sit-grid{grid-template-columns:1fr}.sit.feat{order:-1}}
+  .sit{position:relative;display:flex;flex-direction:column;gap:10px;background:#fff;border:1px solid var(--line-2);border-radius:var(--radius);padding:26px 22px 22px;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+  .sit:hover,.sit:focus-visible{transform:translateY(-3px);border-color:var(--teal);box-shadow:var(--shadow-lg)}
+  .sit:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+  .sit.feat{border:2px solid var(--teal);box-shadow:var(--shadow-lg)}
+  .sit .badge{position:absolute;top:-13px;left:20px;background:var(--teal);color:var(--navy);font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:5px 12px}
+  .sit .k{font-size:11.5px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--teal-deep)}
+  .sit h3{margin:0;font-size:20px;line-height:1.25;color:var(--navy)}
+  .sit ul{margin:4px 0 0;padding-left:18px;font-size:14px;line-height:1.55;color:var(--ink-soft)}
+  .sit .pr{margin-top:auto;padding-top:8px;font-size:26px;font-weight:700;color:var(--navy);letter-spacing:-0.02em}
+  .sit .pr small{display:block;font-size:12.5px;font-weight:500;color:var(--muted);letter-spacing:0}
+  .sit .go{font-weight:700;color:var(--teal-deep);font-size:14px}
+  .call-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:860px){.call-steps{grid-template-columns:1fr}}
+  .call-steps div{border:1px solid var(--line-2);border-radius:var(--radius);padding:20px;background:#fff}
+  .call-steps span{font-size:11.5px;font-weight:700;letter-spacing:.12em;color:var(--teal-deep)}
+  .call-steps b{display:block;margin:6px 0;font-size:16.5px;color:var(--navy)}
+  .call-steps p{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink-soft)}
 </style>
 </head>
 <body data-screen-label="Homepage">
@@ -420,7 +446,8 @@
           <a class="btn primary" href="book.html">Book a 20-minute call</a>
           <a class="btn ghost" href="services.html">See services and prices</a>
         </div>
-        <p data-reveal style="margin-top:14px;font-size:14.5px;color:var(--muted)">Not sure who you need? <a href="book.html#quiz" style="color:var(--teal-deep);font-weight:700">Take the one-minute quiz</a></p>
+        <p data-reveal style="margin-top:14px;font-size:14.5px;color:var(--ink-soft)">Free &middot; 20 minutes &middot; no obligation. You leave with a clear first step.</p>
+        <p data-reveal style="margin-top:6px;font-size:14.5px;color:var(--muted)">Not sure who you need? <a href="book.html#quiz" style="color:var(--teal-deep);font-weight:700">Take the one-minute quiz</a></p>
         <div class="meta" data-reveal>For medical device companies &middot; from first QMS to notified body audit</div>
       </div>
       <div class="founders-hero" data-reveal>
@@ -433,68 +460,74 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- PROOF -->
+  <section class="proofband" aria-label="Why teams trust us">
+    <div class="wrap proof-row">
+      <div><b>2</b><span>certified ISO 13485 lead auditors</span></div>
+      <div><b>CE + FDA De Novo</b><span>for a first-of-its-kind autonomous robotic device</span></div>
+      <div><b>First</b><span>MDR certification audit in Southern Africa, led by Chani</span></div>
+      <div><b>~20 years</b><span>of medtech QA/RA leadership</span></div>
+    </div>
+  </section>
+
+  <!-- SITUATIONS -->
   <section class="gray" id="services">
     <div class="wrap">
       <div class="sec-head" data-reveal>
-        <p class="eyebrow">Services and prices</p>
-        <h2>Senior QA/RA help for medical device companies.</h2>
-        <p>Every engagement starts with a free 20-minute call, and you get the scope and the price in writing before any work starts.</p>
+        <p class="eyebrow">Where are you right now?</p>
+        <h2>Pick your situation. We take it from there.</h2>
+        <p>Every engagement starts with a free 20-minute call, and you get the scope and a fixed price in writing before any work starts.</p>
       </div>
-      <div class="svc-grid">
-        <a class="svc" href="services.html#internal-audit" data-reveal>
-          <span class="k">Internal audit</span>
-          <h3>ISO 13485 internal audit</h3>
-          <div class="pr">&euro;1,200 per auditor day<small>Most audits take 2 to 3 days</small></div>
-          <p>Audit plan up front, graded findings with objective evidence, and a CAPA-ready report your notified body can trust.</p>
-          <span class="chev">See what is included</span>
+      <div class="sit-grid">
+        <a class="sit" href="services.html#path-audit" data-reveal>
+          <span class="k">Preparing for an audit</span>
+          <h3>Walk into your audit knowing what they will find.</h3>
+          <ul><li>ISO 13485 internal audit</li><li>Supplier audit</li><li>Internal auditor course</li></ul>
+          <div class="pr">from &euro;1,200<small>per auditor day</small></div>
+          <span class="go">See services and prices &rarr;</span>
         </a>
-        <a class="svc" href="services.html#gap-assessment" data-reveal>
-          <span class="k">Gap assessment</span>
-          <h3>MDR and ISO 13485 gap assessment</h3>
-          <div class="pr">&euro;4,950 fixed<small>One week, kickoff to read-out</small></div>
-          <p>Know exactly where you stand before your CE mark or first certification audit, with a gap register and a 90-day roadmap.</p>
-          <span class="chev">See what is included</span>
+        <a class="sit feat" href="services.html#path-build" data-reveal>
+          <span class="badge">Most chosen</span><span class="k">Building your quality system</span>
+          <h3>Know exactly what to build, and in what order.</h3>
+          <ul><li>MDR and ISO 13485 gap assessment</li><li>Fractional QA/RA lead</li><li>Quality system workshop</li></ul>
+          <div class="pr">&euro;4,950<small>gap assessment, fixed, one week</small></div>
+          <span class="go">See services and prices &rarr;</span>
         </a>
-        <a class="svc" href="services.html#fractional" data-reveal>
-          <span class="k">Fractional QA/RA</span>
-          <h3>Fractional QA/RA lead</h3>
-          <div class="pr">From &euro;3,000 per month<small>From two days a month</small></div>
-          <p>Senior QA/RA leadership before you can hire it, with your team coached so the knowledge stays with you.</p>
-          <span class="chev">See what is included</span>
+        <a class="sit" href="services.html#path-ops" data-reveal>
+          <span class="k">Doing too much by hand</span>
+          <h3>Stop being the system your company runs on.</h3>
+          <ul><li>Operations assessment and process mapping</li><li>Workflow automation and document control</li></ul>
+          <div class="pr">from &euro;2,950<small>per phase, fixed</small></div>
+          <span class="go">See services and prices &rarr;</span>
         </a>
-      </div>
-      <div class="svc-grid four" style="margin-top:18px">
-        <a class="svc" href="supplier-audits.html" data-reveal>
-          <span class="k">Supplier audits</span>
-          <h3>Supplier and contract-manufacturer audits</h3>
-          <div class="pr">&euro;1,200<small>per auditor day</small></div>
-          <p>ISO 13485 audits of the suppliers your device depends on, on site or remote.</p>
-          <span class="chev">Supplier audits</span>
-        </a>
-        <a class="svc" href="operations-and-systems.html" data-reveal>
-          <span class="k">Operations and systems</span>
-          <h3>Operations that run without you</h3>
-          <div class="pr">from &euro;2,950<small>fixed per phase</small></div>
-          <p>We map how your company really runs, then automate the work your team repeats every week.</p>
-          <span class="chev">Operations and systems</span>
-        </a>
-        <a class="svc" href="investors-and-incubators.html" data-reveal>
-          <span class="k">Investors and incubators</span>
-          <h3>Due diligence and portfolio readiness</h3>
-          <div class="pr">from &euro;4,950<small>per company</small></div>
-          <p>Know where a medtech company stands, and what it will cost to close the gaps, before you invest.</p>
-          <span class="chev">For investors</span>
-        </a>
-        <a class="svc" href="training.html" data-reveal>
-          <span class="k">Training</span>
-          <h3>Internal auditor course and QMS workshop</h3>
-          <div class="pr">from &euro;1,450<small>per group</small></div>
-          <p>In-company training for your team or cohort, taught by practising lead auditors.</p>
-          <span class="chev">Training</span>
+        <a class="sit" href="services.html#path-invest" data-reveal>
+          <span class="k">Investing in medtech</span>
+          <h3>Know the regulatory truth before you invest.</h3>
+          <ul><li>Regulatory and quality due diligence</li><li>Portfolio readiness assessments</li></ul>
+          <div class="pr">from &euro;950<small>per company</small></div>
+          <span class="go">See services and prices &rarr;</span>
         </a>
       </div>
-      <p class="svc-foot" data-reveal>Prices exclude VAT. <a href="services.html">See all services</a>, or <a href="book.html">book a free 20-minute call</a>.</p>
+      <p class="svc-foot" data-reveal>Prices exclude VAT. Not sure which fits? <a href="book.html#quiz">Take the one-minute quiz</a> or <a href="book.html">book a free call</a>.</p>
+    </div>
+  </section>
+
+  <!-- THE CALL -->
+  <section id="the-call">
+    <div class="wrap">
+      <div class="sec-head" data-reveal>
+        <p class="eyebrow">What happens on the call</p>
+        <h2>Twenty minutes. No obligation. A clear first step.</h2>
+      </div>
+      <div class="call-steps" data-reveal>
+        <div><span>01</span><b>Pick a time</b><p>Take the quiz or pick a slot directly. It takes a minute.</p></div>
+        <div><span>02</span><b>Talk to a lead auditor</b><p>You tell us where you are, we tell you what we would do first.</p></div>
+        <div><span>03</span><b>Get it in writing</b><p>If there is a fit, a short proposal with the scope, the dates and a fixed price.</p></div>
+      </div>
+      <div class="actions" data-reveal style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn primary" href="book.html">Book a 20-minute call</a>
+        <a class="btn ghost" href="services.html">See all services and prices</a>
+      </div>
     </div>
   </section>
 
