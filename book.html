@@ -44,7 +44,7 @@
       },
       "image": "https://niavicta.com/og-image.png",
       "email": "hello@niavicta.com",
-      "description": "Niavicta runs ISO 13485 internal audits, MDR gap assessments and fractional QA/RA leadership for medical device companies, delivered by two CQI/IRCA certified lead auditors. Niavicta is also building nianav OS, an operating system for regulated companies.",
+      "description": "Niavicta runs ISO 13485 internal audits, MDR gap assessments and fractional QA/RA leadership for medical device companies, delivered by two certified ISO 13485 lead auditors. Niavicta is also building nianav OS, an operating system for regulated companies.",
       "foundingDate": "2026",
       "address": {
         "@type": "PostalAddress",
@@ -71,7 +71,7 @@
           "@type": "Person",
           "name": "Jasmine Beukema",
           "jobTitle": "COO and co-founder",
-          "hasCredential": "CQI/IRCA Certified Lead Auditor, ISO 13485:2016"
+          "hasCredential": "ISO 13485:2016 Lead Auditor, BSI"
         }
       ]
     },
@@ -107,6 +107,7 @@
 <link rel="stylesheet" href="dirs/_fonts.css">
 <link rel="stylesheet" href="console.css">
 <link rel="stylesheet" href="site-chrome.css">
+<link rel="stylesheet" href="auditor-quiz.css">
 <style>
   .founders-hero{position:relative;display:flex;flex-direction:column;align-items:center;padding-top:20px}
   .fh-photos{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%;align-items:end}
@@ -139,13 +140,16 @@
   .faq-list summary::-webkit-details-marker{display:none}
   .faq-list p{margin:10px 0 0;font-size:14px;line-height:1.6;color:var(--ink-soft)}
   .book-frame{width:100%;min-height:900px;border:0;border-radius:12px;background:#fff}
+  .skip{text-align:center;margin-top:18px;font-size:14px;color:var(--muted)}
+  .skip a{color:#2E9E8B;font-weight:600}
+  #book{scroll-margin-top:90px}
   .book-fallback{max-width:640px;background:#fff;border:1px solid var(--line-strong);border-radius:14px;padding:30px}
 </style>
 </head>
 <body data-screen-label="Book a call">
 
 <!-- announcement strip -->
-<div class="strip"><div class="wrap"><span>ISO 13485 audits, MDR gap assessments and fractional QA/RA, priced up front.</span><a href="book.html">Book a 20-minute call &rsaquo;</a></div></div>
+<div class="strip"><div class="wrap"><span>ISO 13485 audits, MDR gap assessments and fractional QA/RA for medtech.</span><a href="book.html">Book a 20-minute call &rsaquo;</a></div></div>
 
 <!-- header -->
 <header class="site">
@@ -233,19 +237,82 @@
     <div class="inner">
       <div data-reveal>
         <div class="eyebrow">Free 20-minute call</div>
-        <h1>Book a call with a lead auditor.</h1>
-        <p class="lede">Pick a time that suits you. Tell us your company, your device class and what you need, and we come prepared. Internal audits, gap assessments, fractional QA/RA, or a question you want answered.</p>
+        <h1>Book a call with a <em>lead auditor</em>.</h1>
+        <p class="lede">Answer six quick questions and we match you with the right one of us. Or skip straight to a time that suits you. Internal audits, gap assessments, fractional QA/RA, or a question you want answered.</p>
       </div>
     </div>
   </section>
+
+  <section class="band" id="quiz" style="background:#e8eef4">
+    <div class="container">
+      <div class="section-mark">
+        <span class="lbl">Step 1 &middot; Who do you need?</span>
+        <span class="desc">Under a minute. Then you book with your match.</span>
+      </div>
+      <div class="matcher" id="matcher"></div>
+      <p class="skip">Already know what you need? <a href="#book" id="skip-quiz">Skip the quiz and pick a time</a></p>
+    </div>
+  </section>
+
   <section class="band white" id="book">
     <div class="container">
-      <div id="booking-slot" data-reveal></div>
+      <div class="section-mark">
+        <span class="lbl" id="book-label">Step 2 &middot; Pick a time</span>
+        <span class="desc">Twenty minutes, on Teams, free.</span>
+      </div>
+      <div id="booking-slot"></div>
       <p class="vatnote">Prefer to see the prices first? <a href="services.html#services">Services and prices</a>.</p>
     </div>
   </section>
 </main>
 <script src="booking.js"></script>
+<script src="auditor-quiz.js"></script>
+<script>
+(function(){
+  var cfg = window.NIAVICTA_BOOKING || { shared:'', person:{} };
+  var slot = document.getElementById('booking-slot');
+  var label = document.getElementById('book-label');
+
+  function esc(s){ var d=document.createElement('div'); d.textContent=s||''; return d.innerHTML; }
+
+  function showBooking(key, summary){
+    var people = window.NiavictaQuiz ? window.NiavictaQuiz.PEOPLE : {};
+    var p = key ? people[key] : null;
+    var url = ((p && cfg.person && cfg.person[key]) || cfg.shared || '').trim();
+    label.textContent = p ? 'Step 2 · Book your call with ' + p.first : 'Step 2 · Pick a time';
+    if(url){
+      var safe = url.replace(/"/g,'&quot;');
+      slot.innerHTML = '<iframe class="book-frame" title="Book a 20-minute call with Niavicta" src="'+safe+'" loading="lazy"></iframe>'
+        + '<p class="vatnote">Booking page not showing? <a href="'+safe+'" target="_blank" rel="noopener">Open it in a new tab</a>.</p>';
+    } else {
+      var to = (p && p.email) || 'hello@niavicta.com';
+      var lines = ['Company:', 'Device class:'];
+      if(summary){ lines.push('What we need: ' + summary.need, '', 'Quiz answers:'); lines = lines.concat(summary.answers); lines.push(''); }
+      else { lines.push('What we need:'); }
+      lines.push('Two times that suit us:');
+      var body = lines.map(encodeURIComponent).join('%0A');
+      var subject = encodeURIComponent('20-minute QA/RA call' + (p ? ' with ' + p.first : ''));
+      slot.innerHTML = '<div class="book-fallback"><h3 style="margin-top:0">' + (p ? 'Great. Send ' + esc(p.first) + ' two times that suit you' : 'Send us two times that suit you') + '</h3>'
+        + '<p>Tell us your company, your device class and two times that work for you. We reply within one working day with a Teams invite.' + (summary ? ' Your quiz answers are already in the email.' : '') + '</p>'
+        + '<p><a class="btn p" href="mailto:' + to + '?subject=' + subject + '&amp;body=' + body + '">Email ' + (p ? esc(p.first) : 'us') + ' <span class="arrow"></span></a></p></div>';
+    }
+  }
+
+  if(window.NiavictaQuiz){
+    window.NiavictaQuiz.mount(document.getElementById('matcher'), {
+      onBook: function(key, summary){
+        showBooking(key, summary);
+        document.getElementById('book').scrollIntoView({ behavior:'smooth', block:'start' });
+      }
+    });
+  }
+  document.getElementById('skip-quiz').addEventListener('click', function(){ showBooking(null, null); });
+
+  var m = /[?&]with=(chani|jasmine)/.exec(location.search);
+  showBooking(m ? m[1] : null, null);
+  if(m){ setTimeout(function(){ document.getElementById('book').scrollIntoView({ block:'start' }); }, 50); }
+})();
+</script>
 <script>
 (function(){
   var slot=document.getElementById('booking-slot');

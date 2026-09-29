@@ -1,4 +1,8 @@
-/* One place for the booking link. Every "Book a call" button on the site points to book.html,
-   and book.html reads this value. Paste the Microsoft Bookings page URL between the quotes.
-   While it is empty, book.html offers the email fallback. */
-window.NIAVICTA_BOOKING_URL = "";
+/* Where every "Book a call" goes. Paste Microsoft Bookings links between the quotes.
+   PERSON: each founder's own "Bookings with me" page, used after the quiz matches a visitor to them.
+   SHARED: the Niavicta booking page, used when someone skips the quiz.
+   Any link left empty falls back to the next one, and finally to email. */
+window.NIAVICTA_BOOKING = {
+  shared: "",
+  person: { chani: "", jasmine: "" }
+};
