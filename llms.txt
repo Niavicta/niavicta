@@ -9,9 +9,9 @@ Services and prices (excluding VAT):
 - MDR and ISO 13485 gap assessment: EUR 4,950 fixed, one week, with a gap register and a 90-day roadmap.
 - Fractional QA/RA lead: from EUR 3,000 per month, from two days a month.
 - Supplier and contract-manufacturer audit: EUR 1,200 per auditor day, usually 1 to 2 days per supplier.
-- Operations assessment, process mapping and workflow automation: fixed price per phase, scoped after a free call.
-- For investors and incubators: regulatory and quality due diligence on medtech companies, and readiness assessments for portfolios.
-- Training: two-day in-company ISO 13485 or ISO 9001 internal auditor course, and a half-day "quality system in plain language" workshop.
+- Operations assessment and process mapping: from EUR 2,950 per phase. Workflow automation: from EUR 3,500 per build.
+- For investors and incubators: regulatory and quality due diligence from EUR 4,950 per company, and portfolio readiness assessments from EUR 950 per company.
+- Training: two-day in-company ISO 13485 or ISO 9001 internal auditor course, EUR 5,950 per group of up to 8, and a half-day "quality system in plain language" workshop, EUR 1,450 per group.
 - Free 20-minute QA/RA call to scope any of the above.
 
 Key facts:

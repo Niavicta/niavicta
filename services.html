@@ -155,7 +155,19 @@
       "provider": {
         "@id": "https://niavicta.com/#organization"
       },
-      "areaServed": "EU"
+      "areaServed": "EU",
+      "offers": {
+        "@type": "Offer",
+        "price": "1200",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "1200",
+          "priceCurrency": "EUR",
+          "unitText": "per auditor day",
+          "valueAddedTaxIncluded": false
+        }
+      }
     },
     {
       "@type": "Service",
@@ -165,7 +177,19 @@
       "provider": {
         "@id": "https://niavicta.com/#organization"
       },
-      "areaServed": "EU"
+      "areaServed": "EU",
+      "offers": {
+        "@type": "Offer",
+        "price": "2950",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "2950",
+          "priceCurrency": "EUR",
+          "unitText": "from, per phase",
+          "valueAddedTaxIncluded": false
+        }
+      }
     },
     {
       "@type": "Service",
@@ -175,7 +199,19 @@
       "provider": {
         "@id": "https://niavicta.com/#organization"
       },
-      "areaServed": "EU"
+      "areaServed": "EU",
+      "offers": {
+        "@type": "Offer",
+        "price": "3500",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "3500",
+          "priceCurrency": "EUR",
+          "unitText": "from, per build",
+          "valueAddedTaxIncluded": false
+        }
+      }
     },
     {
       "@type": "Service",
@@ -185,7 +221,19 @@
       "provider": {
         "@id": "https://niavicta.com/#organization"
       },
-      "areaServed": "EU"
+      "areaServed": "EU",
+      "offers": {
+        "@type": "Offer",
+        "price": "4950",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "4950",
+          "priceCurrency": "EUR",
+          "unitText": "from, per company",
+          "valueAddedTaxIncluded": false
+        }
+      }
     },
     {
       "@type": "Service",
@@ -195,7 +243,19 @@
       "provider": {
         "@id": "https://niavicta.com/#organization"
       },
-      "areaServed": "EU"
+      "areaServed": "EU",
+      "offers": {
+        "@type": "Offer",
+        "price": "950",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "950",
+          "priceCurrency": "EUR",
+          "unitText": "from, per company",
+          "valueAddedTaxIncluded": false
+        }
+      }
     },
     {
       "@type": "Service",
@@ -205,7 +265,19 @@
       "provider": {
         "@id": "https://niavicta.com/#organization"
       },
-      "areaServed": "EU"
+      "areaServed": "EU",
+      "offers": {
+        "@type": "Offer",
+        "price": "5950",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "5950",
+          "priceCurrency": "EUR",
+          "unitText": "per group of up to 8",
+          "valueAddedTaxIncluded": false
+        }
+      }
     },
     {
       "@type": "Service",
@@ -215,7 +287,19 @@
       "provider": {
         "@id": "https://niavicta.com/#organization"
       },
-      "areaServed": "EU"
+      "areaServed": "EU",
+      "offers": {
+        "@type": "Offer",
+        "price": "1450",
+        "priceCurrency": "EUR",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "1450",
+          "priceCurrency": "EUR",
+          "unitText": "per group",
+          "valueAddedTaxIncluded": false
+        }
+      }
     },
     {
       "@type": "FAQPage",
@@ -326,6 +410,46 @@
   .faq-list p{margin:10px 0 0;font-size:14px;line-height:1.6;color:var(--ink-soft)}
   .book-frame{width:100%;min-height:900px;border:0;border-radius:12px;background:#fff}
   .book-fallback{max-width:640px;background:#fff;border:1px solid var(--line-strong);border-radius:14px;padding:30px}
+
+  .reassure{margin-top:12px;font-size:14px;color:var(--ink-soft)}
+  .proof{background:#0E2240;color:#fff;padding:22px 0}
+  .proof-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  @media (max-width:900px){.proof-row{grid-template-columns:1fr 1fr}}
+  .proof-row b{display:block;font-size:19px;color:#6FCBBB;letter-spacing:-0.01em}
+  .proof-row span{font-size:13px;line-height:1.45;color:#D5DEE8}
+  .paths{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 30px}
+  .pt{font:inherit;font-size:15px;font-weight:600;color:var(--ink);background:#fff;border:1.5px solid #BCC9D6;border-radius:999px;padding:11px 18px;cursor:pointer;transition:all .15s ease}
+  .pt:hover{border-color:#4FB3A2}
+  .pt[aria-selected="true"]{background:#0E2240;border-color:#0E2240;color:#fff}
+  .pt:focus-visible{outline:3px solid #4FB3A2;outline-offset:2px}
+  .path{margin-bottom:34px}
+  .path-head h2{margin:0 0 6px;font-size:clamp(24px,3vw,34px);letter-spacing:-0.02em}
+  .path-head p{margin:0 0 22px;color:var(--muted);font-size:15.5px}
+  .svc2-grid{display:grid;gap:18px;align-items:stretch}
+  .svc2-grid.c3{grid-template-columns:repeat(3,1fr)}
+  .svc2-grid.c2{grid-template-columns:repeat(2,1fr)}
+  @media (max-width:900px){.svc2-grid.c3,.svc2-grid.c2{grid-template-columns:1fr}}
+  .svc2{position:relative;display:flex;flex-direction:column;gap:10px;background:#fff;border:1px solid var(--line-strong);border-radius:14px;padding:26px 24px 22px;box-shadow:0 1px 2px rgba(14,34,64,.06);transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;scroll-margin-top:120px}
+  .svc2:hover,.svc2:focus-within{transform:translateY(-3px);box-shadow:0 22px 44px -26px rgba(14,34,64,.45);border-color:#4FB3A2}
+  .svc2.featured{border:2px solid #4FB3A2;box-shadow:0 26px 56px -30px rgba(14,34,64,.55)}
+  @media (min-width:901px){.svc2-grid.c3 .svc2.featured{transform:translateY(-10px)}.svc2-grid.c3 .svc2.featured:hover{transform:translateY(-13px)}}
+  .svc2 .badge{position:absolute;top:-13px;left:22px;background:#4FB3A2;color:#0E2240;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:5px 12px}
+  .svc2 .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#2E9E8B}
+  .svc2 h3{margin:0;font-size:19px;letter-spacing:-0.015em;color:var(--ink)}
+  .svc2 .pr{font-size:32px;font-weight:700;letter-spacing:-0.025em;color:#0E2240;line-height:1.05}
+  .svc2 .pr small{display:block;margin-top:6px;font-size:13px;font-weight:500;letter-spacing:0;color:var(--muted)}
+  .svc2 .ln{margin:2px 0 0;font-size:15px;line-height:1.5;color:var(--ink);font-weight:500}
+  .svc2 ul{margin:0;padding-left:18px;font-size:14px;line-height:1.55;color:var(--ink-soft)}
+  .svc2 ul li{margin:3px 0}
+  .svc2 .cta{margin-top:auto;justify-content:center;text-align:center}
+  .svc2 .more{font-size:14px;font-weight:600;color:#2E9E8B;text-decoration:none;text-align:center}
+  .svc2 .more:hover{text-decoration:underline}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  @media (max-width:900px){.svc2.featured{order:-1;margin-top:14px}}
+  .notsure{margin-top:6px;font-size:15px;color:var(--ink-soft)}
+  .notsure a{color:#2E9E8B;font-weight:700}
+  .steps.s3{grid-template-columns:repeat(3,1fr)}
+  @media (max-width:860px){.steps.s3{grid-template-columns:1fr}}
 </style>
 </head>
 <body data-screen-label="Services">
@@ -425,9 +549,10 @@
         <p class="lede">ISO 13485 internal audits, MDR gap assessments and a fractional QA/RA lead, from two certified lead auditors who have built QA/RA functions from the ground up. Start with a free 20-minute call.</p>
         <div class="btn-row">
           <a class="btn p" href="book.html">Book a 20-minute call <span class="arrow"></span></a>
-          <a class="btn g" href="#services">See the services</a>
+          <a class="btn g" href="#services">Find your service</a>
         </div>
-        <p style="margin-top:14px;font-size:14px;color:var(--muted)">Not sure who you need? <a href="book.html#quiz" style="color:#2E9E8B;font-weight:600">Take the one-minute quiz</a></p>
+        <p class="reassure">Free &middot; 20 minutes &middot; no obligation. You leave with a clear first step.</p>
+        <p style="margin-top:8px;font-size:14px;color:var(--muted)">Not sure who you need? <a href="book.html#quiz" style="color:#2E9E8B;font-weight:600">Take the one-minute quiz</a></p>
       </div>
       <div data-reveal>
         <div class="founders-hero">
@@ -441,202 +566,147 @@
     </div>
   </section>
 
+  <section class="proof" aria-label="Why teams trust us">
+    <div class="container proof-row">
+      <div><b>2</b><span>certified ISO 13485 lead auditors</span></div>
+      <div><b>CE + FDA De Novo</b><span>for a first-of-its-kind autonomous robotic device</span></div>
+      <div><b>First</b><span>MDR certification audit in Southern Africa, led by Chani</span></div>
+      <div><b>~20 years</b><span>of medtech QA/RA leadership</span></div>
+    </div>
+  </section>
+
   <section class="band white" id="services">
     <div class="container">
       <div class="section-mark" data-reveal>
-        <span class="lbl">Services and prices</span>
-        <span class="desc">Medtech quality and regulatory work: what you get, how long it takes and what it costs.</span>
+        <span class="lbl">Where are you right now?</span>
+        <span class="desc">Pick the one that fits. Every price excludes VAT and is confirmed in writing before any work starts.</span>
       </div>
-      <div class="cards c2" data-reveal>
-        <article class="card offer free" id="call">
-          <span class="num">Start here</span>
-          <h3>Free 20-minute QA/RA call</h3>
-          <div class="price">Free</div>
-          <p class="for">For anyone with a quality or regulatory question. Tell us where you are. We tell you what we would do first, and whether we are the right people for it.</p>
-          <div class="offer-cta"><a class="btn p" href="book.html">Book a 20-minute call <span class="arrow"></span></a></div>
-        </article>
-        <article class="card offer" id="internal-audit">
-          <span class="num">Internal audit</span>
-          <h3>ISO 13485 internal audit</h3>
-          <div class="price">&euro;1,200 per auditor day<small>Most audits take 2 to 3 days, report included</small></div>
-          <p class="for">For companies preparing for a notified body or certification audit, or running their annual internal audit programme.</p>
-          <ul>
-            <li>Audit plan and scope agreed up front</li>
-            <li>Audited against ISO 13485:2016, your own procedures and the MDR where it applies</li>
-            <li>Graded findings with the objective evidence behind each one</li>
-            <li>A CAPA-ready report with a route to close every finding</li>
-            <li>Competency and independence evidence your notified body will ask for</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about an audit</a> <a href="iso-13485-internal-auditor-medtech-netherlands.html" style="margin-left:14px;color:#2E9E8B;font-weight:600;font-size:14px">Full details</a></div>
-        </article>
-        <article class="card offer" id="gap-assessment">
-          <span class="num">Gap assessment</span>
-          <h3>MDR and ISO 13485 gap assessment</h3>
-          <div class="price">&euro;4,950 fixed<small>One week, from kickoff to read-out</small></div>
-          <p class="for">For startups working towards a CE mark or a first certification audit, who know they need a quality system and want to know exactly where they stand.</p>
-          <ul>
-            <li>Review of your quality system and documentation against ISO 13485 and the EU MDR</li>
-            <li>A gap register with the clause behind every gap</li>
-            <li>Findings ranked by risk, so you fix the right things first</li>
-            <li>A 90-day roadmap to certification readiness</li>
-            <li>A 60-minute read-out with your team</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about a gap assessment</a></div>
-        </article>
-        <article class="card offer" id="fractional">
-          <span class="num">Fractional QA/RA</span>
-          <h3>Fractional QA/RA lead</h3>
-          <div class="price">From &euro;3,000 per month<small>From two days a month, scoped with you</small></div>
-          <p class="for">For medtech teams that need senior QA/RA leadership before they can hire it, or while they search for the right person.</p>
-          <ul>
-            <li>Senior QA/RA time on a fixed monthly scope</li>
-            <li>Management review, CAPA and supplier oversight</li>
-            <li>Preparation for notified body and certification audits</li>
-            <li>Coaching your team so the knowledge stays in the company</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about fractional QA/RA</a></div>
-        </article>
-        <article class="card offer" id="supplier-audit">
-          <span class="num">Supplier audit</span>
-          <h3>Supplier and contract-manufacturer audit</h3>
-          <div class="price">&euro;1,200 per auditor day<small>Usually 1 to 2 days per supplier, report included, travel at cost</small></div>
-          <p class="for">For device companies that outsource production, components or critical services, and need their suppliers audited and approved.</p>
-          <ul>
-            <li>Audit plan and scope agreed up front</li>
-            <li>On-site or remote audit against ISO 13485 and your supplier requirements</li>
-            <li>Graded findings and a supplier risk rating</li>
-            <li>A report ready for your supplier file and approved supplier list</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about a supplier audit</a> <a href="supplier-audits.html" style="margin-left:14px;color:#2E9E8B;font-weight:600;font-size:14px">Full details</a></div>
-        </article>
-      </div>
-      <p class="vatnote" data-reveal>All prices exclude VAT. You receive the scope and the price in writing before any work starts.</p>
-    </div>
-  </section>
+      <div class="paths" role="tablist" aria-label="Choose your situation"><button type="button" role="tab" class="pt" id="tab-path-audit" aria-controls="path-audit" aria-selected="false">Preparing for an audit</button><button type="button" role="tab" class="pt" id="tab-path-build" aria-controls="path-build" aria-selected="false">Building your quality system</button><button type="button" role="tab" class="pt" id="tab-path-ops" aria-controls="path-ops" aria-selected="false">Doing too much by hand</button><button type="button" role="tab" class="pt" id="tab-path-invest" aria-controls="path-invest" aria-selected="false">Investing in medtech</button></div>
 
-
-  <section class="band " id="operations">
-    <div class="container">
-      <div class="section-mark" data-reveal>
-        <span class="lbl">Operations and systems</span>
-        <span class="desc">For growing companies that run on a few people, spreadsheets and inboxes.</span>
+      <div class="path" id="path-audit" role="tabpanel" aria-labelledby="tab-path-audit">
+        <div class="path-head"><h2>Walk into your audit knowing what they will find.</h2><p>For companies with a notified body, certification or supplier audit coming up.</p></div>
+        <div class="svc2-grid c3">
+          <article class="svc2" id="internal-audit">
+            <span class="k">Internal audit</span>
+            <h3>ISO 13485 internal audit</h3>
+            <div class="pr">&euro;1,200<small>per auditor day &middot; usually 2 to 3 days</small></div>
+            <p class="ln">Find the gaps before your notified body does.</p>
+            <ul><li>Audit plan agreed up front</li><li>Graded findings with objective evidence</li><li>A CAPA-ready report</li></ul>
+            <a class="btn g cta" href="book.html">Book a call about an audit</a>
+            <a class="more" href="iso-13485-internal-auditor-medtech-netherlands.html">Full details<span class="sr"> about ISO 13485 internal audit</span> &rarr;</a>
+          </article>
+          <article class="svc2" id="supplier-audit">
+            <span class="k">Supplier audit</span>
+            <h3>Supplier and contract-manufacturer audit</h3>
+            <div class="pr">&euro;1,200<small>per auditor day &middot; usually 1 to 2 days</small></div>
+            <p class="ln">Prove you control the suppliers your device depends on.</p>
+            <ul><li>On site or remote, against ISO 13485</li><li>A supplier risk rating</li><li>A report ready for your supplier file</li></ul>
+            <a class="btn g cta" href="book.html">Book a call about a supplier audit</a>
+            <a class="more" href="supplier-audits.html">Full details<span class="sr"> about Supplier and contract-manufacturer audit</span> &rarr;</a>
+          </article>
+          <article class="svc2" id="internal-auditor-course">
+            <span class="k">Training</span>
+            <h3>Internal auditor course</h3>
+            <div class="pr">&euro;5,950<small>per group &middot; two days, up to 8 people</small></div>
+            <p class="ln">Train your own team to run the audits.</p>
+            <ul><li>ISO 13485 or ISO 9001</li><li>Practice on your own procedures</li><li>In English or Dutch</li></ul>
+            <a class="btn g cta" href="book.html">Book a call about the course</a>
+            <a class="more" href="training.html">Full details<span class="sr"> about Internal auditor course</span> &rarr;</a>
+          </article>
+        </div>
       </div>
-      <div class="cards c2" data-reveal>
-        <article class="card offer" id="operations-assessment">
-          <span class="num">Operations assessment</span>
-          <h3>Operations assessment and process mapping</h3>
-          <div class="price">Fixed price per phase<small>Scoped and priced after a free call</small></div>
-          <p class="for">For founders and leadership teams whose company runs through one or two people, and who want to see how the work really flows before fixing it.</p>
-          <ul>
-            <li>A documented picture of how the company runs today</li>
-            <li>Every key process mapped, with owners and hand-offs</li>
-            <li>The bottlenecks and risks, ranked</li>
-            <li>A clear plan for what to fix first</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about an assessment</a> <a href="operations-and-systems.html" style="margin-left:14px;color:#2E9E8B;font-weight:600;font-size:14px">Full details</a></div>
-        </article>
-        <article class="card offer" id="workflow-automation">
-          <span class="num">Workflow automation</span>
-          <h3>Workflow automation and document control</h3>
-          <div class="price">Fixed price per build<small>Scoped and priced after the assessment or a free call</small></div>
-          <p class="for">For teams that repeat the same manual steps every week, or lose documents and decisions across tools.</p>
-          <ul>
-            <li>Automations for repeated work, for example in Microsoft 365 and Power Automate</li>
-            <li>Document control and approvals your team actually uses</li>
-            <li>A first working automation early in the project</li>
-            <li>Hand-over and training, so it runs without us</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about automation</a> <a href="operations-and-systems.html#workflow-automation" style="margin-left:14px;color:#2E9E8B;font-weight:600;font-size:14px">Full details</a></div>
-        </article>
+      <div class="path" id="path-build" role="tabpanel" aria-labelledby="tab-path-build">
+        <div class="path-head"><h2>Know exactly what to build, and in what order.</h2><p>For start-ups working towards a CE mark or a first certification audit.</p></div>
+        <div class="svc2-grid c3">
+          <article class="svc2" id="qms-workshop">
+            <span class="k">Workshop</span>
+            <h3>Your quality system in plain language</h3>
+            <div class="pr">&euro;1,450<small>per group &middot; half day</small></div>
+            <p class="ln">Understand what the rules ask before you build anything.</p>
+            <ul><li>ISO 13485 and the MDR in plain words</li><li>What to build first, and what can wait</li><li>Time for your own questions</li></ul>
+            <a class="btn g cta" href="book.html">Book a call about the workshop</a>
+            <a class="more" href="training.html#qms-workshop">Full details<span class="sr"> about Your quality system in plain language</span> &rarr;</a>
+          </article>
+          <article class="svc2 featured" id="gap-assessment">
+            <span class="badge">Most chosen</span><span class="k">Gap assessment</span>
+            <h3>MDR and ISO 13485 gap assessment</h3>
+            <div class="pr">&euro;4,950<small>fixed &middot; one week, kickoff to read-out</small></div>
+            <p class="ln">See exactly where you stand, and the fastest route to certification.</p>
+            <ul><li>A gap register with the clause behind every gap</li><li>Findings ranked by risk</li><li>A 90-day roadmap to readiness</li></ul>
+            <a class="btn p cta" href="book.html">Book a call about a gap assessment</a>
+            
+          </article>
+          <article class="svc2" id="fractional">
+            <span class="k">Fractional QA/RA</span>
+            <h3>Fractional QA/RA lead</h3>
+            <div class="pr">from &euro;3,000<small>per month &middot; from two days a month</small></div>
+            <p class="ln">Senior QA/RA leadership before you can hire it.</p>
+            <ul><li>Management review, CAPA and supplier oversight</li><li>Audit preparation</li><li>Your team coached so the knowledge stays</li></ul>
+            <a class="btn g cta" href="book.html">Book a call about fractional QA/RA</a>
+            
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="band white" id="investors">
-    <div class="container">
-      <div class="section-mark" data-reveal>
-        <span class="lbl">For investors and incubators</span>
-        <span class="desc">Know where a medtech company stands before you invest in it or coach it.</span>
+      <div class="path" id="path-ops" role="tabpanel" aria-labelledby="tab-path-ops">
+        <div class="path-head"><h2>Stop being the system your company runs on.</h2><p>For growing companies that run on a few people, spreadsheets and inboxes.</p></div>
+        <div class="svc2-grid c2">
+          <article class="svc2 featured" id="operations-assessment">
+            <span class="badge">Most chosen</span><span class="k">Operations assessment</span>
+            <h3>Operations assessment and process mapping</h3>
+            <div class="pr">from &euro;2,950<small>fixed per phase &middot; stop after any phase</small></div>
+            <p class="ln">See how the work really flows before you fix it.</p>
+            <ul><li>How the company runs today, documented</li><li>Key processes mapped with owners</li><li>A plan for what to fix first</li></ul>
+            <a class="btn p cta" href="book.html">Book a call about an assessment</a>
+            <a class="more" href="operations-and-systems.html">Full details<span class="sr"> about Operations assessment and process mapping</span> &rarr;</a>
+          </article>
+          <article class="svc2" id="workflow-automation">
+            <span class="k">Workflow automation</span>
+            <h3>Workflow automation and document control</h3>
+            <div class="pr">from &euro;3,500<small>per build &middot; handed over to your team</small></div>
+            <p class="ln">Take the repeated manual work off your team's desk.</p>
+            <ul><li>Automations in Microsoft 365 and Power Automate</li><li>Document control people actually use</li><li>A first automation live early</li></ul>
+            <a class="btn g cta" href="book.html">Book a call about automation</a>
+            <a class="more" href="operations-and-systems.html#workflow-automation">Full details<span class="sr"> about Workflow automation and document control</span> &rarr;</a>
+          </article>
+        </div>
       </div>
-      <div class="cards c2" data-reveal>
-        <article class="card offer" id="due-diligence">
-          <span class="num">Due diligence</span>
-          <h3>Regulatory and quality due diligence</h3>
-          <div class="price">Fixed price per company<small>Priced by scope after a free call</small></div>
-          <p class="for">For VCs, angels and acquirers looking at a medtech company, who want the regulatory and quality picture before the term sheet.</p>
-          <ul>
-            <li>Review of the regulatory pathway, certificates and technical documentation</li>
-            <li>Assessment of the quality system and its evidence</li>
-            <li>The gaps, and what they will cost in time and money to close</li>
-            <li>A plain-language report for your investment committee</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about due diligence</a> <a href="investors-and-incubators.html" style="margin-left:14px;color:#2E9E8B;font-weight:600;font-size:14px">Full details</a></div>
-        </article>
-        <article class="card offer" id="portfolio-readiness">
-          <span class="num">Portfolio readiness</span>
-          <h3>Readiness assessments for your portfolio</h3>
-          <div class="price">Fixed price per cohort<small>Priced by number of companies after a free call</small></div>
-          <p class="for">For incubators, accelerators and VCs who want every medtech company in their portfolio on a clear path to the market.</p>
-          <ul>
-            <li>A short regulatory and quality assessment per company</li>
-            <li>Each company ranked on readiness, with its next three steps</li>
-            <li>An overview for the programme or fund</li>
-            <li>Optional follow-up workshops for the cohort</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about your portfolio</a> <a href="investors-and-incubators.html#portfolio-readiness" style="margin-left:14px;color:#2E9E8B;font-weight:600;font-size:14px">Full details</a></div>
-        </article>
+      <div class="path" id="path-invest" role="tabpanel" aria-labelledby="tab-path-invest">
+        <div class="path-head"><h2>Know the regulatory truth before you invest.</h2><p>For VCs, angels, acquirers, incubators and accelerators.</p></div>
+        <div class="svc2-grid c2">
+          <article class="svc2 featured" id="due-diligence">
+            <span class="badge">Most chosen</span><span class="k">Due diligence</span>
+            <h3>Regulatory and quality due diligence</h3>
+            <div class="pr">from &euro;4,950<small>per company &middot; timed to your deal</small></div>
+            <p class="ln">The gaps, and what they will cost to close, before the term sheet.</p>
+            <ul><li>Pathway, certificates and technical file</li><li>Quality system and its evidence</li><li>A report for your investment committee</li></ul>
+            <a class="btn p cta" href="book.html">Book a call about due diligence</a>
+            <a class="more" href="investors-and-incubators.html">Full details<span class="sr"> about Regulatory and quality due diligence</span> &rarr;</a>
+          </article>
+          <article class="svc2" id="portfolio-readiness">
+            <span class="k">Portfolio readiness</span>
+            <h3>Readiness assessments for your portfolio</h3>
+            <div class="pr">from &euro;950<small>per company &middot; for a cohort or fund</small></div>
+            <p class="ln">Every medtech company in your portfolio on a clear path to market.</p>
+            <ul><li>A short assessment per company</li><li>Ranked on readiness, with next steps</li><li>An overview for the programme</li></ul>
+            <a class="btn g cta" href="book.html">Book a call about your portfolio</a>
+            <a class="more" href="investors-and-incubators.html#portfolio-readiness">Full details<span class="sr"> about Readiness assessments for your portfolio</span> &rarr;</a>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="band " id="training">
-    <div class="container">
-      <div class="section-mark" data-reveal>
-        <span class="lbl">Training</span>
-        <span class="desc">In-company, for your team or your cohort. Taught by practising lead auditors.</span>
-      </div>
-      <div class="cards c2" data-reveal>
-        <article class="card offer" id="internal-auditor-course">
-          <span class="num">Course</span>
-          <h3>ISO 13485 or ISO 9001 internal auditor course</h3>
-          <div class="price">Two days, in-company<small>Priced per group after a free call</small></div>
-          <p class="for">For quality teams who need trained internal auditors, taught by lead auditors who run these audits every year.</p>
-          <ul>
-            <li>How to plan, run and report an internal audit</li>
-            <li>Writing findings with objective evidence</li>
-            <li>Practice on your own procedures</li>
-            <li>A certificate of completion for your training records</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about training</a> <a href="training.html" style="margin-left:14px;color:#2E9E8B;font-weight:600;font-size:14px">Full details</a></div>
-        </article>
-        <article class="card offer" id="qms-workshop">
-          <span class="num">Workshop</span>
-          <h3>Your quality system in plain language</h3>
-          <div class="price">Half day<small>For your team, your founders or your incubator cohort</small></div>
-          <p class="for">For founders and early teams who know they need a quality system and want to understand it before they build it.</p>
-          <ul>
-            <li>What ISO 13485 and the MDR ask of you, in plain words</li>
-            <li>What to build first, and what can wait</li>
-            <li>The mistakes that cost start-ups months</li>
-            <li>Time for your own questions</li>
-          </ul>
-          <div class="offer-cta"><a class="btn g" href="book.html">Book a call about a workshop</a> <a href="training.html#qms-workshop" style="margin-left:14px;color:#2E9E8B;font-weight:600;font-size:14px">Full details</a></div>
-        </article>
-      </div>
+      <p class="notsure">Not sure which fits? <a href="book.html#quiz">Take the one-minute quiz</a> or <a href="book.html">book a free call</a> and we will tell you.</p>
     </div>
   </section>
 
   <section class="band" id="how">
     <div class="container">
       <div class="section-mark" data-reveal>
-        <span class="lbl">How it works</span>
-        <span class="desc">Four steps, and you know the price at the second one.</span>
+        <span class="lbl">What happens on the call</span>
+        <span class="desc">Free, 20 minutes, no obligation.</span>
       </div>
-      <div class="steps" data-reveal>
-        <div class="step"><span class="n">01</span><b>Book a free call</b><p>Twenty minutes to understand where you are and what you need.</p></div>
-        <div class="step"><span class="n">02</span><b>Scope and price in writing</b><p>A short proposal with the scope, the dates and a fixed price.</p></div>
-        <div class="step"><span class="n">03</span><b>We do the work with you</b><p>On site or remote, alongside your team, so nothing stops.</p></div>
-        <div class="step"><span class="n">04</span><b>Report and next steps</b><p>A clear report, a read-out, and the next steps in priority order.</p></div>
+      <div class="steps s3" data-reveal>
+        <div class="step"><span class="n">01</span><b>Pick a time</b><p>Take the quiz or pick a slot directly. It takes a minute.</p></div>
+        <div class="step"><span class="n">02</span><b>Talk to a lead auditor</b><p>Twenty minutes on Teams. You tell us where you are, we tell you what we would do first.</p></div>
+        <div class="step"><span class="n">03</span><b>Get it in writing</b><p>If there is a fit, a short proposal with the scope, the dates and a fixed price.</p></div>
       </div>
     </div>
   </section>
@@ -722,6 +792,35 @@
   </div>
 </footer>
 
+
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.pt'));
+  var paths = Array.prototype.slice.call(document.querySelectorAll('.path'));
+  if(!tabs.length) return;
+  var MAP = {"internal-audit": "path-audit", "supplier-audit": "path-audit", "internal-auditor-course": "path-audit", "qms-workshop": "path-build", "gap-assessment": "path-build", "fractional": "path-build", "operations-assessment": "path-ops", "workflow-automation": "path-ops", "due-diligence": "path-invest", "portfolio-readiness": "path-invest", "operations": "path-ops", "investors": "path-invest", "training": "path-audit", "services": "path-build"};
+  function show(id, focusTab){
+    paths.forEach(function(p){ p.hidden = p.id !== id; });
+    tabs.forEach(function(t){ var on = t.getAttribute('aria-controls') === id; t.setAttribute('aria-selected', on ? 'true' : 'false'); t.tabIndex = on ? 0 : -1; if(on && focusTab) t.focus(); });
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ show(t.getAttribute('aria-controls')); });
+    t.addEventListener('keydown', function(e){
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if(d){ var n = tabs[(i + d + tabs.length) % tabs.length]; show(n.getAttribute('aria-controls'), true); e.preventDefault(); }
+    });
+  });
+  function fromHash(){
+    var h = location.hash.replace('#','');
+    var id = MAP[h] || (document.getElementById(h) && document.getElementById(h).classList.contains('path') ? h : null);
+    show(id || 'path-build');
+    if(id && MAP[h] && document.getElementById(h) && h !== 'services'){ setTimeout(function(){ document.getElementById(h).scrollIntoView({block:'center'}); }, 30); }
+  }
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
+})();
+</script>
+<script src="sticky-book.js" defer></script>
 <script src="console-home.js"></script>
 </body>
 </html>
