@@ -1,8 +1,8 @@
 {
   "_meta": {
     "purpose": "Searchable catalog of reusable website images. AI/authors read this to pick images for blog posts and page updates. See dirs/img/README.md.",
-    "generated": "2026-07-23T11:49:49Z",
-    "count": 44
+    "generated": "2026-10-09T07:15:20Z",
+    "count": 45
   },
   "images": [
     {
@@ -133,8 +133,8 @@
         "inline"
       ],
       "orientation": "landscape",
-      "width": 4460,
-      "height": 2974
+      "width": 1800,
+      "height": 1200
     },
     {
       "file": "dirs/img/anncapictures-tartan-track-2678544_1920.jpg",
@@ -194,8 +194,8 @@
         "thumbnail"
       ],
       "orientation": "landscape",
-      "width": 3000,
-      "height": 2000
+      "width": 1800,
+      "height": 1200
     },
     {
       "file": "dirs/img/audit-meeting.jpg",
@@ -213,8 +213,8 @@
         "thumbnail"
       ],
       "orientation": "landscape",
-      "width": 4460,
-      "height": 2974
+      "width": 1800,
+      "height": 1200
     },
     {
       "file": "dirs/img/bru-no-lightbulb-3489395_1920.jpg",
@@ -254,8 +254,8 @@
         "thumbnail"
       ],
       "orientation": "landscape",
-      "width": 4460,
-      "height": 2973
+      "width": 1800,
+      "height": 1200
     },
     {
       "file": "dirs/img/colin00b-light-2156209_1920.jpg",
@@ -423,8 +423,8 @@
         "thumbnail"
       ],
       "orientation": "landscape",
-      "width": 4460,
-      "height": 2973
+      "width": 1800,
+      "height": 1200
     },
     {
       "file": "dirs/img/lab-microscope.jpg",
@@ -442,8 +442,8 @@
         "thumbnail"
       ],
       "orientation": "landscape",
-      "width": 4460,
-      "height": 2974
+      "width": 1800,
+      "height": 1200
     },
     {
       "file": "dirs/img/lightbulb.jpg",
@@ -545,8 +545,8 @@
         "thumbnail"
       ],
       "orientation": "landscape",
-      "width": 4460,
-      "height": 2973
+      "width": 1800,
+      "height": 1200
     },
     {
       "file": "dirs/img/noname_13-lake-2063957_1920.jpg",
@@ -722,6 +722,26 @@
       "height": 1262
     },
     {
+      "file": "dirs/img/secret-sauce-bones.png",
+      "alt": "Healthy bones beside osteoporotic bones: the dense middle between Team and Outcome is the Secret Sauce Recipe, the hollow one has No Recipe",
+      "description": "Chani's annotated diagram for the secret-sauce post. A healthy bone and an osteoporotic bone side by side, each labelled Team at one end and Outcome at the other. The healthy bone's dense middle is the Secret Sauce Recipe, the hollowed bone has No Recipe and a shrugging man.",
+      "tags": [
+        "knowledge-management",
+        "osteoporosis",
+        "bones",
+        "secret-sauce",
+        "documentation",
+        "diagram",
+        "qms"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 812,
+      "height": 619
+    },
+    {
       "file": "dirs/img/step-answers.jpg",
       "alt": "Close-up of hands typing on a laptop keyboard",
       "description": "Close-up of hands typing on a laptop keyboard.",
@@ -878,8 +898,8 @@
         "inline"
       ],
       "orientation": "landscape",
-      "width": 4460,
-      "height": 2974
+      "width": 1800,
+      "height": 1200
     },
     {
       "file": "dirs/img/timhill-ferrybridge-5428427_1920.jpg",
