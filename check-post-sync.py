@@ -94,6 +94,11 @@ def draft_paragraphs(md: str):
         chunk = chunk.strip()
         if not chunk or chunk.startswith("#"):
             continue
+        chunk = re.sub(r"\*([^*]+)\*", r"\1", chunk)  # markdown *emphasis*
+        lines = chunk.splitlines()
+        if all(line.startswith("- ") for line in lines):  # bullet list: one entry per item
+            paras.extend(normalise(line[2:]) for line in lines)
+            continue
         paras.append(normalise(chunk))
     return paras
 
@@ -103,8 +108,8 @@ def html_paragraphs(page: str):
     m = re.search(r'<div class="prose article".*?>(.*?)</div>', page, re.S)
     if not m:
         return None
-    return [normalise(re.sub(r"<[^>]+>", "", p)) for p in
-            re.findall(r"<p>(.*?)</p>", m.group(1), re.S)]
+    return [normalise(re.sub(r"<[^>]+>", "", p)) for _, p in
+            re.findall(r"<(p|li)>(.*?)</\1>", m.group(1), re.S)]
 
 
 def check(draft_path: Path):
