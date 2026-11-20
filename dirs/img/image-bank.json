@@ -1,8 +1,8 @@
 {
   "_meta": {
     "purpose": "Searchable catalog of reusable website images. AI/authors read this to pick images for blog posts and page updates. See dirs/img/README.md.",
-    "generated": "2026-10-09T07:15:20Z",
-    "count": 45
+    "generated": "2026-11-20T09:18:20Z",
+    "count": 46
   },
   "images": [
     {
@@ -636,6 +636,27 @@
       "orientation": "landscape",
       "width": 3669,
       "height": 2446
+    },
+    {
+      "file": "dirs/img/pixabay-gym-interior-91849_1280.jpg",
+      "alt": "An empty gym with rows of weight benches, barbell racks and plates under a bright ceiling.",
+      "description": "Empty modern gym interior with benches, racks and barbells, warm wood floor, nobody training yet. Fits the gym-as-system metaphor: the equipment is there, the program and showing up are what count. Source: Pixabay 91849, Pixabay Content License.",
+      "tags": [
+        "gym",
+        "fitness",
+        "equipment",
+        "empty",
+        "weights",
+        "training",
+        "system",
+        "discipline"
+      ],
+      "use": [
+        "inline"
+      ],
+      "orientation": "landscape",
+      "width": 1280,
+      "height": 814
     },
     {
       "file": "dirs/img/placidplace-frequency-wave-7776034_1920.jpg",
